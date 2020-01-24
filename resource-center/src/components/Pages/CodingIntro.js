@@ -2,14 +2,8 @@ import React from "react";
 
 function Intro () {
     return (
+        
         <div>
-        {/* <meta charSet="UTF -8" />
-        <title>FSWD-Library</title>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous" />
-        {/*MY CSS*/}
-        {/* <link href="style.css" type="text/css" rel="stylesheet" /> */} */} */}
         <ul>
           <li style={{textAlign: 'center', font: 'bolder', background: '#039be5', color: 'white', height: '50px', fontSize: '24px', paddingTop: '3px'}}>
             FullStackDev</li>

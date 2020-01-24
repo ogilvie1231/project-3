@@ -4,7 +4,7 @@ import images from './images.json';
 import Sidebar from './components/Sidebar';
 // import FireBase from './components/Pages/Firebase';
 // import Html from './components/Pages/IntroHTML';
-// import Intro from './components/Pages/Intro';
+// import Intro from './components/Pages/CodingIntro';
 
 class App extends Component {
   state = {

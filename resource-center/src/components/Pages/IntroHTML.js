@@ -1,11 +1,9 @@
 import React from "react";
 
-function Intro () {
+function Html () {
      return (
+      
       <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
         <ul>
           <li style={{textAlign: 'center', font: 'bolder', background: '#039be5', color: 'white', height: '50px', fontSize: '24px', paddingTop: '3px'}}>
             FullStackDev</li>
@@ -123,4 +121,4 @@ function Intro () {
     );
 };
 
-export default Intro;
+export default Html;
