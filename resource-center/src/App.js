@@ -17,7 +17,7 @@ class App extends Component {
     <div>
    <Header images= {(this.state.images[0].img)} />
    <Sidebar />
-   {/* <Card /> */}
+   <Card />
    {/* <FireBase /> */}
    {/* <Html /> */}
   </div>

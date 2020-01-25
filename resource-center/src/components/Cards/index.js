@@ -1,12 +1,12 @@
 import React from "react";
 import './style.css'
 
-function card (props) {
+function Card (props) {
     return (
     <div className="card">
     <h1></h1>
     <img 
-        className= ''
+        className= 'card'
         src={`images/${props.images}`} 
         alt='card'>
       </img>
@@ -14,4 +14,4 @@ function card (props) {
     )
 };
 
-export default card;
+export default Card;
