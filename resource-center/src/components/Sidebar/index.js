@@ -21,6 +21,6 @@ function Sidebar(props) {
     <li><a href="sequelize.html">Sequelize</a></li>
   </ul> 
     )
-}
+};
 
 export default Sidebar;
