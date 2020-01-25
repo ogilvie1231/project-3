@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+
+import React, { Component, useContext } from "react";
+import { Auth0Context } from "./context/auth0-context";
 import Header from './components/Header';
 import images from './images.json';
 import Sidebar from './components/Sidebar';
@@ -8,14 +10,14 @@ import Html from './Pages/IntroHTML';
 import Intro from './Pages/CodingIntro';
 import Btrap.js from './Pages/Btrap.js';
 
-class App extends Component {
-  state = {
-    images
-  }
-  
- render() {
+function App() {
+  const auth0 = useContext(Auth0Context);
+
+
   return (
     <div>
+    <div className="container text-center">{auth0.message}</div>
+    </div>
    <Header images= {(this.state.images[0].img)} />
    <Sidebar />
    {/* <Card /> */}
@@ -26,5 +28,5 @@ class App extends Component {
   </div>
   );
 }
-}
+
 export default App;
