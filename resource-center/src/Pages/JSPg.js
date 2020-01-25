@@ -35,7 +35,7 @@ function Header (props) {
         <div class="card">
             <div class="card-header">
                 <H1>Javascript</H1>
-                <img src="assets/jslogo2.png" class="titleimg">
+                <img src="assets/jslogo2.png" class="titleimg"></img>
             </div>
             <div class="card-body">
                 <h5 class="card-title">Quick Links</h5>
