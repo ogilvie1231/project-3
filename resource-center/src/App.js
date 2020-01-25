@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import images from './images.json';
 import Sidebar from './components/Sidebar';
-import Card from './components/Cards';
-// import FireBase from './components/Pages/Firebase';
-// import Html from './components/Pages/IntroHTML';
-// import Intro from './components/Pages/CodingIntro';
+// import Card from './components/Cards';
+import FireBase from './Pages/Firebase';
+import Html from './Pages/IntroHTML';
+import Intro from './Pages/CodingIntro';
+import Btrap.js from './Pages/Btrap.js';
 
 class App extends Component {
   state = {
@@ -17,9 +18,11 @@ class App extends Component {
     <div>
    <Header images= {(this.state.images[0].img)} />
    <Sidebar />
-   <Card />
-   {/* <FireBase /> */}
-   {/* <Html /> */}
+   {/* <Card /> */}
+   <FireBase />
+   <Html />
+   <Intro />
+   <Btrap.js />
   </div>
   );
 }

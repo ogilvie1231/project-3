@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header (props) {
+function Css (props) {
      return (
       <div>
         {/*LINKS*/}
@@ -114,4 +114,4 @@ function Header (props) {
     );
 };
 
-export default Header;
+export default Css;
