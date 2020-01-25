@@ -111,12 +111,6 @@ function Header (props) {
         </div>
         <br />
       </div>
-
-
-
-
-
-
     );
 };
 
