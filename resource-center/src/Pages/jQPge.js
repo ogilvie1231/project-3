@@ -34,7 +34,7 @@ function Header (props) {
             <div className="card">
               <div className="card-header">
                 <h1>jQuery</h1>
-                <img src="assets/jqueryvector.png" className="titleimg" />
+                <img src="assets/jqueryvector.png" className="titleimg"></img>
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>

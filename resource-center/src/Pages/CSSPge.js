@@ -34,7 +34,7 @@ function Header (props) {
             <div className="card">
               <div className="card-header">
                 <h1>CSS</h1>
-                <img src="assets/css logo.svg" className="titleimg" />
+                <img src="assets/css logo.svg" className="titleimg"></img>
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
