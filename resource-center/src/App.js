@@ -8,7 +8,7 @@ import Sidebar from './components/Sidebar';
 import FireBase from './Pages/Firebase';
 import Html from './Pages/IntroHTML';
 import Intro from './Pages/CodingIntro';
-import Btrap.js from './Pages/Btrap.js';
+import Btrap from './Pages/Btrap.js';
 
 function App() {
   const auth0 = useContext(Auth0Context);
@@ -16,11 +16,12 @@ function App() {
 
   return (
     <div>
+    <div>
     <div className="container text-center">{auth0.message}</div>
     </div>
    <Header images= {(this.state.images[0].img)} />
    <Sidebar />
-   {/* <Card /> */}
+   
    <FireBase />
    <Html />
    <Intro />
