@@ -19,7 +19,7 @@ function App() {
     <div>
     <div className="container text-center">{auth0.message}</div>
     </div>
-   <Header images= {(this.state.images[0].img)} />
+   <Header images= {(images[0].img)} />
    <Sidebar />
    
    <FireBase />

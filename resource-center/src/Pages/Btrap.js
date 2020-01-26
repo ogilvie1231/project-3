@@ -2,6 +2,8 @@ import React from "react";
 
 function Header (props) {
      return (
+         <div>
+
       <div>
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
@@ -34,7 +36,7 @@ function Header (props) {
     <div style="margin-left:18%;margin-right:2%;padding:1px 16px;height:1000px;">
         <div class="card">
             <div class="card-header">
-                <H1>Bootstrap</H1>
+                <h1>Bootstrap</h1>
                 <img src="assets/bootstrap-logo.png" class="titleimg"/>
             </div>
             <div class="card-body">
@@ -73,7 +75,8 @@ function Header (props) {
                 <div class="card">
                     <div class="card-body">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="320" height="215" src="https://www.youtube.com/embed/9cKsq14Kfsw"
+          
+                        <iframe width="320" height="215" src="https://www.youtube.com/embed/9cKsq14Kfsw"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
@@ -132,6 +135,7 @@ function Header (props) {
                 href="https://www.youtube.com/watch?v=Thw33qJ5DXo">Watch Here</a>
         </div>
         <br/>
+        </div>
         
     );
 };
