@@ -9,8 +9,11 @@ export class Auth0Provider extends Component {
 
 
   state = {
-    auth0Client: null
-};
+    auth0Client: null,
+    isLoading: true,
+    isAuthenticated: false,
+    user: null
+  };
 config = {
     domain: process.env.REACT_APP_AUTH0_DOMAIN,
     client_id: process.env.REACT_APP_AUTH0_CLIENT_ID,
@@ -21,16 +24,25 @@ componentDidMount() {
     this.initializeAuth0();
 }
 
-// initialize the auth0 library
 initializeAuth0 = async () => {
-    const auth0Client = await createAuth0Client(this.config);
-    this.setState({ auth0Client });
-};
+  const auth0Client = await createAuth0Client(this.config);
+  const isAuthenticated = await auth0Client.isAuthenticated();
+  const user = isAuthenticated ? await auth0Client.getUser() : null; 
 
-render() {
-    const { children } = this.props;
+  this.setState({ auth0Client, isLoading: false, isAuthenticated, user }); // <-- updated
+    };
 
-    const configObject = { };
+    render() {
+      const { isLoading, isAuthenticated, user } = this.state; // <-- updated
+      const { children } = this.props;
+
+      const configObject = {
+          isLoading,
+          isAuthenticated,
+          user, // <-- new
+      };
+
+
 
     return (
         <Auth0Context.Provider value={configObject}>
