@@ -30,4 +30,5 @@ function ajax () {
       </div>
     </div>
   );
-}
+};
+export default ajax;
