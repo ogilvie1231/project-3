@@ -74,7 +74,7 @@ function App() {
           <Route path="/TimersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
-          <PrivateRoute path="/post" component={Post} />
+          {/* <PrivateRoute path="/post" component={Post} /> */}
         </Switch>
       </Router>
     </div>
