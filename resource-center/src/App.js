@@ -72,8 +72,8 @@ function App() {
           <Route path="/Sequelize" component={Sequelize} />
           <Route path="/TimersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
-          {/* <Route path="/profile" component={Profile} /> */}
           <PrivateRoute path="/profile" component={Profile} />
+          <PrivateRoute path="/post" component={Post} />
         </Switch>
       </Router>
     </div>
