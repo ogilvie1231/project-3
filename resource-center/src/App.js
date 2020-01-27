@@ -7,40 +7,22 @@ import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import Profile from "./components/Profile";
 import ajax from "./Pages/Ajax";
-import btrap from "./Pages/Bootstrap";
+import Bootstrap from "./Pages/Bootstrap";
 import CodingIntro from "./Pages/CodingIntro";
-import CSSPge from "./Pages/CSS";
+import CSS from "./Pages/CSS";
 import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
-import IntroHTML from "./Pages/HTML";
-import jQPge from "./Pages/jQuery";
-import JSPg from "./Pages/JavaScript";
+import HTML from "./Pages/HTML";
+import jQuery from "./Pages/jQuery";
+import JavaScript from "./Pages/JavaScript";
 import Mysql from "./Pages/Mysql";
 import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
-import TimersPg from "./Pages/Timers";
+import Timers from "./Pages/Timers";
 import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
-// import Intro from './Pages/IntroHTML';
 
-
-// class App extends Component {
-//   state = {
-//     images
-//   };
-
-//   render() {
-//     return (
-//       <div>
-//         <Header images={this.state.images[0].img} />
-//         <Sidebar />
-//         {/* <Intro /> */}
-//       </div>
-//     );
-//   }
-// }
-// export default App;
 
 function App() {
   const { loading } = useAuth0();
@@ -60,18 +42,18 @@ function App() {
         <Switch>
           <Route path="/" exact />
           <Route path="/ajax" component={ajax} />
-          <Route path="/btrap" component={btrap} />
+          <Route path="/Bootstrap" component={Bootstrap} />
           <Route path="/CodingIntro" component={CodingIntro} />
-          <Route path="/CSSPge" component={CSSPge} />
+          <Route path="/CSS" component={CSS} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
-          <Route path="/IntroHTML" component={IntroHTML} />
-          <Route path="/jQPge" component={jQPge} />
-          <Route path="/JSPg" component={JSPg} />
+          <Route path="/HTML" component={HTML} />
+          <Route path="/jQuery" component={jQuery} />
+          <Route path="/JavaScript" component={JavaScript} />
           <Route path="/Mysql" component={Mysql} />
           <Route path="/Node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
-          <Route path="/TimersPg" component={TimersPg} />
+          <Route path="/Timers" component={Timers} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
           {/* <PrivateRoute path="/post" component={Post} /> */}
