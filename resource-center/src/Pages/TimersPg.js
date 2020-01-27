@@ -1,9 +1,8 @@
 import React from "react";
 
-var NewComponent = React.createClass({
-    render: function() {
-      return (
-        <div>
+function Timers (props) {
+  return (
+   <div>
           <ul>
             <li style={{textAlign: 'center', font: 'bolder', background: '#039be5', color: 'white', height: '50px', fontSize: '24px', paddingTop: '3px'}}>
               FullStackDev</li>
@@ -105,4 +104,4 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  export default Timers;

@@ -7,18 +7,19 @@ function Sidebar(props) {
     <li
       className= "sidebar">
       FullStackDev</li>
-    <li><a href="intro.html">Introduction</a></li>
-    <li><a href="vsc.html">Visual Studio Code</a></li>
-    <li><a href="gitbash.html">GitBash</a></li>
-    <li><a href="index.html">HTML</a></li>
-    <li><a href="css.html">CSS</a></li>
-    <li><a href="bootstrap.html">BOOTSTRAP</a></li>
-    <li><a href="javascript.html">JAVASCRIPT</a></li>
-    <li><a href="jQuery.html">jQuery</a></li>
-    <li><a href="firebase.html">Firebase</a></li>
-    <li><a href="Node.js.html">Node.js</a></li>
-    <li><a href="mysql.html">MySQL</a></li>
-    <li><a href="sequelize.html">Sequelize</a></li>
+    <li><a href="/intro">Introduction</a></li>
+    <li><a href="/vsc">Visual Studio Code</a></li>
+    <li><a href="/gitbash">GitBash</a></li>
+    <li><a href="/IntroHTML">HTML</a></li>
+    <li><a href="/css">CSS</a></li>
+    <li><a href="/bootstrap">BOOTSTRAP</a></li>
+    <li><a href="/javascript">JAVASCRIPT</a></li>
+    <li><a href="/jQuery">jQuery</a></li>
+    <li><a href="/firebase">Firebase</a></li>
+    <li><a href="/Node.js">Node.js</a></li>
+    <li><a href="/mysql">MySQL</a></li>
+    <li><a href="/sequelize">Sequelize</a></li>
+    <li><a href="/profile">Profile</a></li>
   </ul> 
     )
 };

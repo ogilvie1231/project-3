@@ -1,32 +1,84 @@
+import React, { Component } from "react";
+import Header from "./components/Header";
+import images from "./images.json";
+import Sidebar from "./components/Sidebar";
+import NavBar from "./components/NavBar";
+import { useAuth0 } from "./react-auth0-spa";
+import { Router, Route, Switch } from "react-router-dom";
+import Profile from "./components/Profile";
+import ajax from "./Pages/Ajax";
+import btrap from "./Pages/Btrap";
+import CodingIntro from "./Pages/CodingIntro";
+import CSSPge from "./Pages/CSSPge";
+import Firebase from "./Pages/Firebase";
+import GitBash from "./Pages/GitBash";
+import IntroHTML from "./Pages/IntroHTML";
+import jQPge from "./Pages/jQPge";
+import JSPg from "./Pages/JSPg";
+import Mysql from "./Pages/Mysql";
+import Node from "./Pages/Node";
+import Sequelize from "./Pages/Sequelize";
+import TimersPg from "./Pages/TimersPg";
+import vsc from "./Pages/vsc";
+import history from "./utils/history";
+import PrivateRoute from "./components/PrivateRoute";
+// import Intro from './Pages/IntroHTML';
 
-import React, { Component, useContext } from "react";
-import { Auth0Context } from "./context/auth0-context";
-import Header from './components/Header';
-import images from './images.json';
-import Sidebar from './components/Sidebar';
-// import Card from './components/Cards';
-import FireBase from './Pages/Firebase';
-import Html from './Pages/IntroHTML';
-import Intro from './Pages/CodingIntro';
-import Btrap.js from './Pages/Btrap.js';
+// class App extends Component {
+//   state = {
+//     images
+//   };
+
+//   render() {
+//     return (
+//       <div>
+//         <Header images={this.state.images[0].img} />
+//         <Sidebar />
+//         {/* <Intro /> */}
+//       </div>
+//     );
+//   }
+// }
+// export default App;
 
 function App() {
-  const auth0 = useContext(Auth0Context);
+  const { loading } = useAuth0();
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
-    <div>
-    <div className="container text-center">{auth0.message}</div>
+    <div className="App">
+      <Router history={history}>
+        <header>
+          <NavBar />
+        </header>
+        <Header images={images[0].img} />
+        <Sidebar />
+        <Switch>
+          <Route path="/" exact />
+          <Route path="/ajax" component={ajax} />
+          <Route path="/btrap" component={btrap} />
+          <Route path="/CodingIntro" component={CodingIntro} />
+          <Route path="/CSSPge" component={CSSPge} />
+          <Route path="/Firebase" component={Firebase} />
+          <Route path="/GitBash" component={GitBash} />
+          <Route path="/IntroHTML" component={IntroHTML} />
+          <Route path="/jQPge" component={jQPge} />
+          <Route path="/JSPg" component={JSPg} />
+          <Route path="/Mysql" component={Mysql} />
+          <Route path="/Node" component={Node} />
+          <Route path="/Sequelize" component={Sequelize} />
+          <Route path="/TimersPg" component={TimersPg} />
+          <Route path="/vsc" component={vsc} />
+          {/* <Route path="/profile" component={Profile} /> */}
+          <PrivateRoute path="/profile" component={Profile} />
+        </Switch>
+      </Router>
     </div>
-   <Header images= {(this.state.images[0].img)} />
-   <Sidebar />
-   {/* <Card /> */}
-   <FireBase />
-   <Html />
-   <Intro />
-   <Btrap.js />
-  </div>
   );
 }
 
 export default App;
+
