@@ -24,6 +24,7 @@ import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 // import Intro from './Pages/IntroHTML';
 
+
 // class App extends Component {
 //   state = {
 //     images
@@ -72,8 +73,8 @@ function App() {
           <Route path="/Sequelize" component={Sequelize} />
           <Route path="/TimersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
-          {/* <Route path="/profile" component={Profile} /> */}
           <PrivateRoute path="/profile" component={Profile} />
+          {/* <PrivateRoute path="/post" component={Post} /> */}
         </Switch>
       </Router>
     </div>
