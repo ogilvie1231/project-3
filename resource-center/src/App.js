@@ -55,7 +55,7 @@ function App() {
         <header>
           <NavBar />
         </header>
-        <Header images={images[0].img} />
+        {/* <Header images={images[0].img} /> */}
         <Sidebar />
         <Switch>
           <Route path="/" exact />
