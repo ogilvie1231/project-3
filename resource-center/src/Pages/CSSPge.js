@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header (props) {
+function Css (props) {
      return (
       <div>
         {/*LINKS*/}
@@ -34,7 +34,7 @@ function Header (props) {
             <div className="card">
               <div className="card-header">
                 <h1>CSS</h1>
-                <img src="assets/css logo.svg" className="titleimg"></img>
+                <img src="assets/css logo.svg" className="titleimg" />
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -114,4 +114,4 @@ function Header (props) {
     );
 };
 
-export default Header;
+export default Css;
