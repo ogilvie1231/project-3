@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
+import Home from "./Pages/Home";
 import Profile from "./components/Profile";
 import ajax from "./Pages/Ajax";
 import btrap from "./Pages/Btrap";
@@ -58,7 +59,7 @@ function App() {
         {/* <Header images={images[0].img} /> */}
         <Sidebar />
         <Switch>
-          <Route path="/" exact />
+          <Route path="/" component={Home} />
           <Route path="/ajax" component={ajax} />
           <Route path="/btrap" component={btrap} />
           <Route path="/CodingIntro" component={CodingIntro} />
