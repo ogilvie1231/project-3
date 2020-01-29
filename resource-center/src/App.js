@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from 'react';
-import Header from './components/Header';
-import images from './images.json';
-import Sidebar from './components/Sidebar';
-import Intro from './Pages/intro';
-
-=======
 import React, { Component } from "react";
 import Header from "./components/Header";
 import images from "./images.json";
@@ -31,7 +23,6 @@ import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 // import Intro from './Pages/IntroHTML';
->>>>>>> master
 
 
 // class App extends Component {
@@ -59,14 +50,6 @@ function App() {
   }
 
   return (
-<<<<<<< HEAD
-    <div>
-   <Header images= {(this.state.images[0].img)}
-   />
-   <Sidebar/>
-   <Intro />
-  </div>
-=======
     <div className="App">
       <Router history={history}>
         <header>
@@ -95,7 +78,6 @@ function App() {
         </Switch>
       </Router>
     </div>
->>>>>>> master
   );
 }
 
