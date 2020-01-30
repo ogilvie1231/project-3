@@ -2,11 +2,9 @@ import React from "react";
 
 function Btrap (props) {
      return (
-      <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-        <h1>Bootstrap</h1>
+      <div className="container" >
+
+        <h1 className="container">Bootstrap</h1>
 </div>
     // <div style="margin-left:18%;margin-right:2%;padding:1px 16px;height:1000px;">
     //     <div class="card">

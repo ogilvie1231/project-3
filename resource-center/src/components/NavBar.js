@@ -31,7 +31,7 @@ const NavBar = () => {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation">
-              <Link to="/"></Link>Home
+              <Link to="/home">Home</Link>
             </button>
           </span>
         )}
