@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
-import Intro from "./Pages/Intro";
+import Intro from "./Pages/intro";
 import images from "./images.json";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";

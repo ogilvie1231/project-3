@@ -28,7 +28,7 @@ const Home = () => {
               {/*Cards Section*/}
               <div id="topicards" classname="spacesection" />
               <div classname="cardsec">
-                <p style={{fontSize: '48px', fontFamily: '"Archivo Black", sans-serif'}}>The FSWDR Resources</p>
+                <p style={{fontSize: '48px', fontFamily: '"Archivo Black", sans-serif'}}>Resource Center</p>
                 <p>Find tutorials and answers quicker with FSWDR.</p>
                 <br />
                 <div id="logocards" classname="container">
@@ -52,7 +52,7 @@ const Home = () => {
                       <div classname="card mb-3" style={{maxWidth: '440px'}}>
                         <div classname="row no-gutters" id="cardshadow">
                           <div classname="col-md-4">
-                            <img id="logoimg" src="imgs/git logo.png" classname="card-img" alt="html logo" style={{width: '80px'}} />
+                            <img id="logoimg" src="./images/git logo" classname="card-img" alt="html logo" style={{width: '80px'}} />
                           </div>
                           <div classname="col-md-8">
                             <div classname="card-body">
