@@ -7,7 +7,7 @@ function Header (props) {
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
-        <ul>
+        {/* <ul>
     <li
       className= "sidebar">
       FullStackDev</li>
@@ -24,7 +24,7 @@ function Header (props) {
     <li><a href="/mysql">MySQL</a></li>
     <li><a href="/sequelize">Sequelize</a></li>
     <li><a href="/profile">Profile</a></li>
-  </ul> 
+  </ul>  */}
 </div>
     <div style="margin-left:18%;margin-right:2%;padding:1px 16px;height:1000px;">
         <div class="card">

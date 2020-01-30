@@ -4,7 +4,7 @@ function Node () {
     return (
       
       <div>
-        <ul>
+        {/* <ul>
           <li style={{textAlign: 'center', font: 'bolder', background: '#039be5', color: 'white', height: '50px', fontSize: '24px', paddingTop: '3px'}}>
             FullStackDev</li>
           <li><a href="intro.html">Introduction</a></li>
@@ -19,7 +19,7 @@ function Node () {
           <li><a href="Node.js.html">Node.js</a></li>
           <li><a href="mysql.html">MySQL</a></li>
           <li><a href="sequelize.html">Sequelize</a></li>
-        </ul>
+        </ul> */}
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">

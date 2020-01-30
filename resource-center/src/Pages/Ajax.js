@@ -18,6 +18,14 @@ function ajax () {
             <a href="" className="btn btn-success" target="_blank">AJAX Documentation</a>
             <a href="" className="btn btn-info" target="_blank">AJAX Videos</a>
           </div>
+          <div className="card-body">
+            <h5 className="card-title">Quick Links</h5>
+            <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
+            </p>
+            <a href="https://www.youtube.com/watch?v=tNKD0kfel6o" className="btn btn-primary" target="_blank">Getting started with AJAX</a>
+            <a href="" className="btn btn-success" target="_blank">AJAX Documentation</a>
+            <a href="" className="btn btn-info" target="_blank">AJAX Videos</a>
+          </div>
         </div>
         <br />
         <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
