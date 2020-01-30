@@ -1,6 +1,6 @@
 import React from "react";
 
-function Html () {
+function Header () {
      return (
       <div>
       {/*LINKS*/}
@@ -101,4 +101,4 @@ function Html () {
   );
 };
 
-export default Html;
+export default Header;
