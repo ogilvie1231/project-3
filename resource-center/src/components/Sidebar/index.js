@@ -14,6 +14,7 @@ const Sidebar =() => {
         <li
           className= "sidebar">
           FullStackDev</li>
+        <li><Link to="/home">Home</Link></li>
         <li><Link to="/intro">Introduction</Link></li>
         <li><Link to="/vsc">Visual Studio Code</Link></li>
         <li><Link to="/gitbash">GitBash</Link></li>

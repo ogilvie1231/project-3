@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header (props) {
+function Intro (props) {
      return (
       <div>
         {/*LINKS*/}
@@ -101,4 +101,4 @@ function Header (props) {
     );
 };
 
-export default Header;
+export default Intro;

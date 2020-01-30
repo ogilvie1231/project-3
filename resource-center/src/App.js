@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
+import Intro from "./Pages/Intro";
 import images from "./images.json";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
+import Home from "./Pages/Home";
 import Profile from "./components/Profile";
 import ajax from "./Pages/Ajax";
-import btrap from "./Pages/Btrap";
+import Btrap from "./Pages/Btrap";
 import CodingIntro from "./Pages/CodingIntro";
 import CSSPge from "./Pages/CSSPge";
 import Firebase from "./Pages/Firebase";
@@ -58,9 +60,10 @@ function App() {
         {/* <Header images={images[0].img} /> */}
         <Sidebar />
         <Switch>
-          <Route path="/" exact />
+          <Route path="/home" component={Home} />
+          <Route path="/intro" component={Intro} />
           <Route path="/ajax" component={ajax} />
-          <Route path="/btrap" component={btrap} />
+          <Route path="/bootstrap" component={Btrap} />
           <Route path="/CodingIntro" component={CodingIntro} />
           <Route path="/CSSPge" component={CSSPge} />
           <Route path="/Firebase" component={Firebase} />
