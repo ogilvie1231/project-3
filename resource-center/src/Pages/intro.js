@@ -1,11 +1,12 @@
 import React from "react";
 
-function Header (props) {
+function Intro (props) {
      return (
       <div>
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
+<<<<<<< HEAD
         {/* <ul>
           <li style={{textAlign: 'center', font: 'bolder', background: '#039be5', color: 'white', height: '50px', fontSize: '24px', paddingTop: '3px'}}>
             FullStackDev</li>
@@ -29,6 +30,9 @@ function Header (props) {
           <li><a href="Mongo.html">Mongo-Mongoose</a></li>
           <li><a href="react.html">React</a></li>
         </ul> */}
+=======
+        
+>>>>>>> staging
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
@@ -123,4 +127,4 @@ function Header (props) {
     );
 };
 
-export default Header;
+export default Intro;

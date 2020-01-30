@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header (props) {
+function Btrap (props) {
      return (
       <div>
         {/*LINKS*/}
@@ -111,4 +111,4 @@ function Header (props) {
     );
 };
 
-export default Header;
+export default Btrap;
