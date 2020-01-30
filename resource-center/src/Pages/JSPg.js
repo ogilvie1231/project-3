@@ -7,7 +7,7 @@ function Header (props) {
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
-<<<<<<< HEAD
+{/* <<<<<<< HEAD */}
         {/* <ul>
     <li
       className= "sidebar">
@@ -26,9 +26,8 @@ function Header (props) {
     <li><a href="/sequelize">Sequelize</a></li>
     <li><a href="/profile">Profile</a></li>
   </ul>  */}
-=======
+{/* ======= */}
        
->>>>>>> staging
 </div>
     <div style="margin-left:18%;margin-right:2%;padding:1px 16px;height:1000px;">
         <div class="card">
