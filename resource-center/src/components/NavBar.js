@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
 import { useAuth0 } from "../react-auth0-spa";
 import { Link } from "react-router-dom";
