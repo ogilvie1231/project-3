@@ -6,29 +6,7 @@ function Header (props) {
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
-<<<<<<< HEAD
-        <ul>
-      <li
-        className= "sidebar">
-        FullStackDev</li>
-      <li><a href="/intro">Introduction</a></li>
-      <li><a href="/vsc">Visual Studio Code</a></li>
-      <li><a href="/gitbash">GitBash</a></li>
-      <li><a href="/IntroHTML">HTML</a></li>
-      <li><a href="/CSSPge">CSS</a></li>
-      <li><a href="/bootstrap">BOOTSTRAP</a></li>
-      <li><a href="/javascript">JAVASCRIPT</a></li>
-      <li><a href="/jQuery">jQuery</a></li>
-      <li><a href="/firebase">Firebase</a></li>
-      <li><a href="/Node.js">Node.js</a></li>
-      <li><a href="/mysql">MySQL</a></li>
-      <li><a href="/sequelize">Sequelize</a></li>
-      <li><a href="/profile">Profile</a></li>
-      <li><a href="/post">Add New Content</a></li>
-    </ul> 
-=======
       
->>>>>>> 527ae9620915d2c6c94a432440b7206860f57dd0
       <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="content">
           <div className="card">

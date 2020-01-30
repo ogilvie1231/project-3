@@ -1,40 +1,5 @@
 import React from "react";
 
-<<<<<<< HEAD
-function Node() {
-  return (
-
-    <div>
-      <ul>
-        <li
-          className="sidebar">
-          FullStackDev</li>
-        <li><a href="/intro">Introduction</a></li>
-        <li><a href="/vsc">Visual Studio Code</a></li>
-        <li><a href="/gitbash">GitBash</a></li>
-        <li><a href="/IntroHTML">HTML</a></li>
-        <li><a href="/CSSPge">CSS</a></li>
-        <li><a href="/bootstrap">BOOTSTRAP</a></li>
-        <li><a href="/javascript">JAVASCRIPT</a></li>
-        <li><a href="/jQuery">jQuery</a></li>
-        <li><a href="/firebase">Firebase</a></li>
-        <li><a href="/Node.js">Node.js</a></li>
-        <li><a href="/mysql">MySQL</a></li>
-        <li><a href="/sequelize">Sequelize</a></li>
-        <li><a href="/profile">Profile</a></li>
-        <li><a href="/post">Add New Content</a></li>
-      </ul>
-      <div style={{ marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px' }}>
-        <div className="content">
-          <div className="card">
-            <div className="card-header">
-              <h1>Node.js</h1>
-              <img src="assets/node logo.jpg" className="titleimg" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Quick Links</h5>
-              <p className="card-text">You can find more info, documents and very detailed videos in the buttons
-=======
 function Node () {
     return (
       
@@ -50,7 +15,6 @@ function Node () {
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
                 <p className="card-text">You can find more info, documents and very detailed videos in the buttons
->>>>>>> 527ae9620915d2c6c94a432440b7206860f57dd0
                   below.</p>
               <a href="https://nodejs.org/en/" className="btn btn-primary" target="_blank">Go to Node.js</a>
               <a href="https://nodejs.org/en/docs/" className="btn btn-success" target="_blank">Node Documents</a>
