@@ -22,7 +22,7 @@ import Timers from "./Pages/Timers";
 import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
-
+import Post from "./components/Post"
 
 function App() {
   const { loading } = useAuth0();
@@ -56,7 +56,7 @@ function App() {
           <Route path="/Timers" component={Timers} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
-          {/* <PrivateRoute path="/post" component={Post} /> */}
+          <PrivateRoute path="/post" component={Post} />
         </Switch>
       </Router>
     </div>
