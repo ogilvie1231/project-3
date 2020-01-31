@@ -26,7 +26,7 @@ const Sidebar =() => {
         <li><Link to="/jquery">jQuery</Link></li>
         <li><Link to="/javascript">JAVASCRIPT</Link></li>
         <li><Link to="/mysql">MySQL</Link></li>
-        <li><Link to="/Node">Node.js</Link></li>
+        <li><Link to="/node">Node.js</Link></li>
         <li><Link to="/sequelize">Sequelize</Link></li>
         <li><Link to="/timer">Moment js</Link></li>
         <li><Link to="/vsc">Visual Studio Code</Link></li>
