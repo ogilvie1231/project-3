@@ -11,7 +11,16 @@
 }
 #title {
     float: right;
-    margin-right: 75%;
+    margin-right: 65%;
+    position: relative;
+    text-align: center;
+}
+
+#title1 {
+    float: right;
+    margin-right: 60%;
+    position: relative;
+    text-align: center;
 }
 
 #input {
@@ -25,4 +34,9 @@
     height: 200px;
     position: relative;
     left: 400px;
+}
+
+#header {
+    position: relative;
+    text-align: center;
 }

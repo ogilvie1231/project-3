@@ -20,7 +20,7 @@ const Post = () => {
                     <input type="text" className="form-control" id= "input"></input>
                 </div>
                 <div class="form-group">
-                   <h3> <label htmlFor="Summary" id="title">Summary</label> </h3>
+                   <h3> <label htmlFor="Summary" id="title1">Summary</label> </h3>
                     <input type="text" className="form-control" id= "summary"></input>
                 </div>
                 <div class="form-group form-check"></div>
