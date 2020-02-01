@@ -2,12 +2,7 @@ import React, { Component } from "react";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./utils/history";
-import Header from "./components/Header";
-<<<<<<< HEAD
-import Intro from "./Pages/intro";
-import images from "./images.json";
-=======
->>>>>>> staging
+import Header from "./components/Header/";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import Profile from "./components/Profile";

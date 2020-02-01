@@ -3,11 +3,7 @@ import React from "react";
 function CodeIntro () {
     return (
         
-<<<<<<< HEAD
-        
-=======
-        <div className="container">
->>>>>>> staging
+        // <div className="container">
        
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="container">

@@ -1,94 +1,6 @@
 import React from "react";
 
 function Header (props) {
-<<<<<<< HEAD
-     return (
-         <div>
-      <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-{/* <<<<<<< HEAD */}
-        {/* <ul>
-    <li
-      className= "sidebar">
-      FullStackDev</li>
-    <li><a href="/intro">Introduction</a></li>
-    <li><a href="/vsc">Visual Studio Code</a></li>
-    <li><a href="/gitbash">GitBash</a></li>
-    <li><a href="/index">HTML</a></li>
-    <li><a href="/css">CSS</a></li>
-    <li><a href="/bootstrap">BOOTSTRAP</a></li>
-    <li><a href="/javascript">JAVASCRIPT</a></li>
-    <li><a href="/jQuery">jQuery</a></li>
-    <li><a href="/firebase">Firebase</a></li>
-    <li><a href="/Node.js">Node.js</a></li>
-    <li><a href="/mysql">MySQL</a></li>
-    <li><a href="/sequelize">Sequelize</a></li>
-    <li><a href="/profile">Profile</a></li>
-  </ul>  */}
-{/* ======= */}
-       
-</div>
-    <div style="margin-left:18%;margin-right:2%;padding:1px 16px;height:1000px;">
-        <div class="card">
-            <div class="card-header">
-                <h1>Javascript</h1>
-                <img src="assets/jslogo2.png" class="titleimg"></img>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Quick Links</h5>
-                <p class="card-text">You can find more info, documents and very detailed videos in the buttons below.
-                </p>
-                <a href="https://javascript.info/" class="btn btn-primary" target="_blank">JavaScript</a>
-                <a href="https://devdocs.io/javascript/" class="btn btn-success" target="_blank">JavaScript
-                    Documents</a>
-                <a href="https://www.youtube.com/playlist?list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl" class="btn btn-info"
-                    target="_blank">JavaScript Videos</a>
-                <a href="https://www.w3schools.com/js/default.asp" class="btn btn-secondary" target="_blank">Javascript
-                    W3Schools</a>
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps" class="btn btn-dark"
-                    target="_blank">Moz://a</a>
-            </div>
-        </div>
-        <hr/>
-        <h3>Videos</h3>
-        <p>"JavaScript, often abbreviated as JS, is a high-level, just-in-time compiled, object-oriented programming
-            language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing,
-            prototype-based object-orientation, and first-class functions."-Wikipedia</p>
-
-        <hr/>
-        <div class="container">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="320" height="215" src="https://www.youtube.com/embed/W6NZfCO5SIk"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <h5 class="card-title">JavaScript Tutorial for Beginners</h5>
-                        <p class="card-text">Learn JavaScript in 1 Hour [2019].</p>
-                        <hr/>
-                        <a class="btn btn-success" href="https://www.youtube.com/watch?v=W6NZfCO5SIk&feature=emb_title"
-                            role="button" target="_blank">More
-                            videos Here</a>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="320" height="215" src="https://www.youtube.com/embed/xpZLS6R91rQ"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.
-=======
               return (
           
                 <div>
@@ -101,7 +13,6 @@ function Header (props) {
                       <div className="card-body">
                         <h5 className="card-title">Quick Links</h5>
                         <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
->>>>>>> staging
                         </p>
                         <a href="https://javascript.info/" className="btn btn-primary" target="_blank">JavaScript</a>
                         <a href="https://devdocs.io/javascript/" className="btn btn-success" target="_blank">JavaScript
