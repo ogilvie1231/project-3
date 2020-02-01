@@ -9,7 +9,7 @@ function SQL () {
           <div className="card">
             <div className="card-header">
               <h1>MySQL</h1>
-              <img src="assets/mysql logo 3.jpg" className="titleimg" />
+              <img src="images/mysql logo.jpg" className="titleimg" />
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>
