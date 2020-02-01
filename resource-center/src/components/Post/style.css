@@ -11,14 +11,14 @@
 }
 #title {
     float: right;
-    margin-right: 65%;
+    margin-right: 66%;
     position: relative;
     text-align: center;
 }
 
 #title1 {
     float: right;
-    margin-right: 60%;
+    margin-right: 62%;
     position: relative;
     text-align: center;
 }
@@ -39,4 +39,12 @@
 #header {
     position: relative;
     text-align: center;
+}
+
+#category {
+    width: 700px;
+    height: 30px;
+    left: 400px;
+    position: relative;
+    margin-bottom: 1%;
 }
