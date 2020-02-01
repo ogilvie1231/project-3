@@ -139,7 +139,7 @@ const Home = () => {
                   <div classname="card mb-3" style={{maxWidth: '440px'}}>
                     <div classname="row no-gutters" id="cardshadow">
                       <div classname="col-md-4">
-                        <img id="logoimg" src="./images/jquery logo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
+                        <img id="logoimg" src="./images/jquerylogo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
                       </div>
                       <div classname="col-md-8">
                         <div classname="card-body">

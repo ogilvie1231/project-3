@@ -28,10 +28,6 @@ const Sidebar =() => {
         <li><Link to="/firebase">Firebase</Link></li>
         <li><Link to="/Node.js">Node.js</Link></li>
         <li><Link to="/mysql">MySQL</Link></li>
-<<<<<<< HEAD:resource-center/src/components/Sidebar/index.js
-=======
-        <li><Link to="/node">Node.js</Link></li>
->>>>>>> staging:client/src/components/Sidebar/index.js
         <li><Link to="/sequelize">Sequelize</Link></li>
         <li><Link to="/profile">Profile</Link></li>
       </ul> 
