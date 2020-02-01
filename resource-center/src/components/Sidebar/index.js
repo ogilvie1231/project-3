@@ -13,7 +13,7 @@ const Sidebar =() => {
         <ul>
         <li
           className= "sidebar">
-          FullStackDev</li>
+        </li>
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/intro">Introduction</Link></li>
         <li><Link to="/ajax">AJAX</Link></li>
