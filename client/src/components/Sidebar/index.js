@@ -10,6 +10,7 @@ const Sidebar =() => {
       <div>
       {!isAuthenticated && (
         <span>
+          <br></br>
         <ul>
         <li
           className= "sidebar">
