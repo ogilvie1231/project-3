@@ -16,6 +16,10 @@ const ContentSchema = new Schema ({
         type: String,
         required: true
     },
+    category : {
+        type: String,
+        required: true
+    },
     summary: {
         type: String,
         required: true
@@ -25,4 +29,4 @@ const ContentSchema = new Schema ({
 
 const Content = mongoose.model("Comments", ContentSchema)
 
-module.exports = Comments
+module.exports = Content
