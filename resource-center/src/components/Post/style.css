@@ -1,8 +1,21 @@
-#button{
-    align-items: center;
+#button {
+    float: right;
+    margin-right: 300px;
+    margin-top: 10px;
 }
 
-#input{
-    width: 500px;
-    margin-right: 1000px;
+#id {
+    float: right;
+    width: 50%;
+    margin-left: 100px;
+}
+#title {
+    float: right;
+    margin-right: 75%;
+}
+
+#input {
+    width: 700px;
+    left: 400px;
+    position: relative;
 }

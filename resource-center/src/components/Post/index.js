@@ -12,16 +12,16 @@ const Post = () => {
             </div>
             <form>
                 <div class="form-group">
-                    <label for="Title">Title</label>
-                    <input type="text" class="form-control" id="input"></input>
+                   <h3> <label htmlFor="Title" id="title">Title</label> </h3>
+                    <input type="text" className="form-control" id="input"></input>
                 </div>
                 <div class="form-group">
-                    <label for="Link">Link</label>
-                    <input type="text" class="form-control" id= "input"></input>
+                   <h3> <label htmlFor="Link" id="title">Link</label> </h3>
+                    <input type="text" className="form-control" id= "input"></input>
                 </div>
                 <div class="form-group form-check">
                 </div>
-                <button type="submit" class="btn btn-primary" id="button">Submit</button>
+                <button type="submit" className="btn btn-primary" id="button">Submit</button>
             </form>
         </div>
 

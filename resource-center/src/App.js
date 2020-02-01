@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
-import images from "./images.json";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
@@ -37,7 +35,6 @@ function App() {
         <header>
           <NavBar />
         </header>
-        <Header images={images[0].img} />
         <Sidebar />
         <Switch>
           <Route path="/" exact />
