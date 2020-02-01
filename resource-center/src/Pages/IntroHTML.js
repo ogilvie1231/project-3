@@ -26,11 +26,9 @@ function Header () {
             </div>
           </div>
           <br />
-          <h3>Videos</h3>
-          <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
-            width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-          <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too
-            long (for example if it has over 50 links inside of it).</p>
+          <h3>What is HTML</h3>
+          <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+          <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<a href="https://en.wikipedia.org/wiki/HTML">Wikipedia</a></p>
           <hr />
           <div className="container">
             <div className="card-deck">
@@ -78,14 +76,8 @@ function Header () {
             </div>
           </div>
         </div>
-        <hr />
         <br />
-        {/*TRYING TO PUT HTML TEMPLATE HERE*/}
-        <h3>HTML Template</h3>
-        <div className="code" style={{width: '50%'}}>
-          <pre><code>{/*? $str = <<<'EOD'
-      <!DOCTYPE html*/}{"\n"}{"        "}{"\n"}{"        "}<title>HTML Tutorial</title>{"\n"}{"        "}{"\n"}{"      "}</code></pre>
-        </div>
+        
         <hr />
         {/*ADDITIONAL RESOURCES*/}
         <h3>Addtional Resources</h3>
