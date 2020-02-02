@@ -4,11 +4,7 @@ import Sidebar from "../components/Sidebar";
 function Timers (props) {
   return (
    <div>
-<<<<<<< HEAD:client/src/Pages/TimersPg.js
         
-=======
-         <Sidebar/>
->>>>>>> origin/Database:client/src/Pages/Timers.js
           <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
             <div className="card">
               <div className="card-header">

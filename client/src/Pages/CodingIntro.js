@@ -4,13 +4,8 @@ import Sidebar from "../components/Sidebar";
 function CodeIntro () {
     return (
         
-<<<<<<< HEAD:client/src/Pages/CodingIntro.js
         <div className="container">
        
-=======
-        <div>
-        <Sidebar/>
->>>>>>> origin/Database:resource-center/src/Pages/CodingIntro.js
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="container">
             <div className="content">
