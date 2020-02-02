@@ -1,10 +1,15 @@
 import React from "react";
+import Sidebar from "../components/Sidebar";
 
 function Sequel () {
     return (
     
     <div>
+<<<<<<< HEAD:client/src/Pages/Sequelize.js
       
+=======
+     <Sidebar/>
+>>>>>>> origin/Database:resource-center/src/Pages/Sequelize.js
       <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="card">
           <div className="card-header">
