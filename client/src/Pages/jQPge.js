@@ -4,22 +4,25 @@ function JQPge () {
      return (
 
 <div>
-  <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
-        <div className="card">
-          <div className="card-header">
-            <h1>Ajax</h1>
-            <img src="assets/sequelize logo.svg" className="titleimg" />
+<div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+        <div className="content">
+          <div className="card">
+            <div className="card-header">
+              <h1>jQuery</h1>
+              <img src="assets/jqueryvector.png" className="titleimg" />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title">Quick Links</h5>
+              <p className="card-text">You can find more info, documents and very detailed videos in the buttons
+                below.</p>
+              <a href className="btn btn-primary" target="_blank">Go to jQuery</a>
+              <a href className="btn btn-success" target="_blank">jQuery Documents</a>
+              <a href className="btn btn-info" target="_blank">jQuery Videos</a>
+              <a href="https://www.w3schools.com/jquery/" className="btn btn-secondary" target="_blank">jQuery
+                W3Schools</a>
+            </div>
           </div>
-          <div className="card-body">
-            <h5 className="card-title">Quick Links</h5>
-            <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
-            </p>
-            <a href="https://sequelize.org/master/" className="btn btn-primary" target="_blank">Go to Sequelize</a>
-            <a href className="btn btn-success" target="_blank">Sequelize Documents</a>
-            <a href className="btn btn-info" target="_blank">Sequelize Videos</a>
-          </div>
-        </div>
-        <br />
+          <br />
   
         <h3>What is JQuery</h3>
         <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
@@ -83,6 +86,7 @@ function JQPge () {
         <p>The resources below offer excersices and more videos.</p>
         <a href="https://css-tricks.com/lodge/learn-jquery/" target="_blank">Learn JQuery from scratch</a>
         <br />
+      </div>
       </div>
       </div>
     );

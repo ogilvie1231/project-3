@@ -8,16 +8,17 @@ function Btrap () {
 <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="card">
           <div className="card-header">
-            <h1>Ajax</h1>
-            <img src="assets/sequelize logo.svg" className="titleimg" />
+            <h1>Bootstrap</h1>
+            <img src="assets/bootstrap-logo.png" className="titleimg" />
           </div>
           <div className="card-body">
             <h5 className="card-title">Quick Links</h5>
             <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
             </p>
-            <a href="https://sequelize.org/master/" className="btn btn-primary" target="_blank">Go to Sequelize</a>
-            <a href className="btn btn-success" target="_blank">Sequelize Documents</a>
-            <a href className="btn btn-info" target="_blank">Sequelize Videos</a>
+            <a href="https://getbootstrap.com/" className="btn btn-primary" target="_blank">Go to Bootstrap</a>
+            <a href className="btn btn-success" target="_blank">Bootstrap Documents</a>
+            <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/search?query=bootstrap" className="btn btn-info" target="_blank">Bootstrap Videos</a>
+            <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" className="btn btn-secondary" target="_blank">Bootstrap W3Schools</a>
           </div>
         </div>
         <br />
