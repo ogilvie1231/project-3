@@ -6,7 +6,20 @@ function JSPg () {
     <div>
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="card">
-          <div className="card-header"></div>
+          <div className="card-header">
+            <h1>Ajax</h1>
+            <img src="assets/sequelize logo.svg" className="titleimg" />
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">Quick Links</h5>
+            <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
+            </p>
+            <a href="https://sequelize.org/master/" className="btn btn-primary" target="_blank">Go to Sequelize</a>
+            <a href className="btn btn-success" target="_blank">Sequelize Documents</a>
+            <a href className="btn btn-info" target="_blank">Sequelize Videos</a>
+          </div>
+        </div>
+        <br />
         <h3>Videos</h3>
         <p>"JavaScript, often abbreviated as JS, is a high-level, just-in-time compiled, object-oriented programming
           language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing,
@@ -74,7 +87,6 @@ function JSPg () {
           <a href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf" target="_blank">Eloquent JavaScript</a>
           <div className="space" />
         </div>
-      </div>
       </div>
       </div>
     );

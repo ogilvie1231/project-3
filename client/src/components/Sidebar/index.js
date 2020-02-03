@@ -22,11 +22,11 @@ const Sidebar =() => {
         <li><Link to="/CSSPge">CSS</Link></li>
         <li><Link to="/Btrap">BOOTSTRAP</Link></li>
         <li><Link to="/JSPg">JAVASCRIPT</Link></li>
-        <li><Link to="/jQuery">jQuery</Link></li>
-        <li><Link to="/react">React</Link></li>
+        <li><Link to="/jQPge">jQuery</Link></li>
+        <li><Link to="/ReactPg">React</Link></li>
         <li><Link to="/ajax">Ajax</Link></li>
         <li><Link to="/firebase">Firebase</Link></li>
-        <li><Link to="/Node.js">Node.js</Link></li>
+        <li><Link to="/Node">Node</Link></li>
         <li><Link to="/mysql">MySQL</Link></li>
         <li><Link to="/sequelize">Sequelize</Link></li>
         <li><Link to="/profile">Profile</Link></li>
@@ -50,8 +50,9 @@ const Sidebar =() => {
       <li><a href="/bootstrap">BOOTSTRAP</a></li>
       <li><a href="/JSPg">JAVASCRIPT</a></li>
       <li><a href="/jQuery">jQuery</a></li>
+      <li><a href="/ReactPg">React</a></li>
       <li><a href="/firebase">Firebase</a></li>
-      <li><a href="/Node.js">Node.js</a></li>
+      <li><a href="/Node">Node</a></li>
       <li><a href="/mysql">MySQL</a></li>
       <li><a href="/sequelize">Sequelize</a></li>
       <li><a href="/profile">Profile</a></li>

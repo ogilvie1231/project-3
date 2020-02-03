@@ -13,6 +13,7 @@ import Btrap from "./Pages/Btrap";
 import CodingIntro from "./Pages/CodingIntro";
 import CSSPge from "./Pages/CSSPge";
 import Firebase from "./Pages/Firebase";
+import ReactPg from "./Pages/ReactPg";
 import GitBash from "./Pages/GitBash";
 import IntroHTML from "./Pages/IntroHTML";
 import jQPge from "./Pages/jQPge";
@@ -69,6 +70,7 @@ function App() {
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
+          <Route path="/ReactPg" component={ReactPg} />
           <Route path="/jQPge" component={jQPge} />
           <Route path="/JSPg" component={JSPg} />
           <Route path="/Mysql" component={Mysql} />
