@@ -14,13 +14,13 @@ const Sidebar =() => {
         <li
           className= "sidebar">
           FullStackDev</li>
-        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/Home">Home</Link></li>
         <li><Link to="/intro">Introduction</Link></li>
         <li><Link to="/vsc">Visual Studio Code</Link></li>
         <li><Link to="/gitbash">GitBash</Link></li>
         <li><Link to="/IntroHTML">HTML</Link></li>
-        <li><Link to="/css">CSS</Link></li>
-        <li><Link to="/bootstrap">BOOTSTRAP</Link></li>
+        <li><Link to="/CSSPge">CSS</Link></li>
+        <li><Link to="/Btrap">BOOTSTRAP</Link></li>
         <li><Link to="/javascript">JAVASCRIPT</Link></li>
         <li><Link to="/jQuery">jQuery</Link></li>
         <li><Link to="/react">React</Link></li>

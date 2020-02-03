@@ -63,14 +63,14 @@ function App() {
           <Route path="/home" component={Home} />
           <Route path="/intro" component={Intro} />
           <Route path="/ajax" component={ajax} />
-          <Route path="/bootstrap" component={Btrap} />
+          <Route path="/Btrap" component={Btrap} />
           <Route path="/CodingIntro" component={CodingIntro} />
           <Route path="/CSSPge" component={CSSPge} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
           <Route path="/jQPge" component={jQPge} />
-          <Route path="/JSPg" component={JSPg} />
+          <Route path="/JSPge" component={JSPg} />
           <Route path="/Mysql" component={Mysql} />
           <Route path="/Node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />

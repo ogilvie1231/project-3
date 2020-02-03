@@ -1,12 +1,9 @@
 import React from "react";
 
-function Css (props) {
+function CSSPge (props) {
      return (
       <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-        
+                
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
@@ -92,4 +89,4 @@ function Css (props) {
     );
 };
 
-export default Css;
+export default CSSPge;
