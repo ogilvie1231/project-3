@@ -21,7 +21,7 @@ const Sidebar =() => {
         <li><Link to="/IntroHTML">HTML</Link></li>
         <li><Link to="/CSSPge">CSS</Link></li>
         <li><Link to="/Btrap">BOOTSTRAP</Link></li>
-        <li><Link to="/javascript">JAVASCRIPT</Link></li>
+        <li><Link to="/JSPg">JAVASCRIPT</Link></li>
         <li><Link to="/jQuery">jQuery</Link></li>
         <li><Link to="/react">React</Link></li>
         <li><Link to="/ajax">Ajax</Link></li>
@@ -48,7 +48,7 @@ const Sidebar =() => {
       <li><a href="/IntroHTML">HTML</a></li>
       <li><a href="/CSSPge">CSS</a></li>
       <li><a href="/bootstrap">BOOTSTRAP</a></li>
-      <li><a href="/javascript">JAVASCRIPT</a></li>
+      <li><a href="/JSPg">JAVASCRIPT</a></li>
       <li><a href="/jQuery">jQuery</a></li>
       <li><a href="/firebase">Firebase</a></li>
       <li><a href="/Node.js">Node.js</a></li>

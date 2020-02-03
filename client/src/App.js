@@ -70,7 +70,7 @@ function App() {
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
           <Route path="/jQPge" component={jQPge} />
-          <Route path="/JSPge" component={JSPg} />
+          <Route path="/JSPg" component={JSPg} />
           <Route path="/Mysql" component={Mysql} />
           <Route path="/Node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
