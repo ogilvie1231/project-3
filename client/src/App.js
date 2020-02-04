@@ -45,7 +45,7 @@ import PrivateRoute from "./components/PrivateRoute";
 function App() {
   const { loading } = useAuth0();
 
-  if (loading) {
+  if (loading) { 
     return <div>Loading...</div>;
   }
 
@@ -67,8 +67,8 @@ function App() {
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
-          <Route path="/jQPge" component={jQPge} />
-          <Route path="/JSPg" component={JSPg} />
+          <Route path="/jQuery" component={jQPge} />
+          <Route path="/javascript" component={JSPg} />
           <Route path="/Mysql" component={Mysql} />
           <Route path="/Node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
