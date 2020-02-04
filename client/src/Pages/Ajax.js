@@ -8,15 +8,23 @@ function ajax () {
         <div className="card">
           <div className="card-header">
             <h1>Ajax</h1>
-            <img src="assets/sequelize logo.svg" className="titleimg" />
+            <img src="" className="titleimg-Ajax" />
           </div>
           <div className="card-body">
             <h5 className="card-title">Quick Links</h5>
             <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
             </p>
-            <a href="https://sequelize.org/master/" className="btn btn-primary" target="_blank">Go to Sequelize</a>
-            <a href className="btn btn-success" target="_blank">Sequelize Documents</a>
-            <a href className="btn btn-info" target="_blank">Sequelize Videos</a>
+            <a href="https://www.youtube.com/watch?v=tNKD0kfel6o" className="btn btn-primary" target="_blank">Getting started with AJAX</a>
+            <a href="" className="btn btn-success" target="_blank">AJAX Documentation</a>
+            <a href="" className="btn btn-info" target="_blank">AJAX Videos</a>
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">Quick Links</h5>
+            <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
+            </p>
+            <a href="https://www.youtube.com/watch?v=tNKD0kfel6o" className="btn btn-primary" target="_blank">Getting started with AJAX</a>
+            <a href="" className="btn btn-success" target="_blank">AJAX Documentation</a>
+            <a href="" className="btn btn-info" target="_blank">AJAX Videos</a>
           </div>
         </div>
         <br />

@@ -52,7 +52,7 @@ const Home = () => {
                       <div className="card mb-3" style={{maxWidth: '440px'}}>
                         <div className="row no-gutters" id="cardshadow">
                           <div className="col-md-4">
-                            <img id="logoimg" src="./images/git logo.png" classname="card-img" alt="html logo" style={{width: '80px'}} />
+                            <img id="logoimg" src="./images/gitLogo.png" classname="card-img" alt="html logo" style={{width: '80px'}} />
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
@@ -67,7 +67,7 @@ const Home = () => {
                       <div className="card mb-3" style={{maxWidth: '440px'}}>
                         <div className="row no-gutters" id="cardshadow">
                           <div classname="col-md-4">
-                            <img id="logoimg" src="./images/html logo.png" classname="card-img" alt="html logo" style={{width: '80px'}} />
+                            <img id="logoimg" src="./images/html_logo.png" classname="card-img" alt="html logo" style={{width: '80px'}} />
                           </div>
                           <div classname="col-md-8">
                             <div classname="card-body">
@@ -139,7 +139,7 @@ const Home = () => {
                   <div classname="card mb-3" style={{maxWidth: '440px'}}>
                     <div classname="row no-gutters" id="cardshadow">
                       <div classname="col-md-4">
-                        <img id="logoimg" src="./images/jquerydlogo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
+                        <img id="logoimg" src="./images/jquerylogo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
                       </div>
                       <div classname="col-md-8">
                         <div classname="card-body">
@@ -154,7 +154,7 @@ const Home = () => {
                   <div classname="card mb-3" style={{maxWidth: '440px'}}>
                     <div classname="row no-gutters" id="cardshadow">
                       <div classname="col-md-4">
-                        <img id="logoimg" src="./images/firebase logo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
+                        <img id="logoimg" src="./images/firebaseLogo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
                       </div>
                       <div classname="col-md-8">
                         <div classname="card-body">
@@ -169,7 +169,7 @@ const Home = () => {
                   <div classname="card mb-3" style={{maxWidth: '440px'}}>
                     <div classname="row no-gutters" id="cardshadow">
                       <div classname="col-md-4">
-                        <img id="logoimg" src="./images/node logo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
+                        <img id="logoimg" src="./images/nodeLogo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
                       </div>
                       <div classname="col-md-8">
                         <div classname="card-body">
@@ -189,7 +189,7 @@ const Home = () => {
                   <div classname="card mb-3" style={{maxWidth: '440px'}}>
                     <div classname="row no-gutters" id="cardshadow">
                       <div classname="col-md-4">
-                        <img id="logoimg" src="./images/mysql logo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
+                        <img id="logoimg" src="./images/mysqlLogo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
                       </div>
                       <div classname="col-md-8">
                         <div classname="card-body">

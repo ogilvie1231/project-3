@@ -10,11 +10,12 @@ const Sidebar =() => {
       <div>
       {!isAuthenticated && (
         <span>
+          <br></br>
         <ul>
         <li
           className= "sidebar">
-          FullStackDev</li>
-        <li><Link to="/Home">Home</Link></li>
+        </li>
+        <li><Link to="/home">Home</Link></li>
         <li><Link to="/intro">Introduction</Link></li>
         <li><Link to="/vsc">Visual Studio Code</Link></li>
         <li><Link to="/gitbash">GitBash</Link></li>
@@ -41,7 +42,7 @@ const Sidebar =() => {
       <ul>
       <li
         className= "sidebar">
-        FullStackDev</li>
+      </li>
       <li><a href="/intro">Introduction</a></li>
       <li><a href="/vsc">Visual Studio Code</a></li>
       <li><a href="/gitbash">GitBash</a></li>
