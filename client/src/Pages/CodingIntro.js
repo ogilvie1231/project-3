@@ -1,9 +1,13 @@
 import React from "react";
 
-function CodeIntro () {
+function Intro () {
     return (
         
+<<<<<<< HEAD
         // <div className="container">
+=======
+        <div>
+>>>>>>> lucas
        
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="container">
@@ -158,4 +162,4 @@ function CodeIntro () {
     );
 };
 
-export default CodeIntro;
+export default Intro;

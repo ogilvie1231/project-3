@@ -1,13 +1,13 @@
 import React from "react";
 
-function Header (props) {
-     return (
-      <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-      
-      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+function Header(props) {
+  return (
+    <div>
+      {/*LINKS*/}
+      {/*Bootstrap CSS*/}
+      {/*MY CSS*/}
+
+      <div style={{ marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px' }}>
         <div className="content">
           <div className="card">
             <div className="card-header">
@@ -23,17 +23,15 @@ function Header (props) {
             </div>
           </div>
           <br />
-          <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-          <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width.
-            If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-          <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long
-            (for example if it has over 50 links inside of it).</p>
+          <h3>What is Visual Studio Code</h3>
+          <p>Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control and GitHub, syntax highlighting, intelligent code completion, snippets, and code refactoring. <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code">Wikipedia</a></p>
+
           <iframe width={560} height={315} src="https://www.youtube.com/embed/3FkWddODLno" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         </div>
         <hr />
         <h2>More Videos</h2>
         <div className="container">
-          <div className="card" style={{width: '23rem'}}>
+          <div className="card" style={{ width: '23rem' }}>
             <div className="card-body">
               <iframe width={320} height={215} src="https://www.youtube.com/embed/u21W_tfPVrY" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
               <h5 className="card-title">Visual Studio Code</h5>
@@ -56,6 +54,6 @@ function Header (props) {
         <br />
       </div></div>
   );
-  
-};  
+
+};
 export default Header;

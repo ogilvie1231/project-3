@@ -1,19 +1,23 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./utils/history";
 import Header from "./components/Header/";
+=======
+import Header from "./components/Header";
+import Intro from "./Pages/intro";
+import images from "./images.json";
+>>>>>>> lucas
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
-import Profile from "./components/Profile";
-import PrivateRoute from "./components/PrivateRoute";
-import images from "./images.json";
-
+import { useAuth0 } from "./react-auth0-spa";
+import { Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
-import Intro from "./Pages/intro";
+import Profile from "./components/Profile";
 import ajax from "./Pages/Ajax";
 import Btrap from "./Pages/Btrap";
-import CodeIntro from "./Pages/CodingIntro";
+import CodingIntro from "./Pages/CodingIntro";
 import CSSPge from "./Pages/CSSPge";
 import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
@@ -25,8 +29,8 @@ import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
 import TimersPg from "./Pages/TimersPg";
 import vsc from "./Pages/vsc";
-
-
+import history from "./utils/history";
+import PrivateRoute from "./components/PrivateRoute";
 // import Intro from './Pages/IntroHTML';
 
 
@@ -67,17 +71,17 @@ function App() {
           <Route path="/intro" component={Intro} />
           <Route path="/ajax" component={ajax} />
           <Route path="/bootstrap" component={Btrap} />
-          <Route path="/code-intro" component={CodeIntro} />
-          <Route path="/css" component={CSSPge} />
+          <Route path="/CodingIntro" component={CodingIntro} />
+          <Route path="/CSSPge" component={CSSPge} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
-          <Route path="/jquery" component={jQPge} />
-          <Route path="/javascript" component={JSPg} />
+          <Route path="/jQPge" component={jQPge} />
+          <Route path="/JSPg" component={JSPg} />
           <Route path="/Mysql" component={Mysql} />
-          <Route path="/node" component={Node} />
+          <Route path="/Node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
-          <Route path="/timer" component={TimersPg} />
+          <Route path="/TimersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
           {/* <PrivateRoute path="/post" component={Post} /> */}
