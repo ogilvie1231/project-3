@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-function Header () {
+function JQuery () {
      return (
       <div>
         {/*LINKS*/}
@@ -95,4 +95,4 @@ function Header () {
     );
 };
 
-export default Header;
+export default JQuery;
