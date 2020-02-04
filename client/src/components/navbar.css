@@ -1,6 +1,8 @@
 body {
-    background: lightblue
+    background: white;
 }
-.homeBtn {
-    color: white;
+
+#navbarNav {
+    position: fixed;
+    color: blue;
 }

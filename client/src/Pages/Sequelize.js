@@ -22,12 +22,12 @@ function Sequel () {
           </div>
         </div>
         <br />
-        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
-          width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long
-          (for example if it has over 50 links inside of it).</p>
+        <h3>What is Sequelize?</h3>
+        <p>Sequelize is a promise-based ORM for Node. js. Sequelize is easy to learn and has dozens of cool features like synchronization, association, validation, etc. It also has support for PostgreSQL, MySQL, MariaDB, SQLite, and MSSQL. I am assuming you have some form of SQL database service started on your machine.</p>
+
         <iframe width={560} height={315} src="https://www.youtube.com/embed/qsDvJrGMSUY" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+        <br></br>
+        <h3>Additional Resources</h3>
         <p>Some text..</p>
       </div>
     </div>

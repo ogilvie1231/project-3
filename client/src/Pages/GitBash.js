@@ -24,11 +24,9 @@ function Header (props) {
               </div>
             </div>
             <br />
-            <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-            <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width.
-              If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-            <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long
-              (for example if it has over 50 links inside of it).</p>
+            <h3>What is GitBash</h3>
+            <p>" Git for Windows focuses on offering a lightweight, native set of tools that bring the full feature set of the Git SCM to Windows while providing appropriate user interfaces for experienced Git users and novices alike.<a href="https://gitforwindows.org/">Git for Windows</a></p>
+            
             <iframe width={560} height={315} src="https://www.youtube.com/embed/cEGIFZDyszA" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             <hr />
             <div className="container">
