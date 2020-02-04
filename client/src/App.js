@@ -73,7 +73,7 @@ function App() {
           {/* <Route path="/IntroHTML" component={IntroHTML} /> */}
           <Route path="/jquery" component={jQuery} />
           <Route path="/javascript" component={JavaScript} />
-          <Route path="/Mysql" component={Mysql} />
+          <Route path="/mysql" component={Mysql} />
           <Route path="/node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
           <Route path="/timer" component={Timers} />
