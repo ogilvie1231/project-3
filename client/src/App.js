@@ -1,19 +1,19 @@
 import React, { Component } from "react";
+import { useAuth0 } from "./react-auth0-spa";
+import { Router, Route, Switch } from "react-router-dom";
+import history from "./utils/history";
 import Header from "./components/Header";
-import Intro from "./Pages/intro";
-import images from "./images.json";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
-import Profile from "./components/Profile";
+import Intro from "./Pages/intro";
 import ajax from "./Pages/Ajax";
 import Btrap from "./Pages/Btrap";
-import CodingIntro from "./Pages/CodingIntro";
+import CodeIntro from "./Pages/CodingIntro";
 import CSSPge from "./Pages/CSSPge";
 import Firebase from "./Pages/Firebase";
-import ReactPg from "./Pages/ReactPg";
 import GitBash from "./Pages/GitBash";
 import HTML from "./Pages/HTML";
 import jQuery from "./Pages/jQuery";
@@ -63,9 +63,9 @@ function App() {
           <Route path="/home" component={Home} />
           <Route path="/html" component={Html} />
           <Route path="/ajax" component={ajax} />
-          <Route path="/Btrap" component={Btrap} />
-          <Route path="/CodingIntro" component={CodingIntro} />
-          <Route path="/CSSPge" component={CSSPge} />
+          <Route path="/bootstrap" component={Btrap} />
+          <Route path="/code-intro" component={CodeIntro} />
+          <Route path="/css" component={CSSPge} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
@@ -73,7 +73,7 @@ function App() {
           <Route path="/jQPge" component={jQPge} />
           <Route path="/JSPg" component={JSPg} />
           <Route path="/Mysql" component={Mysql} />
-          <Route path="/Node" component={Node} />
+          <Route path="/node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
           <Route path="/TimersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
