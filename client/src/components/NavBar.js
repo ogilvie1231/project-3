@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
 import { useAuth0 } from "../react-auth0-spa";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 const NavBar = () => {
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();

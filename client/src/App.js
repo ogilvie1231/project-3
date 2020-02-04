@@ -27,7 +27,7 @@ import vsc from "./Pages/vsc";
 import Post from "./components/Post"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Html from './Pages/IntroHTML';
-import Button from 'react-bootstrap/Button';
+
 
 
 // class App extends Component {
