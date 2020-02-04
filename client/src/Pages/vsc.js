@@ -1,4 +1,5 @@
 import React from "react";
+import Sidebar from "../components/Sidebar";
 
 function Header(props) {
   return (
