@@ -139,11 +139,7 @@ const Home = () => {
                   <div classname="card mb-3" style={{maxWidth: '440px'}}>
                     <div classname="row no-gutters" id="cardshadow">
                       <div classname="col-md-4">
-<<<<<<< HEAD
-                        <img id="logoimg" src="./images/jquery logo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
-=======
                         <img id="logoimg" src="./images/jquerydlogo.jpg" classname="card-img" alt="html logo" style={{width: '80px'}} />
->>>>>>> lucas
                       </div>
                       <div classname="col-md-8">
                         <div classname="card-body">
@@ -223,11 +219,7 @@ const Home = () => {
                   <div classname="card mb-3" style={{maxWidth: '440px'}}>
                     <div classname="row no-gutters" id="cardshadow">
                       <div classname="col-md-4">
-<<<<<<< HEAD
-                        <img id="logoimg" src="/images/MongoDB1.png" classname="card-img" alt="html logo" style={{width: '80px'}} />
-=======
                         <img id="logoimg" src="./images/MongoDB1.png" classname="card-img" alt="html logo" style={{width: '80px'}} />
->>>>>>> lucas
                       </div>
                       <div classname="col-md-8">
                         <div classname="card-body">

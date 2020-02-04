@@ -9,20 +9,10 @@ const NavBar = () => {
 
   return (
     <div>
-<<<<<<< HEAD
-      {!isAuthenticated && (
-        <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
-
-          <button
-=======
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         {!isAuthenticated && (
           <span>
             <button 
->>>>>>> lucas
             className="btn btn-primary btn-lg"
             // class="navbar-toggler"
             type="button"

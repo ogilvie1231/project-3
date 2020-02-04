@@ -1,14 +1,7 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
-import { useAuth0 } from "./react-auth0-spa";
-import { Router, Route, Switch } from "react-router-dom";
-import history from "./utils/history";
-import Header from "./components/Header/";
-=======
 import Header from "./components/Header";
 import Intro from "./Pages/intro";
 import images from "./images.json";
->>>>>>> lucas
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
