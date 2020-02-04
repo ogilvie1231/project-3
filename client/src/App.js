@@ -8,7 +8,6 @@ import NavBar from "./components/NavBar";
 import Profile from "./components/Profile";
 import PrivateRoute from "./components/PrivateRoute";
 import images from "./images.json";
-
 import Home from "./Pages/Home";
 import Intro from "./Pages/intro";
 import ajax from "./Pages/Ajax";
@@ -26,8 +25,9 @@ import Sequelize from "./Pages/Sequelize";
 import Timers from "./Pages/Timers";
 import vsc from "./Pages/vsc";
 import Post from "./components/Post"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Html from './Pages/IntroHTML';
+import Button from 'react-bootstrap/Button';
 
 
 // class App extends Component {
