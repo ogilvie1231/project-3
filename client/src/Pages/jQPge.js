@@ -1,6 +1,11 @@
 import React from "react";
+import Sidebar from "../components/Sidebar";
 
+<<<<<<< HEAD
 function JQPge () {
+=======
+function Header () {
+>>>>>>> staging
      return (
 
 <div>

@@ -1,16 +1,23 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-function CSSPge (props) {
+function Css () {
      return (
       <div>
-                
+<<<<<<< HEAD:client/src/Pages/CSSPge.js
+        {/*LINKS*/}
+        {/*Bootstrap CSS*/}
+        {/*MY CSS*/}
+        
+=======
+        <Sidebar/>
+>>>>>>> origin/Database:client/src/Pages/CSS.js
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
                 <h1>CSS</h1>
-                <img src="./css logo.svg" className="titleimg" />
+                <img src="assets/css logo.svg" className="titleimg" />
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -27,9 +34,12 @@ function CSSPge (props) {
               </div>
             </div>
             <br />
-            <h3>What is CSS</h3>
-            <p>CSS stands for Cascading Style Sheets with an emphasis placed on “Style.” While HTML is used to structure a web document (defining things like headlines and paragraphs, and allowing you to embed images, video, and other media), CSS comes through and specifies your document’s style—page layouts, colors, and fonts are all determined with CSS. Think of HTML as the foundation (every house has one), and CSS as the aesthetic choices (there’s a big difference between a Victorian mansion and a mid-century modern home).<a href="https://www.w3schools.com">Skillcrush.com</a></p>
-            
+            <h3>Videos</h3>
+            <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
+              width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+            <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too
+              long
+              (for example if it has over 50 links inside of it).</p>
             <hr />
             <div className="container">
               <div className="card-deck">
@@ -80,8 +90,6 @@ function CSSPge (props) {
             <br />
             <a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-css/" target="_blank">freeCodeCamp</a>
             <br />
-            <a href="https://skillcrush.com/2012/04/03/css/" target="_blank">Skillcrush.com</a>
-            <br />
           </div>
         </div>
         <br />
@@ -89,4 +97,4 @@ function CSSPge (props) {
     );
 };
 
-export default CSSPge;
+export default Css;

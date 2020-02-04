@@ -5,8 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import { Auth0Provider } from "./react-auth0-spa";
 import config from "./auth_config.json";
 import history from "./utils/history";
-import $ from 'jquery';
-import Popper from 'popper.js';
+
 
 const onRedirectCallback = appState => {
   history.push(
