@@ -5,8 +5,9 @@ import history from "./utils/history";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
-import { useAuth0 } from "./react-auth0-spa";
-import { Router, Route, Switch } from "react-router-dom";
+import Profile from "./components/Profile";
+import PrivateRoute from "./components/PrivateRoute";
+import images from "./images.json";
 import Home from "./Pages/Home";
 import Intro from "./Pages/intro";
 import ajax from "./Pages/Ajax";
@@ -23,9 +24,10 @@ import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
 import Timers from "./Pages/Timers";
 import vsc from "./Pages/vsc";
-import history from "./utils/history";
-import PrivateRoute from "./components/PrivateRoute";
-// import Intro from './Pages/IntroHTML';
+import Post from "./components/Post"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Html from './Pages/IntroHTML';
+
 
 
 // class App extends Component {
@@ -68,14 +70,13 @@ function App() {
           <Route path="/css" component={CSSPge} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
-          <Route path="/IntroHTML" component={IntroHTML} />
-          <Route path="/ReactPg" component={ReactPg} />
-          <Route path="/jQPge" component={jQPge} />
-          <Route path="/JSPg" component={JSPg} />
+          {/* <Route path="/IntroHTML" component={IntroHTML} /> */}
+          <Route path="/jquery" component={jQuery} />
+          <Route path="/javascript" component={JavaScript} />
           <Route path="/Mysql" component={Mysql} />
           <Route path="/node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
-          <Route path="/TimersPg" component={TimersPg} />
+          <Route path="/timer" component={Timers} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
           {/* <PrivateRoute path="/post" component={Post} /> */}
