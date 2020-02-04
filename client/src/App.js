@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Intro from "./Pages/intro";
+
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
@@ -59,7 +59,7 @@ function App() {
         <Sidebar />
         <Switch>
           <Route path="/home" component={Home} />
-          <Route path="/intro" component={Intro} />
+
           <Route path="/ajax" component={ajax} />
           <Route path="/bootstrap" component={Btrap} />
           <Route path="/CodingIntro" component={CodingIntro} />
