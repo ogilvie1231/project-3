@@ -42,7 +42,7 @@ const Sidebar =() => {
       <ul>
       <li
         className= "sidebar">
-        FullStackDev</li>
+      </li>
       <li><a href="/intro">Introduction</a></li>
       <li><a href="/vsc">Visual Studio Code</a></li>
       <li><a href="/gitbash">GitBash</a></li>
