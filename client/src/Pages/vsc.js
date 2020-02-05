@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 
 function Header(props) {
   return (
@@ -11,8 +11,8 @@ function Header(props) {
       <div style={{ marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px' }}>
         <div className="content">
           <div className="card">
-            <div className="card-header">
-              <h1>Visual Studio Code</h1>
+            <div className="card-header" style={{textAlign: "center"}}>
+              <h1 style={{textAlign: "center"}}>Visual Studio Code</h1>
               <img src="./image/VSLogo.png" className="titleimg" />
             </div>
             <div className="card-body">

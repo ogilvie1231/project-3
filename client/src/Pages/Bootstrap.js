@@ -1,12 +1,12 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 import CardHeader from "../components/Header/index";
 
 function BootStrap(props) {
     return (
         <div>
             <br></br>
-        <Sidebar/>
+        {/* <Sidebar/> */}
         <div style="margin-left:18%;margin-right:2%;padding:1px 16px;height:1000px;">
             <div class="card">
                 <div class="card-header">

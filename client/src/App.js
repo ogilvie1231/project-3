@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import Intro from "./Pages/intro";
-import Sidebar from "./components/Sidebar";
+// import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
@@ -14,7 +14,7 @@ import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
 import IntroHTML from "./Pages/IntroHTML";
 import jQPge from "./Pages/jQPge";
-import JSPg from "./Pages/JSPg";
+// import JSpge from "./Pages/JSpge";
 import Mysql from "./Pages/Mysql";
 import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
@@ -56,7 +56,7 @@ function App() {
           <NavBar />
         </header>
         {/* <Header images={images[0].img} /> */}
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Switch>
           <Route path="/home" component={Home} />
           {/* <Route path="/intro" component={Intro} /> */}
@@ -68,7 +68,7 @@ function App() {
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
           <Route path="/jQuery" component={jQPge} />
-          <Route path="/javascript" component={JSPg} />
+          {/* <Route path="/javascript" component={JSpge} /> */}
           <Route path="/Mysql" component={Mysql} />
           <Route path="/Node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
