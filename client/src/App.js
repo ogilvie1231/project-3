@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Intro from "./Pages/intro";
+// import Intro from "./Pages/intro";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
@@ -7,9 +7,9 @@ import { Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
 import Profile from "./components/Profile";
 import ajax from "./Pages/Ajax";
-import Btrap from "./Pages/Btrap";
+import BootStrap from "./Pages/Bootstrap";
 import CodingIntro from "./Pages/CodingIntro";
-import CSSPge from "./Pages/CSSPge";
+import Css from "./Pages/CSS";
 import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
 import IntroHTML from "./Pages/IntroHTML";
@@ -59,11 +59,11 @@ function App() {
         <Sidebar />
         <Switch>
           <Route path="/home" component={Home} />
-          <Route path="/intro" component={Intro} />
+          {/* <Route path="/intro" component={Intro} /> */}
           <Route path="/ajax" component={ajax} />
-          <Route path="/bootstrap" component={Btrap} />
+          <Route path="/Bootstrap" component={BootStrap} />
           <Route path="/CodingIntro" component={CodingIntro} />
-          <Route path="/CSSPge" component={CSSPge} />
+          <Route path="/Css" component={Css} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />

@@ -16,8 +16,8 @@ const NavBar = () => {
   return (
     <div>
       {!isAuthenticated && (
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar bg="light fixed-top" expand="lg">
+          <Navbar.Brand href="#home">Resource Center</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -51,8 +51,8 @@ const NavBar = () => {
       )}
 
       {isAuthenticated && (
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar bg="light fixed-top" expand="lg">
+          <Navbar.Brand href="#home">Resource Center</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
