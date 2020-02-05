@@ -1,16 +1,16 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 
-function Header () {
+function IntroHTML () {
      return (
       <div>
-      <Sidebar/>
-      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+      {/* <Sidebar/> */}
+      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
         <div className="content">
           <div className="card">
             <div className="card-header">
               <h1>HTML</h1>
-              <img src="assets/html logo.png" className="titleimg"></img>
+              <img src="./images/htmlLogo.png" className="titleimg"></img>
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>
@@ -91,4 +91,4 @@ function Header () {
   );
 };
 
-export default Header;
+export default IntroHTML;

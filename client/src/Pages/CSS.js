@@ -7,7 +7,7 @@ function Css () {
       <div>
         <br></br>
         {/* <Sidebar/> */}
-        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">

@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="containter">
                   <div className="row">
                     <div className="col-8">
-                      <p style={{fontSize: '48px', fontFamily: '"Archivo Black", sans-serif'}}>FSWDR, THE PLACE WHERE YOU CAN
+                      <p style={{fontSize: '48px', fontFamily: '"Archivo Black", sans-serif'}}>THE PLACE WHERE YOU CAN
                         FIND MANY RESOURCES TO HELP YOU BECOME A FULL-STACK WEB DEVELOPER </p>
                       <br />
                       <h4 style={{color: 'gray', wordWrap: 'break-word'}}>Browse through the page to find videos and additional resources from all over the Web.</h4>
@@ -31,7 +31,7 @@ const Home = () => {
               <div id="topicards" className="spacesection" />
               <div className="cardsec">
                 <p style={{fontSize: '48px', fontFamily: '"Archivo Black", sans-serif'}}>Resource Center</p>
-                <p>Find tutorials and answers quicker with FSWDR.</p>
+                <p>Finding videos, tutorials, and documentation faster!</p>
                 <br />
                 <div id="logocards" className="container">
                   <div className="row">
@@ -69,7 +69,7 @@ const Home = () => {
                       <div className="card mb-3" style={{maxWidth: '440px'}}>
                         <div className="row no-gutters" id="cardshadow">
                           <div className="col-md-4">
-                            <img id="logoimg" src="./images/html_logo.png" className="card-img" alt="html logo" style={{width: '80px'}} />
+                            <img id="logoimg" src="./images/htmlLogo.png" className="card-img" alt="html logo" style={{width: '80px'}} />
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">

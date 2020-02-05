@@ -13,7 +13,7 @@ function Header(props) {
           <div className="card">
             <div className="card-header" style={{textAlign: "center"}}>
               <h1 style={{textAlign: "center"}}>Visual Studio Code</h1>
-              <img src="./image/VSLogo.png" className="titleimg" />
+              <img src="./images/VSLogo.png" className="titleimg" />
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>

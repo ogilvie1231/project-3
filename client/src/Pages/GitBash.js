@@ -13,7 +13,7 @@ function Header (props) {
             <div className="card">
               <div className="card-header">
                 <h1>Git Bash</h1>
-                <img src="./image/gitLogo.png" className="titleimg" />
+                <img src="./images/gitLogo.png" className="titleimg" />
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
