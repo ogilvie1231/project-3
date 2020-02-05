@@ -60,7 +60,6 @@ function App() {
         <header>
           <NavBar />
         </header>
-        {/* <Header images={images[0].img} /> */}
         <Sidebar />
         <Switch>
           <Route path="/home" component={Home} />
