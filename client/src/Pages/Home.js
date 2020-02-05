@@ -105,7 +105,7 @@ const Home = () => {
                     <div className="card mb-3" style={{maxWidth: '440px'}}>
                       <div className="row no-gutters" id="cardshadow">
                         <div className="col-md-4">
-                          <img id="logoimg" src="./images/bootstrap-logo.png" className="card-img" alt="html logo" style={{width: '80px'}} />
+                          <img id="logoimg" src="./images/bootstrapLogo.png" className="card-img" alt="html logo" style={{width: '80px'}} />
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">

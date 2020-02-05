@@ -10,7 +10,7 @@ function Boot (props) {
           <div className="card">
             <div className="card-header">
               <h1 style={{textalign:'center'}}>Bootstrap</h1>
-              <img src="assets/bootstrap-logo.png" className="titleimg" />
+              <img src="./images/bootstrapLogo.png" className="titleimg" />
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
                 <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.

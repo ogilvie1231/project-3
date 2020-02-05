@@ -1,14 +1,14 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-function Header () {
+function jQPge () {
      return (
       <div>
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
        <br></br>
-        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+        <div style={{marginLeft: '18%', marginRight: '2%', marginTop: '100%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
@@ -30,8 +30,7 @@ function Header () {
             <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
             <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
               width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-            <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too
-              long (for example if it has over 50 links inside of it).</p>
+            <p>.</p>
             <iframe width={560} height={315} src="https://www.youtube.com/embed/BWXggB-T1jQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             <hr />
             <div className="container">
@@ -95,4 +94,4 @@ function Header () {
     );
 };
 
-export default Header;
+export default jQPge;

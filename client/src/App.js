@@ -22,6 +22,7 @@ import TimersPg from "./Pages/TimersPg";
 import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
+import JSpge from "./Pages/JavaScript";
 // import Intro from './Pages/IntroHTML';
 
 
@@ -64,10 +65,11 @@ function App() {
           <Route path="/BootStrap" component={Boot} />
           {/* <Route path="/CodingIntro" component={CodingIntro} /> */}
           <Route path="/Css" component={Css} />
+          <Route path="/JavaScript" component={JSpge} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
-          <Route path="/jQuery" component={jQPge} />
+          <Route path="/jQPge" component={jQPge} />
           {/* <Route path="/javascript" component={JSpge} /> */}
           <Route path="/Mysql" component={Mysql} />
           <Route path="/Node" component={Node} />
