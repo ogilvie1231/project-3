@@ -6,7 +6,7 @@ function ajax () {
     
     <div>
       <br></br>
-        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
         <div className="card">
           <div className="card-header">
             <h1 className="ajaxhead" style={{textAlign: "center"}}>Ajax</h1>

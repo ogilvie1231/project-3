@@ -6,11 +6,11 @@ function SQL () {
 
     <div>
         
-        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
           <div className="card">
             <div className="card-header">
               <h1>MySQL</h1>
-              <img src="images/mysql logo.jpg" className="titleimg" />
+              <img src="./images/mysqlLogo.jpg" className="titleimg" />
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>

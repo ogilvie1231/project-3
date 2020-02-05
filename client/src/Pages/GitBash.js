@@ -1,14 +1,14 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-function Header (props) {
+function GitBash (props) {
      return (
       <div>
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
        <br></br>
-        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
@@ -85,4 +85,4 @@ function Header (props) {
     );
 };
 
-export default Header;
+export default GitBash;
