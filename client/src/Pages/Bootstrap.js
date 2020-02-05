@@ -1,15 +1,16 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
+import CardHeader from "../components/Header/index";
 
-
-function Header(props) {
+function BootStrap(props) {
     return (
         <div>
-        <Sidebar/>
+            <br></br>
+        {/* <Sidebar/> */}
         <div style="margin-left:18%;margin-right:2%;padding:1px 16px;height:1000px;">
             <div class="card">
                 <div class="card-header">
-                    <h1>Bootstrap</h1>
+                    <h1 style={{textAlign: "center"}}>Bootstrap</h1>
                     <img src="assets/bootstrap-logo.png" class="titleimg">
                     </img>
                     <div class="card-body">
@@ -117,4 +118,4 @@ function Header(props) {
                             );
 };
 
-export default Header;
+export default BootStrap;

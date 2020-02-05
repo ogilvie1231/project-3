@@ -1,13 +1,15 @@
 import React from "react";
+import CardHeader from "../components/Header/index";
 
 function ajax () {
     return (
     
     <div>
+      <br></br>
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="card">
           <div className="card-header">
-            <h1>Ajax</h1>
+            <h1 className="ajaxhead" style={{textAlign: "center"}}>Ajax</h1>
             <img src="" className="titleimg-Ajax" />
           </div>
           <div className="card-body">

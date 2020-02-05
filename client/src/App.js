@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-
-import Sidebar from "./components/Sidebar";
+// import Intro from "./Pages/intro";
+// import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
 import Profile from "./components/Profile";
 import ajax from "./Pages/Ajax";
-import Btrap from "./Pages/Btrap";
+import BootStrap from "./Pages/Bootstrap";
 import CodingIntro from "./Pages/CodingIntro";
-import CSSPge from "./Pages/CSSPge";
+import Css from "./Pages/CSS";
 import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
 import IntroHTML from "./Pages/IntroHTML";
 import jQPge from "./Pages/jQPge";
-import JSPg from "./Pages/JSPg";
+// import JSpge from "./Pages/JSpge";
 import Mysql from "./Pages/Mysql";
 import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
@@ -56,19 +56,19 @@ function App() {
           <NavBar />
         </header>
         {/* <Header images={images[0].img} /> */}
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Switch>
           <Route path="/home" component={Home} />
-
+          {/* <Route path="/intro" component={Intro} /> */}
           <Route path="/ajax" component={ajax} />
-          <Route path="/bootstrap" component={Btrap} />
+          <Route path="/Bootstrap" component={BootStrap} />
           <Route path="/CodingIntro" component={CodingIntro} />
-          <Route path="/CSSPge" component={CSSPge} />
+          <Route path="/Css" component={Css} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
           <Route path="/IntroHTML" component={IntroHTML} />
           <Route path="/jQuery" component={jQPge} />
-          <Route path="/javascript" component={JSPg} />
+          {/* <Route path="/javascript" component={JSpge} /> */}
           <Route path="/Mysql" component={Mysql} />
           <Route path="/Node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
