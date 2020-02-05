@@ -9,7 +9,7 @@ function Intro () {
               <h1 style={{textAlign: 'center'}}>Full Stack Web Developer</h1>
               <hr />
               <br />
-              <h2>Introduction</h2>
+              <h2 style={{textAlign: "center"}}>Introduction</h2>
               <br />
               <p>FullStackDev is a website that contains all my favorite resources to study Web Development.
                 FullStackDev will help you find helpfull resources in a much faster way than just

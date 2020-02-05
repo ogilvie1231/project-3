@@ -16,11 +16,12 @@ const Sidebar =() => {
           className= "sidebar">
         </li>
         <li><Link to="/home">Home</Link></li>
+        {/* <li><Link to="/intro">Introduction</Link></li> */}
         <li><Link to="/vsc">Visual Studio Code</Link></li>
         <li><Link to="/gitbash">GitBash</Link></li>
         <li><Link to="/IntroHTML">HTML</Link></li>
         <li><Link to="/css">CSS</Link></li>
-        <li><Link to="/bootstrap">BOOTSTRAP</Link></li>
+        <li><Link to="/Bootstrap">BOOTSTRAP</Link></li>
         <li><Link to="/javascript">JAVASCRIPT</Link></li>
         <li><Link to="/jQuery">jQuery</Link></li>
         <li><Link to="/react">React</Link></li>
@@ -42,12 +43,12 @@ const Sidebar =() => {
       <li
         className= "sidebar">
       </li>
-      <li><a href="/intro">Introduction</a></li>
+      {/* <li><a href="/intro">Introduction</a></li> */}
       <li><a href="/vsc">Visual Studio Code</a></li>
       <li><a href="/gitbash">GitBash</a></li>
       <li><a href="/IntroHTML">HTML</a></li>
       <li><a href="/CSSPge">CSS</a></li>
-      <li><a href="/bootstrap">BOOTSTRAP</a></li>
+      <li><a href="/Bootstrap">BOOTSTRAP</a></li>
       <li><a href="/javascript">JAVASCRIPT</a></li>
       <li><a href="/jQuery">jQuery</a></li>
       <li><a href="/firebase">Firebase</a></li>
