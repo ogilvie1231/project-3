@@ -7,8 +7,6 @@ import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import Profile from "./components/Profile";
 import PrivateRoute from "./components/PrivateRoute";
-import images from "./images.json";
-
 import Home from "./Pages/Home";
 import Intro from "./Pages/intro";
 import ajax from "./Pages/Ajax";
@@ -27,25 +25,6 @@ import Timers from "./Pages/Timers";
 import vsc from "./Pages/vsc";
 
 
-// import Intro from './Pages/IntroHTML';
-
-
-// class App extends Component {
-//   state = {
-//     images
-//   };
-
-//   render() {
-//     return (
-//       <div>
-//         <Header images={this.state.images[0].img} />
-//         <Sidebar />
-//         {/* <Intro /> */}
-//       </div>
-//     );
-//   }
-// }
-// export default App;
 
 function App() {
   const { loading } = useAuth0();
