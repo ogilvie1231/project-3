@@ -24,6 +24,9 @@ const NavBar = () => {
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <Nav.Link href="/home">Home</Nav.Link>
               </Button>
+              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+                <Nav.Link href="/post">Test New</Nav.Link>
+              </Button>
               {/* <Nav.Link href="#link">Link</Nav.Link> */}
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
