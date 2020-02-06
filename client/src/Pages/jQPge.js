@@ -4,11 +4,9 @@ import Sidebar from "../components/Sidebar";
 function jQPge () {
      return (
       <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-       <br></br>
-        <div style={{marginLeft: '18%', marginRight: '2%', marginTop: '100%', padding: '1px 16px', height: '1000px'}}>
+
+      
+        <div style={{marginLeft: '18%', marginRight: '2%', marginTop: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
