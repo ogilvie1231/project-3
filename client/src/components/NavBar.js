@@ -38,19 +38,19 @@ const NavBar = () => {
                       <Link to="/gitbash">GitBash</Link>
                     </li>
                     <li>
-                      <Link to="/IntroHTML">HTML</Link>
+                      <Link to="/introHTML">HTML</Link>
                     </li>
                     <li>
                       <Link to="/css">CSS</Link>
                     </li>
                     <li>
-                      <Link to="/Bootstrap">BOOTSTRAP</Link>
+                      <Link to="/bootstrap">BOOTSTRAP</Link>
                     </li>
                     <li>
                       <Link to="/javascript">JAVASCRIPT</Link>
                     </li>
                     <li>
-                      <Link to="/jQuery">jQuery</Link>
+                      <Link to="/jquery">jQuery</Link>
                     </li>
                     <li>
                       <Link to="/react">React</Link>
@@ -62,7 +62,7 @@ const NavBar = () => {
                       <Link to="/firebase">Firebase</Link>
                     </li>
                     <li>
-                      <Link to="/Node.js">Node.js</Link>
+                      <Link to="/node">Node.js</Link>
                     </li>
                     <li>
                       <Link to="/mysql">MySQL</Link>

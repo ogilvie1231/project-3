@@ -21,6 +21,7 @@ import TimersPg from "./Pages/TimersPg";
 import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
+import JSpge from "./Pages/JavaScript";
 // import Intro from './Pages/IntroHTML';
 
 
@@ -76,4 +77,3 @@ class App extends Component {
 }
 
 export default App;
-
