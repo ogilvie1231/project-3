@@ -10,26 +10,26 @@ const Sidebar =() => {
       <div>
       {!isAuthenticated && (
         <span>
+          <br></br>
         <ul>
         <li
           className= "sidebar">
-          FullStackDev</li>
+        </li>
         <li><Link to="/home">Home</Link></li>
-        <li><Link to="/intro">Introduction</Link></li>
-        <li><Link to="/ajax">AJAX</Link></li>
-        <li><Link to="/bootstrap">BOOTSTRAP</Link></li>
-        <li><Link to="/code-intro">Intro to Code</Link></li>
-        <li><Link to="/css">CSS</Link></li>
-        <li><Link to="/firebase">Firebase</Link></li>
+        {/* <li><Link to="/intro">Introduction</Link></li> */}
+        <li><Link to="/vsc">Visual Studio Code</Link></li>
         <li><Link to="/gitbash">GitBash</Link></li>
         <li><Link to="/IntroHTML">HTML</Link></li>
-        <li><Link to="/jquery">jQuery</Link></li>
+        <li><Link to="/css">CSS</Link></li>
+        <li><Link to="/Bootstrap">BOOTSTRAP</Link></li>
         <li><Link to="/javascript">JAVASCRIPT</Link></li>
+        <li><Link to="/jQuery">jQuery</Link></li>
+        <li><Link to="/react">React</Link></li>
+        <li><Link to="/ajax">Ajax</Link></li>
+        <li><Link to="/firebase">Firebase</Link></li>
+        <li><Link to="/Node.js">Node.js</Link></li>
         <li><Link to="/mysql">MySQL</Link></li>
-        <li><Link to="/node">Node.js</Link></li>
         <li><Link to="/sequelize">Sequelize</Link></li>
-        <li><Link to="/timer">Moment js</Link></li>
-        <li><Link to="/vsc">Visual Studio Code</Link></li>
         <li><Link to="/profile">Profile</Link></li>
       </ul> 
       </span>
@@ -42,13 +42,13 @@ const Sidebar =() => {
       <ul>
       <li
         className= "sidebar">
-        FullStackDev</li>
-      <li><a href="/intro">Introduction</a></li>
+      </li>
+      {/* <li><a href="/intro">Introduction</a></li> */}
       <li><a href="/vsc">Visual Studio Code</a></li>
       <li><a href="/gitbash">GitBash</a></li>
       <li><a href="/IntroHTML">HTML</a></li>
-      <li><a href="/css">CSS</a></li>
-      <li><a href="/bootstrap">BOOTSTRAP</a></li>
+      <li><a href="/CSSPge">CSS</a></li>
+      <li><a href="/Bootstrap">BOOTSTRAP</a></li>
       <li><a href="/javascript">JAVASCRIPT</a></li>
       <li><a href="/jQuery">jQuery</a></li>
       <li><a href="/firebase">Firebase</a></li>

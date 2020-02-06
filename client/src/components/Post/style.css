@@ -1,0 +1,50 @@
+#button {
+    float: right;
+    margin-right: 300px;
+    margin-top: 10px;
+}
+
+#id {
+    float: right;
+    width: 50%;
+    margin-left: 100px;
+}
+#title {
+    float: right;
+    margin-right: 66%;
+    position: relative;
+    text-align: center;
+}
+
+#title1 {
+    float: right;
+    margin-right: 62%;
+    position: relative;
+    text-align: center;
+}
+
+#input {
+    width: 700px;
+    left: 400px;
+    position: relative;
+}
+
+#summary {
+    width: 700px;
+    height: 200px;
+    position: relative;
+    left: 400px;
+}
+
+#header {
+    position: relative;
+    text-align: center;
+}
+
+#category {
+    width: 700px;
+    height: 30px;
+    left: 400px;
+    position: relative;
+    margin-bottom: 1%;
+}

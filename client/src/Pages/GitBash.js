@@ -1,4 +1,5 @@
 import React from "react";
+import Sidebar from "../components/Sidebar";
 
 function Header (props) {
      return (
@@ -6,13 +7,13 @@ function Header (props) {
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
-       
+       <br></br>
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
                 <h1>Git Bash</h1>
-                <img src="assets/git logo.png" className="titleimg" />
+                <img src="./image/gitLogo.png" className="titleimg" />
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -23,11 +24,9 @@ function Header (props) {
               </div>
             </div>
             <br />
-            <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-            <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width.
-              If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-            <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long
-              (for example if it has over 50 links inside of it).</p>
+            <h3>What is GitBash</h3>
+            <p>" Git for Windows focuses on offering a lightweight, native set of tools that bring the full feature set of the Git SCM to Windows while providing appropriate user interfaces for experienced Git users and novices alike.<a href="https://gitforwindows.org/">Git for Windows</a></p>
+            
             <iframe width={560} height={315} src="https://www.youtube.com/embed/cEGIFZDyszA" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             <hr />
             <div className="container">

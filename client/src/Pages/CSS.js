@@ -1,19 +1,18 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
+import CardHeader from "../components/Header/index";
 
 function Css () {
      return (
       <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-        
+        <br></br>
+        {/* <Sidebar/> */}
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
-                <h1>CSS</h1>
-                <img src="assets/css logo.svg" className="titleimg" />
+                <h1 style={{textAlign: "center"}}>CSS</h1>
+                <img src="./images/csslogo.png" className="titleimg" />
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>

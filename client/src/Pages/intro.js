@@ -12,7 +12,7 @@ function Intro (props) {
             <div className="card">
               <div className="card-header">
                 <h1>HTML</h1>
-                <img src="assets/html logo.png" className="titleimg" />
+                <img src="assets/html logo.png" className="titleimg"></img>
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
