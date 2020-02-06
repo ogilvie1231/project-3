@@ -4,12 +4,8 @@ import React from "react";
 function IntroHTML () {
      return (
       <div>
-<<<<<<< HEAD
-      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
-=======
       {/* <Sidebar/> */}
       <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
->>>>>>> chason
         <div className="content">
           <div className="card">
             <div className="card-header">
