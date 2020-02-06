@@ -60,21 +60,22 @@ function Auth0() {
         {/* <Header images={images[0].img} /> */}
         {/* <Sidebar /> */}
         <Switch>
+        <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
           {/* <Route path="/intro" component={Intro} /> */}
           <Route path="/ajax" component={ajax} />
-          <Route path="/Bootstrap" component={BootStrap} />
-          <Route path="/CodingIntro" component={CodingIntro} />
-          <Route path="/Css" component={Css} />
-          <Route path="/Firebase" component={Firebase} />
-          <Route path="/GitBash" component={GitBash} />
-          <Route path="/IntroHTML" component={IntroHTML} />
-          <Route path="/jQuery" component={jQPge} />
+          <Route path="/bootstrap" component={BootStrap} />
+          <Route path="/codingIntro" component={CodingIntro} />
+          <Route path="/css" component={Css} />
+          <Route path="/firebase" component={Firebase} />
+          <Route path="/gitbash" component={GitBash} />
+          <Route path="/introHTML" component={IntroHTML} />
+          <Route path="/jquery" component={jQPge} />
           {/* <Route path="/javascript" component={JSpge} /> */}
-          <Route path="/Mysql" component={Mysql} />
-          <Route path="/Node" component={Node} />
-          <Route path="/Sequelize" component={Sequelize} />
-          <Route path="/TimersPg" component={TimersPg} />
+          <Route path="/mysql" component={Mysql} />
+          <Route path="/node" component={Node} />
+          <Route path="/sequelize" component={Sequelize} />
+          <Route path="/timersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
           {/* <PrivateRoute path="/post" component={Post} /> */}
