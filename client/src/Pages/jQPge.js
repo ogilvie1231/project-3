@@ -1,12 +1,12 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 
 function jQPge () {
      return (
       <div>
 
       
-        <div style={{marginLeft: '18%', marginRight: '2%', marginTop: '2%', padding: '1px 16px', height: '1000px'}}>
+        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
