@@ -34,7 +34,7 @@ const NavBar = () => {
                   <li><Link to="/css">CSS</Link></li>
                   <li><Link to="/Bootstrap">BOOTSTRAP</Link></li>
                   <li><Link to="/javascript">JAVASCRIPT</Link></li>
-                  <li><Link to="/jQuery">jQuery</Link></li>
+                  <li><Link to="/jQPge">jQuery</Link></li>
                   <li><Link to="/react">React</Link></li>
                   <li><Link to="/ajax">Ajax</Link></li>
                   <li><Link to="/firebase">Firebase</Link></li>
@@ -84,7 +84,7 @@ const NavBar = () => {
                   <li><Link to="/css">CSS</Link></li>
                   <li><Link to="/Bootstrap">BOOTSTRAP</Link></li>
                   <li><Link to="/javascript">JAVASCRIPT</Link></li>
-                  <li><Link to="/jQuery">jQuery</Link></li>
+                  <li><Link to="/jQPge">jQuery</Link></li>
                   <li><Link to="/react">React</Link></li>
                   <li><Link to="/ajax">Ajax</Link></li>
                   <li><Link to="/firebase">Firebase</Link></li>
