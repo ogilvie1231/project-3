@@ -58,6 +58,7 @@ function App() {
         {/* <Header images={images[0].img} /> */}
         {/* <Sidebar /> */}
         <Switch>
+        <Route path="/" component={Home} />
           <Route path="/home" component={Home} />
           {/* <Route path="/intro" component={Intro} /> */}
           <Route path="/ajax" component={ajax} />
