@@ -1,17 +1,19 @@
 import React from "react";
 import './style.css'
 
-function Header (props) {
+function CardHeader (props) {
     return (
     <div className="card-header">
-    <h1>HTML</h1>
+    <h1></h1>
     <img 
         className= "titleimg"
         src={`images/${props.images}`} 
-        alt='header'>
+        alt='header'
+        alignItem='center' >
+      
       </img>
     </div>
     )
 };
 
-export default Header;
+export default CardHeader;

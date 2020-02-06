@@ -1,19 +1,17 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 
-function Header () {
+function jQPge () {
      return (
       <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-       
-        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+
+      
+        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
                 <h1>jQuery</h1>
-                <img src="assets/jqueryvector.png" className="titleimg" />
+                <img src="./images/jquerylogo.jpg" className="titleimg" />
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -30,8 +28,7 @@ function Header () {
             <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
             <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
               width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-            <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too
-              long (for example if it has over 50 links inside of it).</p>
+            <p>.</p>
             <iframe width={560} height={315} src="https://www.youtube.com/embed/BWXggB-T1jQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             <hr />
             <div className="container">
@@ -95,4 +92,4 @@ function Header () {
     );
 };
 
-export default Header;
+export default jQPge;

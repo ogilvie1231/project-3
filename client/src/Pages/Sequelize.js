@@ -6,11 +6,11 @@ function Sequel () {
     
     <div>
       
-      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+      <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
         <div className="card">
           <div className="card-header">
             <h1>Sequelize</h1>
-            <img src="assets/sequelize logo.svg" className="titleimg" />
+            <img src="./images/Sequelize.png" className="titleimg" />
           </div>
           <div className="card-body">
             <h5 className="card-title">Quick Links</h5>
