@@ -91,14 +91,15 @@ const NavBar = () => {
                 className="mr-sm-2"
               />
               <Button variant="outline-success">Search</Button>
-              <Button
+             
+            </Form>
+            <Button
                 style={{ marginLeft: "5px" }}
                 variant="outline-success"
                 onClick={() => loginWithRedirect({})}
               >
                 Log in
               </Button>
-            </Form>
           </Navbar.Collapse>
         </Navbar>
       )}
@@ -180,14 +181,15 @@ const NavBar = () => {
                 className="mr-sm-2"
               />
               <Button variant="outline-success">Search</Button>
-              <Button
+             
+            </Form>
+            <Button
                 variant="outline-success"
                 style={{ marginLeft: "5px" }}
                 onClick={() => logout()}
               >
                 Log out
               </Button>
-            </Form>
           </Navbar.Collapse>
         </Navbar>
       )}
