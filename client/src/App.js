@@ -58,6 +58,7 @@ function App() {
           <Route path="/timersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
+          <Route path="/post" component={Post} />
           <PrivateRoute path="/post" component={Post} />
         </Switch>
       </Router>
