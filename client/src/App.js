@@ -68,6 +68,7 @@ class App extends Component {
             <Route path="/sequelize" component={Sequelize} />
             <Route path="/timersPg" component={TimersPg} />
             <Route path="/vsc" component={vsc} />
+            <Route path="/post" component={Post} />
             <PrivateRoute path="/profile" component={Profile} />
             {/* <PrivateRoute path="/post" component={Post} /> */}
           </Switch>
