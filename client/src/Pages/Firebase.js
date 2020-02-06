@@ -5,16 +5,8 @@ function FireBase () {
      return (
     
     <div>
-<<<<<<< HEAD
-<<<<<<< HEAD:resource-center/src/Pages/Firebase.js
-      <Sidebar/>
-=======
-  
->>>>>>> staging:client/src/Pages/Firebase.js
-=======
       <br></br>
->>>>>>> staging
-      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+      <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
         <div className="content">
           <div className="card">
             <div className="card-header">

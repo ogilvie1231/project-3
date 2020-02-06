@@ -1,16 +1,6 @@
 import React from "react";
 // import Sidebar from "../components/Sidebar";
 
-<<<<<<< HEAD
-function Header (props) {
-     return (
-      <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-      
-      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
-=======
 function Header(props) {
   return (
     <div>
@@ -19,7 +9,6 @@ function Header(props) {
       {/*MY CSS*/}
     <br></br>
       <div style={{ marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px' }}>
->>>>>>> staging
         <div className="content">
           <div className="card">
             <div className="card-header" style={{textAlign: "center"}}>

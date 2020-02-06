@@ -7,11 +7,7 @@ function Header (props) {
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
-<<<<<<< HEAD
-       
-=======
        <br></br>
->>>>>>> staging
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
