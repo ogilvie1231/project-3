@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 function Html () {
      return (
       <div>
-      <Sidebar/>
+      {/* <Sidebar/> */}
       <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="content">
           <div className="card">
