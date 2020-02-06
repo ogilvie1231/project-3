@@ -91,15 +91,14 @@ const NavBar = () => {
                 className="mr-sm-2"
               />
               <Button variant="outline-success">Search</Button>
-             
             </Form>
             <Button
-                style={{ marginLeft: "5px" }}
-                variant="outline-success"
-                onClick={() => loginWithRedirect({})}
-              >
-                Log in
-              </Button>
+              style={{ marginLeft: "5px" }}
+              variant="outline-success"
+              onClick={() => loginWithRedirect({})}
+            >
+              Log in
+            </Button>
           </Navbar.Collapse>
         </Navbar>
       )}
@@ -181,15 +180,17 @@ const NavBar = () => {
                 className="mr-sm-2"
               />
               <Button variant="outline-success">Search</Button>
-             
             </Form>
             <Button
-                variant="outline-success"
-                style={{ marginLeft: "5px" }}
-                onClick={() => logout()}
-              >
-                Log out
-              </Button>
+              variant="outline-success"
+              style={{ marginLeft: "5px" }}
+              onClick={() => logout()}
+            >
+              Log out
+            </Button>
+            <Button variant="outline-success" style={{ marginLeft: "5px" }}>
+              <Link to="/post">Add New Content</Link>
+            </Button>
           </Navbar.Collapse>
         </Navbar>
       )}
