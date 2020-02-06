@@ -7,8 +7,8 @@ import { Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
 import Profile from "./components/Profile";
 import ajax from "./Pages/Ajax";
-import BootStrap from "./Pages/Bootstrap";
-import CodingIntro from "./Pages/CodingIntro";
+import Boot from "./Pages/Bootstrap";
+// import CodingIntro from "./Pages/CodingIntro";
 import Css from "./Pages/CSS";
 import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
@@ -22,6 +22,7 @@ import TimersPg from "./Pages/TimersPg";
 import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
+import JSpge from "./Pages/JavaScript";
 // import Intro from './Pages/IntroHTML';
 
 
@@ -62,6 +63,7 @@ function App() {
           <Route path="/home" component={Home} />
           {/* <Route path="/intro" component={Intro} /> */}
           <Route path="/ajax" component={ajax} />
+<<<<<<< HEAD
           <Route path="/bootstrap" component={BootStrap} />
           <Route path="/codingIntro" component={CodingIntro} />
           <Route path="/css" component={Css} />
@@ -69,6 +71,16 @@ function App() {
           <Route path="/gitbash" component={GitBash} />
           <Route path="/introHTML" component={IntroHTML} />
           <Route path="/jquery" component={jQPge} />
+=======
+          <Route path="/BootStrap" component={Boot} />
+          {/* <Route path="/CodingIntro" component={CodingIntro} /> */}
+          <Route path="/Css" component={Css} />
+          <Route path="/JavaScript" component={JSpge} />
+          <Route path="/Firebase" component={Firebase} />
+          <Route path="/GitBash" component={GitBash} />
+          <Route path="/IntroHTML" component={IntroHTML} />
+          <Route path="/jQPge" component={jQPge} />
+>>>>>>> chason
           {/* <Route path="/javascript" component={JSpge} /> */}
           <Route path="/mysql" component={Mysql} />
           <Route path="/node" component={Node} />
