@@ -1,7 +1,7 @@
 import React from "react"
 import "./style.css"
 
-const Post = () => {
+const Post = (props) => {
 
     return (
         <div>
@@ -13,14 +13,14 @@ const Post = () => {
             <form>
                 <div class="form-group">
                    <h3> <label htmlFor="Title" id="title">Title</label> </h3>
-                    <input type="text" className="form-control" id="input"></input>
+                    <input type="text" className="form-control" id="input" value={props.title}></input>
                 </div>
                 <div class="form-group">
                    <h3> <label htmlFor="Link" id="title">Link</label> </h3>
-                    <input type="text" className="form-control" id= "input"></input>
+                    <input type="text" className="form-control" id= "input" value={props.link}></input>
                 </div>
                 <h3> <label htmlFor="Link" id="title1">Category</label> </h3>
-                <select id="category">
+                <select id="category" value={props.category}>
                 <option value="Visual Studio Code">Visual Studio Code</option>
                 <option value="GitBash">GitBash</option>
                 <option value="HTML">HTML</option>
@@ -36,10 +36,10 @@ const Post = () => {
                 </select>
                 <div class="form-group">
                    <h3> <label htmlFor="Summary" id="title1">Summary</label> </h3>
-                    <input type="text" className="form-control" id= "summary"></input>
+                    <input type="text" className="form-control" id= "summary" value={props.summary}></input>
                 </div>
                 <div class="form-group form-check"></div>
-                <button type="submit" className="btn btn-primary" id="button">Submit</button>
+                <button type="submit" className="btn btn-primary" id="button" onClick={props.HandleFormSumbit}>Submit</button>
             </form>
         </div>
 
