@@ -22,6 +22,7 @@ import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
+import Post from "./components/Post"
 // import Intro from './Pages/IntroHTML';
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
           <Route path="/timersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
-          {/* <PrivateRoute path="/post" component={Post} /> */}
+          <PrivateRoute path="/post" component={Post} />
         </Switch>
       </Router>
     </div>
