@@ -4,14 +4,20 @@ import Sidebar from "../components/Sidebar";
 function Css () {
      return (
       <div>
+<<<<<<< HEAD:client/src/Pages/CSSPge.js
 <<<<<<< HEAD:client/src/Pages/CSS.js
         <Sidebar/>
 =======
+=======
+>>>>>>> staging:resource-center/src/Pages/CSSPge.js
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
         
+<<<<<<< HEAD:client/src/Pages/CSSPge.js
 >>>>>>> staging:client/src/Pages/CSSPge.js
+=======
+>>>>>>> staging:resource-center/src/Pages/CSSPge.js
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">

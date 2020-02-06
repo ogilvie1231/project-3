@@ -1,14 +1,10 @@
 import React from "react";
+// import Sidebar from "../components/Sidebar";
 
-function Header (props) {
+function JSpge () {
      return (
          <div>
-      <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-       
-</div>
+    {/* <Sidebar/> */}
     <div style="margin-left:18%;margin-right:2%;padding:1px 16px;height:1000px;">
         <div class="card">
             <div class="card-header">
@@ -120,4 +116,4 @@ function Header (props) {
     );
 };
 
-export default Header;
+export default JSpge;
