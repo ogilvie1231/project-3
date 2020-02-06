@@ -1,8 +1,8 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
 
-function CodeIntro () {
+function Intro () {
     return (
+<<<<<<< HEAD
         
 <<<<<<< HEAD:resource-center/src/Pages/CodingIntro.js
         <div>
@@ -11,13 +11,16 @@ function CodeIntro () {
         <div className="container">
        
 >>>>>>> staging:client/src/Pages/CodingIntro.js
+=======
+       
+>>>>>>> staging
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="container">
             <div className="content">
               <h1 style={{textAlign: 'center'}}>Full Stack Web Developer</h1>
               <hr />
               <br />
-              <h2>Introduction</h2>
+              <h2 style={{textAlign: "center"}}>Introduction</h2>
               <br />
               <p>FullStackDev is a website that contains all my favorite resources to study Web Development.
                 FullStackDev will help you find helpfull resources in a much faster way than just
@@ -160,8 +163,8 @@ function CodeIntro () {
                   </div>
                 </div>
               </div>
-            </div></div></div></div>
+            </div></div></div>
     );
 };
 
-export default CodeIntro;
+export default Intro;

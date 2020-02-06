@@ -1,23 +1,43 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-function Header () {
+<<<<<<< HEAD
+function JQuery () {
      return (
       <div>
+<<<<<<< HEAD:client/src/Pages/jQPge.js
 <<<<<<< HEAD:client/src/Pages/jQuery.js
         <Sidebar/>
 =======
+=======
+>>>>>>> staging:client/src/Pages/jQuery.js
         {/*LINKS*/}
         {/*Bootstrap CSS*/}
         {/*MY CSS*/}
        
+<<<<<<< HEAD:client/src/Pages/jQPge.js
 >>>>>>> staging:client/src/Pages/jQPge.js
+=======
+>>>>>>> staging:client/src/Pages/jQuery.js
+=======
+function Header () {
+     return (
+      <div>
+        {/*LINKS*/}
+        {/*Bootstrap CSS*/}
+        {/*MY CSS*/}
+       <br></br>
+>>>>>>> staging
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
                 <h1>jQuery</h1>
+<<<<<<< HEAD
                 <img src="assets/jqueryvector.png" className="titleimg" />
+=======
+                <img src="./images/jquerylogo.jpg" className="titleimg" />
+>>>>>>> staging
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -99,4 +119,8 @@ function Header () {
     );
 };
 
+<<<<<<< HEAD
+export default JQuery;
+=======
 export default Header;
+>>>>>>> staging

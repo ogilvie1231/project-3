@@ -1,9 +1,15 @@
 import React from "react";
+<<<<<<< HEAD
 import Sidebar from "../components/Sidebar";
+=======
+// import Sidebar from "../components/Sidebar";
+import CardHeader from "../components/Header/index";
+>>>>>>> staging
 
 function Css () {
      return (
       <div>
+<<<<<<< HEAD
 <<<<<<< HEAD:client/src/Pages/CSS.js
         <Sidebar/>
 =======
@@ -12,12 +18,21 @@ function Css () {
         {/*MY CSS*/}
         
 >>>>>>> staging:client/src/Pages/CSSPge.js
+=======
+        <br></br>
+        {/* <Sidebar/> */}
+>>>>>>> staging
         <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
           <div className="content">
             <div className="card">
               <div className="card-header">
+<<<<<<< HEAD
                 <h1>CSS</h1>
                 <img src="assets/css logo.svg" className="titleimg" />
+=======
+                <h1 style={{textAlign: "center"}}>CSS</h1>
+                <img src="./images/csslogo.png" className="titleimg" />
+>>>>>>> staging
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
