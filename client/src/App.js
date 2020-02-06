@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./utils/history";
-import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import Profile from "./components/Profile";
@@ -24,9 +23,17 @@ import Sequelize from "./Pages/Sequelize";
 import Timers from "./Pages/Timers";
 import vsc from "./Pages/vsc";
 
+class App extends Component {
+  state = {
+    title: "",
+    link: "",
+    catagory: "",
+    summary: "",
 
+  }
+}
 
-function App() {
+function Auth0() {
   const { loading } = useAuth0();
 
   if (loading) {
@@ -49,7 +56,7 @@ function App() {
           <Route path="/css" component={CSSPge} />
           <Route path="/Firebase" component={Firebase} />
           <Route path="/GitBash" component={GitBash} />
-          <Route path="/IntroHTML" component={IntroHTML} />
+          <Route path="/HTML" component={HTML} />
           <Route path="/jquery" component={jQPge} />
           <Route path="/javascript" component={JSPg} />
           <Route path="/Mysql" component={Mysql} />
