@@ -24,14 +24,14 @@ function GitBash (props) {
             <h3>What is GitBash</h3>
             <p>" Git for Windows focuses on offering a lightweight, native set of tools that bring the full feature set of the Git SCM to Windows while providing appropriate user interfaces for experienced Git users and novices alike.<a href="https://gitforwindows.org/">Git for Windows</a></p>
             
-            <iframe width={560} height={315} src="https://www.youtube.com/embed/cEGIFZDyszA" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <iframe title="git" width={560} height={315} src="https://www.youtube.com/embed/cEGIFZDyszA" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             <hr />
             <div className="container">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/SWYqp7iY_Tc" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="git"width={320} height={215} src="https://www.youtube.com/embed/SWYqp7iY_Tc" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">GitBash Tricks</h5>
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -44,7 +44,7 @@ function GitBash (props) {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/xuB1Id2Wxak" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="git"width={320} height={215} src="https://www.youtube.com/embed/xuB1Id2Wxak" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">Git &amp; GitHub</h5>
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -59,7 +59,7 @@ function GitBash (props) {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/AzfVDEBn9hw" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="git"width={320} height={215} src="https://www.youtube.com/embed/AzfVDEBn9hw" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">Git Commands</h5>
                     <p className="card-text">Git Commands with examples.</p>

@@ -26,7 +26,8 @@ function Header(props) {
           <h3>What is Visual Studio Code</h3>
           <p>Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control and GitHub, syntax highlighting, intelligent code completion, snippets, and code refactoring. <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code">Wikipedia</a></p>
 
-          <iframe width={560} height={315} src="https://www.youtube.com/embed/3FkWddODLno" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          <iframe title="vsc
+          " width={560} height={315} src="https://www.youtube.com/embed/3FkWddODLno" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         </div>
         <hr />
         <h2>More Videos</h2>
@@ -48,7 +49,7 @@ function Header(props) {
         <a href="https://www.syncfusion.com/blogs/post/10-tricks-in-visual-studio-code.aspx"  rel="noopener noreferrer" target="_blank">"10 Tricks
           Every Developer Should Know in Visual Studio Code"</a>
         <br />
-        <a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks" target="_blanck">"Visual Studio Code Tips
+        <a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks" rel="noopener noreferrer" target="_blanck">"Visual Studio Code Tips
           and Tricks"</a>
         <br />
         <br />

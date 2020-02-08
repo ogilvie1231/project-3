@@ -33,7 +33,7 @@ function JSpge () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/W6NZfCO5SIk" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="js"width={320} height={215} src="https://www.youtube.com/embed/W6NZfCO5SIk" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">JavaScript Tutorial for Beginners</h5>
                   <p className="card-text">Learn JavaScript in 1 Hour [2019].</p>
@@ -46,7 +46,7 @@ function JSpge () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/xpZLS6R91rQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="js"width={320} height={215} src="https://www.youtube.com/embed/xpZLS6R91rQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -61,7 +61,7 @@ function JSpge () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/fGdd9qNwQdQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="js"width={320} height={215} src="https://www.youtube.com/embed/fGdd9qNwQdQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">Javascript Tutorial For Beginners</h5>
                   <p className="card-text">This Javascript Tutorial is designed for beginners.</p>
