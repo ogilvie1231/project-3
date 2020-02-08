@@ -4,7 +4,8 @@ import Sidebar from "../components/Sidebar";
 function Timers (props) {
   return (
    <div>
-          <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+        
+          <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
             <div className="card">
               <div className="card-header">
                 <h1>MySQL</h1>

@@ -1,16 +1,6 @@
 import React from "react";
 // import Sidebar from "../components/Sidebar";
 
-<<<<<<< HEAD
-function Header (props) {
-     return (
-      <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-      
-      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
-=======
 function Header(props) {
   return (
     <div>
@@ -18,13 +8,12 @@ function Header(props) {
       {/*Bootstrap CSS*/}
       {/*MY CSS*/}
     <br></br>
-      <div style={{ marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px' }}>
->>>>>>> staging
+      <div style={{ marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
         <div className="content">
           <div className="card">
             <div className="card-header" style={{textAlign: "center"}}>
               <h1 style={{textAlign: "center"}}>Visual Studio Code</h1>
-              <img src="./image/VSLogo.png" className="titleimg" />
+              <img src="./images/VSLogo.png" className="titleimg" />
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>
