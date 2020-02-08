@@ -1,9 +1,36 @@
-import React from "react";
+import React, { Component } from "react";
 import "./style.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-const Post = (props) => {
+class Post extends Component {
+  state = {
+    title: "",
+    link: "",
+    catagory: "",
+    summary: "",
+  };
+
+  handleInputChange = event => {
+    const value = event.target.value;
+    const name = event.target.name;
+    this.setState({
+      [name]: value
+    });
+  }
+  handleFormSubmit = event => {
+    event.preventDefault()
+   axios.post("mongodb://localhost/resource-center", {
+     Title: this.state.title,
+     Link: this.state.link,
+     Catagory: this.state.catagory,
+     Summary: this.state.summary
+   })
+
+    
+  }
+
+render() {
   return (
     <div>
       <div className="jumbotron jumbotron-fluid">
@@ -13,20 +40,32 @@ const Post = (props) => {
           </h1>
         </div>
       </div>
-      {/* <form> */}
-        {/*  */}
         <Form className="container" style={{ maxWidth: "25rem" }}>
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label >Title</Form.Label>
-            <Form.Control value={props.title} type="title" placeholder="Title" />
+            <Form.Control 
+            onChange={this.handleInputChange}
+            value={this.state.title}
+            name="title"
+            type="title" 
+            placeholder="Title" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label>Link</Form.Label>
-            <Form.Control value={props.link} type="link" placeholder="link" />
+            <Form.Control 
+            onChange={this.handleInputChange}
+            value={this.state.link}
+            name="link" 
+            type="link" 
+            placeholder="link" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlSelect1">
             <Form.Label>Select category</Form.Label>
-            <Form.Control as="select">
+            <Form.Control
+            onChange={this.handleInputChange}
+            value={this.state.catagory}
+            name="catagory"
+             as="select">
               <option value="Visual Studio Code">Visual Studio Code</option>
               <option value="GitBash">GitBash</option>
               <option value="HTML">HTML</option>
@@ -42,15 +81,22 @@ const Post = (props) => {
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>Summary</Form.Label>
-            <Form.Control value={props.summary} as="textarea" rows="3" />
+            <Form.Control onChange={this.handleInputChange}
+             value={this.state.summary}
+             name="summary"
+              as="textarea" rows="3" />
           </Form.Group>
-          <Button onClick={props.HandleFormSumbit} type="submit" className="btn btn-primary" id="button">
+          <Button
+          onClick={this.handleFormSubmit} 
+          type=" button" 
+          className="btn btn-primary" 
+          id="button">
             Submit
           </Button>
         </Form>
-        
     </div>
   );
 };
+}
 
 export default Post;
