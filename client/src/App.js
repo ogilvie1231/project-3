@@ -63,19 +63,6 @@ function App() {
           <Route path="/home" component={Home} />
           {/* <Route path="/intro" component={Intro} /> */}
           <Route path="/ajax" component={ajax} />
-<<<<<<< HEAD
-          <Route path="/bootstrap" component={BootStrap} />
-          <Route path="/css" component={Css} />
-          <Route path="/firebase" component={Firebase} />
-          <Route path="/gitbash" component={GitBash} />
-          <Route path="/introHTML" component={IntroHTML} />
-          <Route path="/jquery" component={jQPge} />
-          <Route path="/javascript" component={JSpge} />
-          <Route path="/mysql" component={Mysql} />
-          <Route path="/node" component={Node} />
-          <Route path="/Sequelize" component={Sequelize} />
-          <Route path="/timersPg" component={TimersPg} />
-=======
           <Route path="/BootStrap" component={Boot} />
           {/* <Route path="/CodingIntro" component={CodingIntro} /> */}
           <Route path="/Css" component={Css} />
@@ -88,7 +75,6 @@ function App() {
           <Route path="/Node" component={Node} />
           <Route path="/Sequelize" component={Sequelize} />
           <Route path="/TimersPg" component={TimersPg} />
->>>>>>> chason
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
           {/* <PrivateRoute path="/post" component={Post} /> */}
