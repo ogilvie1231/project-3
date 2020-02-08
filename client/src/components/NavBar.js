@@ -56,7 +56,7 @@ const NavBar = () => {
                       <Link to="/jquery">jQuery</Link>
                     </li>
                     <li>
-                      <Link to="/react">React</Link>
+                      <Link to="/ReactPg">React</Link>
                     </li>
                     <li>
                       <Link to="/ajax">Ajax</Link>
@@ -65,7 +65,7 @@ const NavBar = () => {
                       <Link to="/firebase">Firebase</Link>
                     </li>
                     <li>
-                      <Link to="/node">Node.js</Link>
+                      <Link to="/Node">Node</Link>
                     </li>
                     <li>
                       <Link to="/mysql">MySQL</Link>
@@ -157,6 +157,9 @@ const NavBar = () => {
                     </li>
                     <li>
                       <Link to="/mysql">MySQL</Link>
+                    </li>
+                    <li>
+                      <Link to="/ReactPg">React</Link>
                     </li>
                     <li>
                       <Link to="/sequelize">Sequelize</Link>
