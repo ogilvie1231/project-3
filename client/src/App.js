@@ -54,7 +54,7 @@ function App() {
           <Route path="/javascript" component={JSpge} />
           <Route path="/mysql" component={Mysql} />
           <Route path="/node" component={Node} />
-          <Route path="/sequelize" component={Sequelize} />
+          <Route path="/Sequelize" component={Sequelize} />
           <Route path="/timersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
