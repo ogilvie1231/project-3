@@ -14,14 +14,17 @@ class Post extends Component {
   handleInputChange = event => {
     const value = event.target.value;
     const name = event.target.name;
-    console.log(value);
-    console.log(name);
     this.setState({
       [name]: value
     });
   }
-  handleFormSumbit = event => {
+  handleFormSubmit = event => {
     event.preventDefault()
+    console.log(this.state.title)
+    console.log(this.state.link)
+    console.log(this.state.catagory)
+    console.log(this.state.summary)
+    
   }
 
 render() {
@@ -41,20 +44,25 @@ render() {
             onChange={this.handleInputChange}
             value={this.state.title}
             name="title"
-            id="title"
             type="title" 
             placeholder="Title" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label>Link</Form.Label>
             <Form.Control 
-            value={this.state.link} 
+            onChange={this.handleInputChange}
+            value={this.state.link}
+            name="link" 
             type="link" 
             placeholder="link" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlSelect1">
             <Form.Label>Select category</Form.Label>
-            <Form.Control as="select">
+            <Form.Control
+            onChange={this.handleInputChange}
+            value={this.state.catagory}
+            name="catagory"
+             as="select">
               <option value="Visual Studio Code">Visual Studio Code</option>
               <option value="GitBash">GitBash</option>
               <option value="HTML">HTML</option>
@@ -70,11 +78,14 @@ render() {
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>Summary</Form.Label>
-            <Form.Control value={this.state.summary} as="textarea" rows="3" />
+            <Form.Control onChange={this.handleInputChange}
+             value={this.state.summary}
+             name="summary"
+              as="textarea" rows="3" />
           </Form.Group>
-          <Button 
+          <Button
           onClick={this.handleFormSubmit} 
-          type="submit" 
+          type=" button" 
           className="btn btn-primary" 
           id="button">
             Submit
