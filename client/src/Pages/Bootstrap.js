@@ -1,6 +1,5 @@
 import React from "react";
-// import Sidebar from "../components/Sidebar";
-import CardHeader from "../components/Header/index";
+
 
 function Boot (props) {
     return (
@@ -10,15 +9,15 @@ function Boot (props) {
           <div className="card">
             <div className="card-header">
               <h1 style={{textalign:'center'}}>Bootstrap</h1>
-              <img src="./images/bootstrapLogo.png" className="titleimg" />
+              <img src="./images/bootstrapLogo.png" className="titleimg" alt="bootstrap logo"/>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
                 <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
                 </p>
-                <a href="https://getbootstrap.com/" className="btn btn-primary" target="_blank">Go to Bootstrap</a>
-                <a href className="btn btn-success" target="_blank">Bootstrap Documents</a>
-                <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/search?query=bootstrap" className="btn btn-info" target="_blank">Bootstrap Videos</a>
-                <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" className="btn btn-secondary" target="_blank">Bootstrap W3Schools</a>
+                <a href="https://getbootstrap.com/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to Bootstrap</a>
+                <a href className="btn btn-success" target="_blank" rel="noopener noreferrer">Bootstrap Documents</a>
+                <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/search?query=bootstrap" className="btn btn-info" target="_blank" rel="noopener noreferrer">Bootstrap Videos</a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">Bootstrap W3Schools</a>
               </div>
             </div>
           </div>
@@ -52,7 +51,7 @@ function Boot (props) {
                 <p className="card-text">Responsive Bootstrap Website Start To Finish with Bootstrap 4, HTML5 &amp;
                   CSS3.</p>
                 <hr />
-                <a className="btn btn-success" href="https://youtu.be/9cKsq14Kfsw" role="button" target="_blank">Watch video Here</a>
+                <a className="btn btn-success" href="https://youtu.be/9cKsq14Kfsw" role="button" target="_blank" rel="noopener noreferrer">Watch video Here</a>
                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -67,7 +66,7 @@ function Boot (props) {
             <p className="card-text">Bootstrap 4 Tutorial #1.
             </p>
             <hr />
-            <a className="btn btn-success" href="https://www.youtube.com/watch?v=QAgrHLtG1Yk&list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv" role="button" target="_blank">Watch Video Here</a>
+            <a className="btn btn-success" href="https://www.youtube.com/watch?v=QAgrHLtG1Yk&list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv" role="button" target="_blank" rel="noopener noreferrer">Watch Video Here</a>
             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
           </div>
           <div className="card">
@@ -79,7 +78,7 @@ function Boot (props) {
               <p className="card-text">This card has supporting text below as a natural lead-in to additional
                 content.</p>
               <hr />
-              <a className="btn btn-success" href="https://www.youtube.com/watch?v=tLANGA8f6qI" role="button" target="_blank">Watch Video Here</a>
+              <a className="btn btn-success" href="https://www.youtube.com/watch?v=tLANGA8f6qI" role="button" target="_blank" rel="noopener noreferrer">Watch Video Here</a>
               <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
