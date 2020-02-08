@@ -5,3 +5,7 @@ body {
 #navbarNav {
     position: fixed;
 }
+
+#basic-nav-dropdown {
+    color: white;
+}
