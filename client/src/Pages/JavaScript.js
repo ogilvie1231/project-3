@@ -4,7 +4,7 @@ import React from "react";
 function JSpge () {
      return (
         <div>
-        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
+        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
           <div className="card">
             <div className="card-header">
               <h1>Javascript</h1>
