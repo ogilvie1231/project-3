@@ -43,7 +43,7 @@ const Home = () => {
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title"><a href="#section1">Visual Studio Code</a></h5>
+                              <h5 className="card-title"><a href="../GitBash">Visual Studio Code</a></h5>
                               <p className="card-text">VSC Tutorials.</p>
                             </div>
                           </div>
