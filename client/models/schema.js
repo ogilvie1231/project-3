@@ -30,3 +30,6 @@ const ContentSchema = new Schema ({
 const Content = mongoose.model("Comments", ContentSchema)
 
 module.exports = Content
+
+
+
