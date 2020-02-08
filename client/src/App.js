@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 // import Intro from "./Pages/intro";
 // import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
