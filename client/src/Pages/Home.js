@@ -43,7 +43,7 @@ const Home = () => {
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title"><a href="../GitBash">Visual Studio Code</a></h5>
+                              <h5 className="card-title"><a href="/vsc">VS Code</a></h5>
                               <p className="card-text">VSC Tutorials.</p>
                             </div>
                           </div>
@@ -58,7 +58,7 @@ const Home = () => {
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title"><a href="#section2">GitBash</a></h5>
+                              <h5 className="card-title"><a href="/GitBash">GitBash</a></h5>
                               <p className="card-text">GitBash Tutorials.</p>
                             </div>
                           </div>
@@ -73,7 +73,7 @@ const Home = () => {
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title"><a href="#section3">HTML</a></h5>
+                              <h5 className="card-title"><a href="/IntroHTML">HTML</a></h5>
                               <p className="card-text">HTML Tutorials.</p>
                             </div>
                           </div>
@@ -94,7 +94,7 @@ const Home = () => {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title"><a href="#section4">CSS</a></h5>
+                            <h5 className="card-title"><a href="/CSS">CSS</a></h5>
                             <p className="card-text">CSS Tutorials.</p>
                           </div>
                         </div>
@@ -109,7 +109,7 @@ const Home = () => {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title"><a href="#section5">Bootstrap</a></h5>
+                            <h5 className="card-title"><a href="/Bootstrap">Bootstrap</a></h5>
                             <p className="card-text">Bootstrap Tutorials.</p>
                           </div>
                         </div>
@@ -124,7 +124,7 @@ const Home = () => {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title"><a href="#section6">JavaScript</a></h5>
+                            <h5 className="card-title"><a href="/JSPg">JavaScript</a></h5>
                             <p className="card-text">JavaScript Tutorials.</p>
                           </div>
                         </div>
@@ -145,7 +145,7 @@ const Home = () => {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section7">jQuery</a></h5>
+                          <h5 className="card-title"><a href="/jQuery">jQuery</a></h5>
                           <p className="card-text">jQuery Tutorials.</p>
                         </div>
                       </div>
@@ -160,7 +160,7 @@ const Home = () => {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section8">Firebase</a></h5>
+                          <h5 className="card-title"><a href="/Firebase">Firebase</a></h5>
                           <p className="card-text">Firebase Tutorials.</p>
                         </div>
                       </div>
@@ -175,7 +175,7 @@ const Home = () => {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section9">Node</a></h5>
+                          <h5 className="card-title"><a href="/Node">Node</a></h5>
                           <p className="card-text">Node Tutorials.</p>
                         </div>
                       </div>
@@ -195,7 +195,7 @@ const Home = () => {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section10">MySQL</a></h5>
+                          <h5 className="card-title"><a href="/Mysql">MySQL</a></h5>
                           <p className="card-text">MySQL Tutorials.</p>
                         </div>
                       </div>
@@ -210,7 +210,7 @@ const Home = () => {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section11">Sequelize</a></h5>
+                          <h5 className="card-title"><a href="/Sequelize">Sequelize</a></h5>
                           <p className="card-text">Sequelize Tutorials.</p>
                         </div>
                       </div>
@@ -225,7 +225,7 @@ const Home = () => {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section12">MongoDB</a></h5>
+                          <h5 className="card-title"><a href="/">MongoDB</a></h5>
                           <p className="card-text">MongoDB Tutorials.</p>
                         </div>
                       </div>
