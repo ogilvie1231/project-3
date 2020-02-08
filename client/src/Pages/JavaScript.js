@@ -1,5 +1,4 @@
 import React from "react";
-// import Sidebar from "../components/Sidebar";
 
 function JSpge () {
      return (
@@ -8,19 +7,19 @@ function JSpge () {
           <div className="card">
             <div className="card-header">
               <h1>Javascript</h1>
-              <img src="./images/jslogo.png" className="titleimg" />
+              <img src="./images/jslogo.png" className="titleimg" alt="js logo"/>
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>
               <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
               </p>
-              <a href="https://javascript.info/" className="btn btn-primary" target="_blank">JavaScript</a>
-              <a href="https://devdocs.io/javascript/" className="btn btn-success" target="_blank">JavaScript
+              <a href="https://javascript.info/" className="btn btn-primary"  rel="noopener noreferrer" target="_blank">JavaScript</a>
+              <a href="https://devdocs.io/javascript/" className="btn btn-success"  rel="noopener noreferrer" target="_blank">JavaScript
                 Documents</a>
-              <a href="https://www.youtube.com/playlist?list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl" className="btn btn-info" target="_blank">JavaScript Videos</a>
-              <a href="https://www.w3schools.com/js/default.asp" className="btn btn-secondary" target="_blank">Javascript
+              <a href="https://www.youtube.com/playlist?list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl" className="btn btn-info"  rel="noopener noreferrer" target="_blank">JavaScript Videos</a>
+              <a href="https://www.w3schools.com/js/default.asp" className="btn btn-secondary"  rel="noopener noreferrer" target="_blank">Javascript
                 W3Schools</a>
-              <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps" className="btn btn-dark" target="_blank">Moz://a</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps" className="btn btn-dark"  rel="noopener noreferrer" target="_blank">Moz://a</a>
             </div>
           </div>
           <hr />
@@ -39,7 +38,7 @@ function JSpge () {
                   <h5 className="card-title">JavaScript Tutorial for Beginners</h5>
                   <p className="card-text">Learn JavaScript in 1 Hour [2019].</p>
                   <hr />
-                  <a className="btn btn-success" href="https://www.youtube.com/watch?v=W6NZfCO5SIk&feature=emb_title" role="button" target="_blank">More
+                  <a className="btn btn-success" href="https://www.youtube.com/watch?v=W6NZfCO5SIk&feature=emb_title" role="button"  rel="noopener noreferrer" target="_blank">More
                     videos Here</a>
                   <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
@@ -54,7 +53,7 @@ function JSpge () {
                     content.
                   </p>
                   <hr />
-                  <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl" role="button" target="_blank">More
+                  <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl" role="button"  rel="noopener noreferrer" target="_blank">More
                     videos Here</a>
                   <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
@@ -67,7 +66,7 @@ function JSpge () {
                   <h5 className="card-title">Javascript Tutorial For Beginners</h5>
                   <p className="card-text">This Javascript Tutorial is designed for beginners.</p>
                   <hr />
-                  <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PLoYCgNOIyGACnrXwo5HMCfOH9VT05znGv" role="button" target="_blank">More
+                  <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PLoYCgNOIyGACnrXwo5HMCfOH9VT05znGv" role="button"  rel="noopener noreferrer" target="_blank">More
                     videos Here</a>
                   <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
@@ -76,19 +75,19 @@ function JSpge () {
             <hr />
             <h3>Addtional Resources</h3>
             <p>The resources below offer excersices and more videos.</p>
-            <a href="https://javascript30.com/" target="_blank">JavaScript30</a>
+            <a href="https://javascript30.com/"  rel="noopener noreferrer" target="_blank">JavaScript30</a>
             <br />
-            <a href="https://www.codecademy.com/learn/introduction-to-javascript/" target="_blank">JavaScript/CodeCademy</a>
+            <a href="https://www.codecademy.com/learn/introduction-to-javascript/"  rel="noopener noreferrer" target="_blank">JavaScript/CodeCademy</a>
             <br />
-            <a href="https://doc.qt.io/qt-5/qtqml-javascript-functionlist.html" target="_blank">List of JavaScript
+            <a href="https://doc.qt.io/qt-5/qtqml-javascript-functionlist.html"  rel="noopener noreferrer" target="_blank">List of JavaScript
               Objects and Functions</a>
             <br />
-            <a href="https://medium.com/@dannyhuang_75970/8-best-places-to-learn-javascript-2018-updated-free-paid-940eed6b8296" target="_blank">8 best places to learn Javascript (2018 Updated Free &amp; Paid)</a>
+            <a href="https://medium.com/@dannyhuang_75970/8-best-places-to-learn-javascript-2018-updated-free-paid-940eed6b8296"  rel="noopener noreferrer" target="_blank">8 best places to learn Javascript (2018 Updated Free &amp; Paid)</a>
             <br />
-            <a href="https://scrimba.com/g/gintrotojavascript" target="_blank">Introduction to JavaScript (Videos)</a>
+            <a href="https://scrimba.com/g/gintrotojavascript"  rel="noopener noreferrer" target="_blank">Introduction to JavaScript (Videos)</a>
             <hr />
             <h2>Books</h2>
-            <a href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf" target="_blank">Eloquent JavaScript</a>
+            <a href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf"  rel="noopener noreferrer" target="_blank">Eloquent JavaScript</a>
             <div className="space" />
           </div>
         </div>
