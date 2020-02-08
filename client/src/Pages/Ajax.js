@@ -1,5 +1,4 @@
 import React from "react";
-import CardHeader from "../components/Header/index";
 
 function AJAX () {
     return (
@@ -10,15 +9,15 @@ function AJAX () {
         <div className="card">
           <div className="card-header">
             <h1 className="AJAXhead" style={{textAlign: "center"}}>AJAX</h1>
-            <img src="./images/ajax.png" className="titleimg-AJAX" />
+            <img src="./images/ajax.png" className="titleimg-AJAX" alt="ajax logo"/>
           </div>
           <div className="card-body">
             <h5 className="card-title">Quick Links</h5>
             <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
             </p>
-            <a href="https://www.youtube.com/watch?v=tNKD0kfel6o" className="btn btn-primary" target="_blank">Getting started with AJAX</a>
-            <a href="" className="btn btn-success" target="_blank">AJAX Documentation</a>
-            <a href="" className="btn btn-info" target="_blank">AJAX Videos</a>
+            <a href="https://www.youtube.com/watch?v=tNKD0kfel6o" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Getting started with AJAX</a>
+            <a href="https://api.jquery.com/jquery.ajax/" className="btn btn-success" target="_blank" rel="noopener noreferrer">AJAX Documentation</a>
+            <a href="https://teamtreehouse.com/library/ajax-basics-2" className="btn btn-info" target="_blank" rel="noopener noreferrer">AJAX Videos</a>
           </div>
         </div>
         <br />

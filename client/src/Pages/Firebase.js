@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
 
 function FireBase () {
      return (
@@ -11,14 +10,14 @@ function FireBase () {
           <div className="card">
             <div className="card-header">
               <h1>Firebase</h1>
-              <img src="./images/firebaseLogo.jpg" className="titleimg" />
+              <img src="./images/firebaseLogo.jpg" className="titleimg" alt="firebase logo"/>
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>
               <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.</p>
-              <a href className="btn btn-primary" target="_blank">Go to Firebase</a>
-              <a href className="btn btn-success" target="_blank">Firebase Documents</a>
-              <a href className="btn btn-info" target="_blank">Firebase Videos</a>
+              <a href className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to Firebase</a>
+              <a href className="btn btn-success" target="_blank" rel="noopener noreferrer">Firebase Documents</a>
+              <a href className="btn btn-info" target="_blank" rel="noopener noreferrer">Firebase Videos</a>
             </div>
           </div>
           <br />

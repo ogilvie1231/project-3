@@ -1,5 +1,4 @@
 import React from "react";
-// import Sidebar from "../components/Sidebar";
 
 function jQPge () {
      return (
@@ -11,16 +10,16 @@ function jQPge () {
             <div className="card">
               <div className="card-header">
                 <h1>jQuery</h1>
-                <img src="./images/jquerylogo.jpg" className="titleimg" />
+                <img src="./images/jquerylogo.jpg" className="titleimg" alt="jquery logo"/>
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
                 <p className="card-text">You can find more info, documents and very detailed videos in the buttons
                   below.</p>
-                <a href className="btn btn-primary" target="_blank">Go to jQuery</a>
-                <a href className="btn btn-success" target="_blank">jQuery Documents</a>
-                <a href className="btn btn-info" target="_blank">jQuery Videos</a>
-                <a href="https://www.w3schools.com/jquery/" className="btn btn-secondary" target="_blank">jQuery
+                <a href className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to jQuery</a>
+                <a href className="btn btn-success" target="_blank" rel="noopener noreferrer">jQuery Documents</a>
+                <a href className="btn btn-info" target="_blank" rel="noopener noreferrer">jQuery Videos</a>
+                <a href="https://www.w3schools.com/jquery/" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">jQuery
                   W3Schools</a>
               </div>
             </div>
@@ -43,7 +42,7 @@ function jQPge () {
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
                       content.</p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=R9GYRBDqxI8&list=PLsrZV8shpwjNuvhvotOuzRCQGcqscCekJ" role="button" target="_blank">More
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=R9GYRBDqxI8&list=PLsrZV8shpwjNuvhvotOuzRCQGcqscCekJ" role="button" target="_blank" rel="noopener noreferrer">More
                       videos Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -59,7 +58,7 @@ function jQPge () {
                       content.
                     </p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp" role="button" target="_blank">More
+                    <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp" role="button" target="_blank" rel="noopener noreferrer">More
                       videos Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -74,7 +73,7 @@ function jQPge () {
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
                       content.</p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=65a5QQ3ZR2g&list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR" role="button" target="_blank">More
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=65a5QQ3ZR2g&list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR" role="button" target="_blank" rel="noopener noreferrer">More
                       videos Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -84,7 +83,7 @@ function jQPge () {
             <hr />
             <h3>Addtional Resources</h3>
             <p>The resources below offer excersices and more videos.</p>
-            <a href="https://css-tricks.com/lodge/learn-jquery/" target="_blank">Learn JQuery from scratch</a>
+            <a href="https://css-tricks.com/lodge/learn-jquery/" target="_blank" rel="noopener noreferrer">Learn JQuery from scratch</a>
             <br />
           </div>
         </div>
