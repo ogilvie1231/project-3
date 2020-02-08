@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { InstantSearch } from 'react-instantsearch-dom';
 // import Intro from "./Pages/intro";
 // import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";

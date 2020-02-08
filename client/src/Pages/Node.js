@@ -11,7 +11,7 @@ function Node () {
             <div className="card">
               <div className="card-header">
                 <h1>Node.js</h1>
-                <img src="assets/node logo.jpg" className="titleimg" />
+                <img src="./images/nodeLogo.jpg" className="titleimg" />
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -78,10 +78,10 @@ function Node () {
             </div>
           </div>
           <br />
-          <p>Some text..</p>
+          <p></p>
           <div className="code" style={{ width: '50%' }}>
             <code>
-              hello hello hello
+             
               </code>
           </div>
         </div>
