@@ -10,14 +10,14 @@ function GitBash (props) {
             <div className="card border border-white">
               <div className="card-header">
                 <h1>Git Bash</h1>
-                <img src="./images/gitLogo.png" className="titleimg" />
+                <img src="./images/gitLogo.png" className="titleimg" alt="git logo"/>
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
                 <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.</p>
-                <a href="https://gitforwindows.org/" className="btn btn-primary" target="_blank">Go to Git Bash</a>
-                <a href="https://github.com/git-for-windows/git/tree/master/Documentation" className="btn btn-success" target="_blank">Git Bash Documents</a>
-                <a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx" className="btn btn-info" target="_blank">Git Bash Videos</a>
+                <a href="https://gitforwindows.org/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to Git Bash</a>
+                <a href="https://github.com/git-for-windows/git/tree/master/Documentation" className="btn btn-success" target="_blank" rel="noopener noreferrer">Git Bash Documents</a>
+                <a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx" className="btn btn-info" target="_blank" rel="noopener noreferrer">Git Bash Videos</a>
               </div>
             </div>
             <br />
@@ -37,7 +37,7 @@ function GitBash (props) {
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
                       content.</p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=SWYqp7iY_Tc&t=1154s" role="button" target="_blank">Watch Video Here</a>
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=SWYqp7iY_Tc&t=1154s" role="button" target="_blank" rel="noopener noreferrer">Watch Video Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
@@ -51,7 +51,7 @@ function GitBash (props) {
                       content.
                     </p>
                     <hr />
-                    <a className="btn btn-success" href="https://youtu.be/xuB1Id2Wxak" role="button" target="_blank">Watch Video
+                    <a className="btn btn-success" href="https://youtu.be/xuB1Id2Wxak" role="button" target="_blank" rel="noopener noreferrer">Watch Video
                       Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -65,7 +65,7 @@ function GitBash (props) {
                     <p className="card-text">Git Commands with examples.</p>
                     <br />
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=AzfVDEBn9hw" role="button" target="_blank">Watch video Here</a>
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=AzfVDEBn9hw" role="button" target="_blank" rel="noopener noreferrer">Watch video Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>

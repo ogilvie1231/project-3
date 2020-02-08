@@ -8,18 +8,18 @@ function Timers (props) {
             <div className="card">
               <div className="card-header">
                 <h1>MySQL</h1>
-                <img src="assets/mysql logo 3.jpg" className="titleimg" />
+                <img src="assets/mysql logo 3.jpg" className="titleimg" alt="mysql logo"/>
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
                 <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
                 </p>
-                <a href="https://www.mysql.com/products/workbench/" className="btn btn-primary" target="_blank">Go to
+                <a href="https://www.mysql.com/products/workbench/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to
                   MySQL</a>
-                <a href="https://www.mysql.com/products/workbench/" className="btn btn-success" target="_blank">MySQL
+                <a href="https://www.mysql.com/products/workbench/" className="btn btn-success" target="_blank" rel="noopener noreferrer">MySQL
                   Documents</a>
-                <a href="https://www.youtube.com/watch?v=iP1wOSsKjW8&list=PLS1QulWo1RIahlYDqHWZb81qsKgEvPiHn" className="btn btn-info" target="_blank">MySQL Videos</a>
-                <a href="https://www.w3schools.com/sql/default.asp" className="btn btn-secondary" target="_blank">MySQL
+                <a href="https://www.youtube.com/watch?v=iP1wOSsKjW8&list=PLS1QulWo1RIahlYDqHWZb81qsKgEvPiHn" className="btn btn-info" target="_blank" rel="noopener noreferrer">MySQL Videos</a>
+                <a href="https://www.w3schools.com/sql/default.asp" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">MySQL
                   W3Schools</a>
               </div>
             </div>
@@ -42,7 +42,7 @@ function Timers (props) {
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
                       content.</p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=R9GYRBDqxI8&list=PLsrZV8shpwjNuvhvotOuzRCQGcqscCekJ" role="button" target="_blank">More
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=R9GYRBDqxI8&list=PLsrZV8shpwjNuvhvotOuzRCQGcqscCekJ" role="button" target="_blank" rel="noopener noreferrer">More
                       videos Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -57,7 +57,7 @@ function Timers (props) {
                       content.
                     </p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp" role="button" target="_blank">More
+                    <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp" role="button" target="_blank" rel="noopener noreferrer">More
                       videos Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -71,7 +71,7 @@ function Timers (props) {
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
                       content.</p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=65a5QQ3ZR2g&list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR" role="button" target="_blank">More
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=65a5QQ3ZR2g&list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR" role="button" target="_blank" rel="noopener noreferrer">More
                       videos Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>

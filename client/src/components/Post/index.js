@@ -3,7 +3,7 @@ import "./style.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-const Post = () => {
+const Post = (props) => {
   return (
     <div>
       <div className="jumbotron jumbotron-fluid">
@@ -17,12 +17,12 @@ const Post = () => {
         {/*  */}
         <Form className="container" style={{ maxWidth: "25rem" }}>
           <Form.Group controlId="exampleForm.ControlInput1">
-            <Form.Label>Title</Form.Label>
-            <Form.Control type="title" placeholder="Title" />
+            <Form.Label >Title</Form.Label>
+            <Form.Control value={props.title} type="title" placeholder="Title" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label>Link</Form.Label>
-            <Form.Control type="link" placeholder="link" />
+            <Form.Control value={props.link} type="link" placeholder="link" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlSelect1">
             <Form.Label>Select category</Form.Label>
@@ -42,9 +42,9 @@ const Post = () => {
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>Summary</Form.Label>
-            <Form.Control as="textarea" rows="3" />
+            <Form.Control value={props.summary} as="textarea" rows="3" />
           </Form.Group>
-          <Button type="submit" className="btn btn-primary" id="button">
+          <Button onClick={props.HandleFormSumbit} type="submit" className="btn btn-primary" id="button">
             Submit
           </Button>
         </Form>

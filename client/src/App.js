@@ -1,7 +1,10 @@
-import React, { Component } from "react";
-import { InstantSearch } from 'react-instantsearch-dom';
 // import Intro from "./Pages/intro";
 // import Sidebar from "./components/Sidebar";
+// import CodingIntro from "./Pages/CodingIntro";
+// import JSpge from "./Pages/JSpge";
+// import Intro from './Pages/IntroHTML';
+import React, { Component } from "react";
+import { InstantSearch } from 'react-instantsearch-dom';
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
@@ -9,13 +12,11 @@ import Home from "./Pages/Home";
 import Profile from "./components/Profile";
 import ajax from "./Pages/Ajax";
 import Boot from "./Pages/Bootstrap";
-// import CodingIntro from "./Pages/CodingIntro";
 import Css from "./Pages/CSS";
 import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
 import IntroHTML from "./Pages/IntroHTML";
 import jQPge from "./Pages/jQPge";
-// import JSpge from "./Pages/JSpge";
 import Mysql from "./Pages/Mysql";
 import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
@@ -24,7 +25,6 @@ import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
-// import Intro from './Pages/IntroHTML';
 
 
 // class App extends Component {

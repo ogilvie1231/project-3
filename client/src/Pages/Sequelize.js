@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function Sequel () {
     return (
     
@@ -10,15 +9,15 @@ function Sequel () {
         <div className="card">
           <div className="card-header">
             <h1>Sequelize</h1>
-            <img src="./images/Sequelize.png" className="titleimg" />
+            <img src="./images/Sequelize.png" className="titleimg" alt="sequelize logo"/>
           </div>
           <div className="card-body">
             <h5 className="card-title">Quick Links</h5>
             <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
             </p>
-            <a href="https://sequelize.org/master/" className="btn btn-primary" target="_blank">Go to Sequelize</a>
-            <a href className="btn btn-success" target="_blank">Sequelize Documents</a>
-            <a href className="btn btn-info" target="_blank">Sequelize Videos</a>
+            <a href="https://sequelize.org/master/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to Sequelize</a>
+            <a href className="btn btn-success" target="_blank" rel="noopener noreferrer">Sequelize Documents</a>
+            <a href className="btn btn-info" target="_blank" rel="noopener noreferrer">Sequelize Videos</a>
           </div>
         </div>
         <br />
