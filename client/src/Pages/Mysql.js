@@ -1,27 +1,27 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+
 
 function SQL () {
     return (
 
     <div>
         
-        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
           <div className="card">
             <div className="card-header">
               <h1>MySQL</h1>
-              <img src="images/mysql logo.jpg" className="titleimg" />
+              <img src="./images/mysqlLogo.jpg" className="titleimg" alt="mysql logo"/>
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>
               <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
               </p>
-              <a href="https://www.mysql.com/products/workbench/" className="btn btn-primary" target="_blank">Go to
+              <a href="https://www.mysql.com/products/workbench/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to
                 MySQL</a>
-              <a href="https://www.mysql.com/products/workbench/" className="btn btn-success" target="_blank">MySQL
+              <a href="https://www.mysql.com/products/workbench/" className="btn btn-success" target="_blank" rel="noopener noreferrer">MySQL
                 Documents</a>
-              <a href="https://www.youtube.com/watch?v=iP1wOSsKjW8&list=PLS1QulWo1RIahlYDqHWZb81qsKgEvPiHn" className="btn btn-info" target="_blank">MySQL Videos</a>
-              <a href="https://www.w3schools.com/sql/default.asp" className="btn btn-secondary" target="_blank">MySQL
+              <a href="https://www.youtube.com/watch?v=iP1wOSsKjW8&list=PLS1QulWo1RIahlYDqHWZb81qsKgEvPiHn" className="btn btn-info" target="_blank" rel="noopener noreferrer">MySQL Videos</a>
+              <a href="https://www.w3schools.com/sql/default.asp" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">MySQL
                 W3Schools</a>
             </div>
           </div>
@@ -42,7 +42,7 @@ function SQL () {
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional
                     content.</p>
                   <hr />
-                  <a className="btn btn-success" href="https://www.youtube.com/watch?v=7S_tz1z_5bA" role="button" target="_blank">More
+                  <a className="btn btn-success" href="https://www.youtube.com/watch?v=7S_tz1z_5bA" role="button" target="_blank" rel="noopener noreferrer">More
                     videos Here</a>
                   <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
@@ -57,7 +57,7 @@ function SQL () {
                     content.
                   </p>
                   <hr />
-                  <a className="btn btn-success" href="https://www.youtube.com/watch?v=HXV3zeQKqGY" role="button" target="_blank">More
+                  <a className="btn btn-success" href="https://www.youtube.com/watch?v=HXV3zeQKqGY" role="button" target="_blank" rel="noopener noreferrer">More
                     videos Here</a>
                   <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
@@ -71,7 +71,7 @@ function SQL () {
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional
                     content.</p>
                   <hr />
-                  <a className="btn btn-success" href="https://www.youtube.com/watch?v=nN4Kjdverzs&list=PL41lfR-6DnOokmJfmYj2hdVMKVGIcF7__" role="button" target="_blank">More
+                  <a className="btn btn-success" href="https://www.youtube.com/watch?v=nN4Kjdverzs&list=PL41lfR-6DnOokmJfmYj2hdVMKVGIcF7__" role="button" target="_blank" rel="noopener noreferrer">More
                     videos Here</a>
                   <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
