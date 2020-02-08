@@ -1,9 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 import "./style.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-const Post = () => {
+class Post extends Component {
+  state = {
+    title: "",
+    link: "",
+    catagory: "",
+    summary: "",
+  };
+
+  handleInputChange = event => {
+    const value = event.target.value;
+    const name = event.target.name;
+    this.setState({
+      [name]: value
+    });
+  }
+  handleFormSubmit = event => {
+    event.preventDefault()
+    console.log(this.state.title)
+    console.log(this.state.link)
+    console.log(this.state.catagory)
+    console.log(this.state.summary)
+    
+  }
+
+render() {
   return (
     <div>
       <div className="jumbotron jumbotron-fluid">
@@ -13,20 +37,32 @@ const Post = () => {
           </h1>
         </div>
       </div>
-      {/* <form> */}
-        {/*  */}
         <Form className="container" style={{ maxWidth: "25rem" }}>
           <Form.Group controlId="exampleForm.ControlInput1">
-            <Form.Label>Title</Form.Label>
-            <Form.Control type="title" placeholder="Title" />
+            <Form.Label >Title</Form.Label>
+            <Form.Control 
+            onChange={this.handleInputChange}
+            value={this.state.title}
+            name="title"
+            type="title" 
+            placeholder="Title" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label>Link</Form.Label>
-            <Form.Control type="link" placeholder="link" />
+            <Form.Control 
+            onChange={this.handleInputChange}
+            value={this.state.link}
+            name="link" 
+            type="link" 
+            placeholder="link" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlSelect1">
             <Form.Label>Select category</Form.Label>
-            <Form.Control as="select">
+            <Form.Control
+            onChange={this.handleInputChange}
+            value={this.state.catagory}
+            name="catagory"
+             as="select">
               <option value="Visual Studio Code">Visual Studio Code</option>
               <option value="GitBash">GitBash</option>
               <option value="HTML">HTML</option>
@@ -42,63 +78,22 @@ const Post = () => {
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>Summary</Form.Label>
-            <Form.Control as="textarea" rows="3" />
+            <Form.Control onChange={this.handleInputChange}
+             value={this.state.summary}
+             name="summary"
+              as="textarea" rows="3" />
           </Form.Group>
-          <Button type="submit" className="btn btn-primary" id="button">
+          <Button
+          onClick={this.handleFormSubmit} 
+          type=" button" 
+          className="btn btn-primary" 
+          id="button">
             Submit
           </Button>
         </Form>
-        {/*  */}
-        {/* <div class="form-group">
-          <h3>
-            {" "}
-            <label htmlFor="Title" id="title">
-              Title
-            </label>{" "}
-          </h3>
-          <input type="text" className="form-control" id="input"></input>
-        </div>
-        <div class="form-group">
-          <h3>
-            {" "}
-            <label htmlFor="Link" id="title">
-              Link
-            </label>{" "}
-          </h3>
-          <input type="text" className="form-control" id="input"></input>
-        </div>
-        <h3>
-          {" "}
-          <label htmlFor="Link" id="title1">
-            Category
-          </label>{" "}
-        </h3>
-        <select id="category">
-          <option value="Visual Studio Code">Visual Studio Code</option>
-          <option value="GitBash">GitBash</option>
-          <option value="HTML">HTML</option>
-          <option value="CSS">CSS</option>
-          <option value="Bootstrap">Bootstrap</option>
-          <option value="Javascript">Javascript</option>
-          <option value="jQuery">jQuery</option>
-          <option value="Firebase">Firebase</option>
-          <option value="Node.js">Node.js</option>
-          <option value="MySQL">MySQL</option>
-          <option value="Sequelize">Sequelize</option>
-        </select>
-        <div class="form-group">
-          <h3>
-            {" "}
-            <label htmlFor="Summary" id="title1">
-              Summary
-            </label>{" "}
-          </h3>
-          <input type="text" className="form-control" id="summary"></input>
-        </div>
-        <div class="form-group form-check"></div> */}
-      {/* </form> */}
     </div>
   );
 };
+}
 
 export default Post;
