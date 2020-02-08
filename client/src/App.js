@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import Intro from "./Pages/intro";
-// import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
@@ -13,7 +11,6 @@ import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
 import IntroHTML from "./Pages/IntroHTML";
 import jQPge from "./Pages/jQPge";
-// import JSpge from "./Pages/JSpge";
 import Mysql from "./Pages/Mysql";
 import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
@@ -23,7 +20,7 @@ import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
 import Post from "./components/Post"
-// import Intro from './Pages/IntroHTML';
+
 
 
 class App extends Component {
@@ -42,7 +39,6 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/home" component={Home} />
-              {/* <Route path="/intro" component={Intro} /> */}
               <Route path="/ajax" component={ajax} />
               <Route path="/bootstrap" component={BootStrap} />
               <Route path="/css" component={Css} />
