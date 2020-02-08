@@ -4,6 +4,7 @@ import Sidebar from "../components/Sidebar";
 function Node () {
     return (
       
+<<<<<<< HEAD
       <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="content">
           <div className="card">
@@ -15,6 +16,21 @@ function Node () {
               <h5 className="card-title">Quick Links</h5>
               <p className="card-text">You can find more info, documents and very detailed videos in the buttons
                 below.</p>
+=======
+      <div>
+        
+        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
+          <div className="content">
+            <div className="card">
+              <div className="card-header">
+                <h1>Node.js</h1>
+                <img src="assets/node logo.jpg" className="titleimg" />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title">Quick Links</h5>
+                <p className="card-text">You can find more info, documents and very detailed videos in the buttons
+                  below.</p>
+>>>>>>> alex
               <a href="https://nodejs.org/en/" className="btn btn-primary" target="_blank">Go to Node.js</a>
               <a href="https://nodejs.org/en/docs/" className="btn btn-success" target="_blank">Node Documents</a>
               <a href="https://www.youtube.com/playlist?list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR&ref=hackr.io" className="btn btn-info" target="_blank">Node Videos</a>

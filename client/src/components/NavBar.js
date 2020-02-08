@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
 import { useAuth0 } from "../react-auth0-spa";
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
+import Button from "react-bootstrap/Button";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Form from "react-bootstrap/Form";
+import FormControl from "react-bootstrap/FormControl";
 
 const NavBar = () => {
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
@@ -16,26 +16,73 @@ const NavBar = () => {
   return (
     <div>
       {!isAuthenticated && (
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar bg="light fixed-top" expand="lg">
+          <Navbar.Brand href="">Resource Center</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+                <Nav.Link href="/home">Home</Nav.Link>
+              </Button>
+              {/* <Nav.Link href="#link">Link</Nav.Link> */}
+              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+                <NavDropdown title="Topics" id="basic-nav-dropdown">
+                  {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
+                  <NavDropdown.Item href="#action/3.2">
+                    {/* <li><Link to="/home">Home</Link></li> */}
+                    {/* <li><Link to="/intro">Introduction</Link></li> */}
+                    <li>
+                      <Link to="/vsc">Visual Studio Code</Link>
+                    </li>
+                    <li>
+                      <Link to="/gitbash">GitBash</Link>
+                    </li>
+                    <li>
+                      <Link to="/introHTML">HTML</Link>
+                    </li>
+                    <li>
+                      <Link to="/css">CSS</Link>
+                    </li>
+                    <li>
+                      <Link to="/bootstrap">BOOTSTRAP</Link>
+                    </li>
+                    <li>
+                      <Link to="/javascript">JAVASCRIPT</Link>
+                    </li>
+                    <li>
+                      <Link to="/jquery">jQuery</Link>
+                    </li>
+                    <li>
+                      <Link to="/react">React</Link>
+                    </li>
+                    <li>
+                      <Link to="/ajax">Ajax</Link>
+                    </li>
+                    <li>
+                      <Link to="/firebase">Firebase</Link>
+                    </li>
+                    <li>
+                      <Link to="/node">Node.js</Link>
+                    </li>
+                    <li>
+                      <Link to="/mysql">MySQL</Link>
+                    </li>
+                    <li>
+                      <Link to="/sequelize">Sequelize</Link>
+                    </li>
+                    <li>
+                      <Link to="/profile">Profile</Link>
+                    </li>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    {/* dropdown action link */}
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Button>
             </Nav>
             <Form inline>
               <FormControl
@@ -45,33 +92,87 @@ const NavBar = () => {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
+            <Button
+              style={{ marginLeft: "5px" }}
+              variant="outline-success"
+              onClick={() => loginWithRedirect({})}
+            >
+              Log in
+            </Button>
           </Navbar.Collapse>
         </Navbar>
-        
       )}
 
       {isAuthenticated && (
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar bg="light fixed-top" expand="lg">
+          <Navbar.Brand href="">Resource Center</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+                <Nav.Link href="/home">Home</Nav.Link>
+              </Button>
+              {/* <Nav.Link href="#link">Link</Nav.Link> */}
+              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+                <NavDropdown title="Topics" id="basic-nav-dropdown">
+                  {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
+                  <NavDropdown.Item href="#action/3.2">
+                    {/* <li><Link to="/home">Home</Link></li> */}
+                    {/* <li><Link to="/intro">Introduction</Link></li> */}
+                    <li>
+                      <Link to="/vsc">Visual Studio Code</Link>
+                    </li>
+                    <li>
+                      <Link to="/gitbash">GitBash</Link>
+                    </li>
+                    <li>
+                      <Link to="/introHTML">HTML</Link>
+                    </li>
+                    <li>
+                      <Link to="/css">CSS</Link>
+                    </li>
+                    <li>
+                      <Link to="/bootstrap">BOOTSTRAP</Link>
+                    </li>
+                    <li>
+                      <Link to="/javascript">JAVASCRIPT</Link>
+                    </li>
+                    <li>
+                      <Link to="/jquery">jQuery</Link>
+                    </li>
+                    <li>
+                      <Link to="/react">React</Link>
+                    </li>
+                    <li>
+                      <Link to="/ajax">Ajax</Link>
+                    </li>
+                    <li>
+                      <Link to="/firebase">Firebase</Link>
+                    </li>
+                    <li>
+                      <Link to="/node">Node.js</Link>
+                    </li>
+                    <li>
+                      <Link to="/mysql">MySQL</Link>
+                    </li>
+                    <li>
+                      <Link to="/sequelize">Sequelize</Link>
+                    </li>
+                    <li>
+                      <Link to="/profile">Profile</Link>
+                    </li>
+                  </NavDropdown.Item>
+                  {/* <NavDropdown.Item href="#action/3.3">
                   Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+                </NavDropdown.Item> */}
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Button>
             </Nav>
+
             <Form inline>
               <FormControl
                 type="text"
@@ -80,6 +181,16 @@ const NavBar = () => {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
+            <Button
+              variant="outline-success"
+              style={{ marginLeft: "5px" }}
+              onClick={() => logout()}
+            >
+              Log out
+            </Button>
+            <Button variant="outline-success" style={{ marginLeft: "5px" }}>
+              <Link to="/post">Add New Content</Link>
+            </Button>
           </Navbar.Collapse>
         </Navbar>
       )}

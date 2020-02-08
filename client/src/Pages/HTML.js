@@ -4,13 +4,13 @@ import Sidebar from "../components/Sidebar";
 function Html () {
      return (
       <div>
-      <Sidebar/>
+      {/* <Sidebar/> */}
       <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="content">
           <div className="card">
             <div className="card-header">
               <h1>HTML</h1>
-              <img src="assets/html logo.png" className="titleimg"></img>
+              <img src="./images/html_logo.png" className="titleimg"></img>
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>

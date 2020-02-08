@@ -1,19 +1,17 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-function Header (props) {
+function GitBash (props) {
      return (
       <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-       
-        <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+
+       <br></br>
+        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
           <div className="content">
-            <div className="card">
+            <div className="card border border-white">
               <div className="card-header">
                 <h1>Git Bash</h1>
-                <img src="assets/git logo.png" className="titleimg" />
+                <img src="./images/gitLogo.png" className="titleimg" />
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -85,4 +83,4 @@ function Header (props) {
     );
 };
 
-export default Header;
+export default GitBash;

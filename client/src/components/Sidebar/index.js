@@ -16,15 +16,23 @@ const Sidebar =() => {
           className= "sidebar">
         </li>
         <li><Link to="/home">Home</Link></li>
-        <li><Link to="/intro">Introduction</Link></li>
+        {/* <li><Link to="/intro">Introduction</Link></li> */}
         <li><Link to="/vsc">Visual Studio Code</Link></li>
         <li><Link to="/gitbash">GitBash</Link></li>
         <li><Link to="/IntroHTML">HTML</Link></li>
+<<<<<<< HEAD
         <li><Link to="/CSSPge">CSS</Link></li>
         <li><Link to="/Btrap">BOOTSTRAP</Link></li>
         <li><Link to="/JSPg">JAVASCRIPT</Link></li>
         <li><Link to="/jQPge">jQuery</Link></li>
         <li><Link to="/ReactPg">React</Link></li>
+=======
+        <li><Link to="/css">CSS</Link></li>
+        <li><Link to="/Bootstrap">BOOTSTRAP</Link></li>
+        <li><Link to="/javascript">JAVASCRIPT</Link></li>
+        <li><Link to="/jQuery">jQuery</Link></li>
+        <li><Link to="/react">React</Link></li>
+>>>>>>> alex
         <li><Link to="/ajax">Ajax</Link></li>
         <li><Link to="/firebase">Firebase</Link></li>
         <li><Link to="/Node">Node</Link></li>
@@ -43,13 +51,18 @@ const Sidebar =() => {
       <li
         className= "sidebar">
       </li>
-      <li><a href="/intro">Introduction</a></li>
+      {/* <li><a href="/intro">Introduction</a></li> */}
       <li><a href="/vsc">Visual Studio Code</a></li>
       <li><a href="/gitbash">GitBash</a></li>
       <li><a href="/IntroHTML">HTML</a></li>
       <li><a href="/CSSPge">CSS</a></li>
+<<<<<<< HEAD
       <li><a href="/bootstrap">BOOTSTRAP</a></li>
       <li><a href="/JSPg">JAVASCRIPT</a></li>
+=======
+      <li><a href="/Bootstrap">BOOTSTRAP</a></li>
+      <li><a href="/javascript">JAVASCRIPT</a></li>
+>>>>>>> alex
       <li><a href="/jQuery">jQuery</a></li>
       <li><a href="/ReactPg">React</a></li>
       <li><a href="/firebase">Firebase</a></li>

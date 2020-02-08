@@ -5,13 +5,13 @@ function FireBase () {
      return (
     
     <div>
-  
-      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
+      <br></br>
+      <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
         <div className="content">
           <div className="card">
             <div className="card-header">
               <h1>Firebase</h1>
-              <img src="assets/firebase logo 2.jpg" className="titleimg" />
+              <img src="./images/firebaseLogo.jpg" className="titleimg" />
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>

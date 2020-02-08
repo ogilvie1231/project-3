@@ -1,6 +1,7 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 function JQPge () {
 =======
@@ -39,6 +40,20 @@ function Header () {
         <div className="container">
           <div className="card-deck">
             <div className="card">
+=======
+function jQPge () {
+     return (
+      <div>
+
+      
+        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
+          <div className="content">
+            <div className="card">
+              <div className="card-header">
+                <h1>jQuery</h1>
+                <img src="./images/jquerylogo.jpg" className="titleimg" />
+              </div>
+>>>>>>> alex
               <div className="card-body">
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
@@ -53,10 +68,52 @@ function Header () {
                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
+<<<<<<< HEAD
             <div className="card">
               <div className="card-body">
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+=======
+            <br />
+            <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+            <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
+              width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+            <p>.</p>
+            <iframe width={560} height={315} src="https://www.youtube.com/embed/BWXggB-T1jQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <hr />
+            <div className="container">
+              <div className="card-deck">
+                <div className="card">
+                  <div className="card-body">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    </div>
+                    <br />
+                    <h5 className="card-title">Card title</h5>
+                    <p className="card-text">This card has supporting text below as a natural lead-in to additional
+                      content.</p>
+                    <hr />
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=R9GYRBDqxI8&list=PLsrZV8shpwjNuvhvotOuzRCQGcqscCekJ" role="button" target="_blank">More
+                      videos Here</a>
+                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-body">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    </div>
+                    <br />
+                    <h5 className="card-title">Card title</h5>
+                    <p className="card-text">This card has supporting text below as a natural lead-in to additional
+                      content.
+                    </p>
+                    <hr />
+                    <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp" role="button" target="_blank">More
+                      videos Here</a>
+                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+>>>>>>> alex
                 </div>
                 <br />
                 <h5 className="card-title">Card title</h5>
@@ -97,4 +154,8 @@ function Header () {
     );
 };
 
+<<<<<<< HEAD
 export default JQPge;
+=======
+export default jQPge;
+>>>>>>> alex

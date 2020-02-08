@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 
 function Header(props) {
   return (
@@ -7,13 +7,13 @@ function Header(props) {
       {/*LINKS*/}
       {/*Bootstrap CSS*/}
       {/*MY CSS*/}
-
-      <div style={{ marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px' }}>
+    <br></br>
+      <div style={{ marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
         <div className="content">
           <div className="card">
-            <div className="card-header">
-              <h1>Visual Studio Code</h1>
-              <img src="assets/VSLogo.png" className="titleimg" />
+            <div className="card-header" style={{textAlign: "center"}}>
+              <h1 style={{textAlign: "center"}}>Visual Studio Code</h1>
+              <img src="./images/VSLogo.png" className="titleimg" />
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>

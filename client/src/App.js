@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+// import Intro from "./Pages/intro";
+// import Sidebar from "./components/Sidebar";
+import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./utils/history";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+//import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import Profile from "./components/Profile";
 import PrivateRoute from "./components/PrivateRoute";
@@ -11,41 +14,23 @@ import images from "./images.json";
 import Home from "./Pages/Home";
 import Intro from "./Pages/intro";
 import ajax from "./Pages/Ajax";
-import Btrap from "./Pages/Btrap";
-import CodeIntro from "./Pages/CodingIntro";
-import CSSPge from "./Pages/CSSPge";
+import BootStrap from "./Pages/Bootstrap";
+import Css from "./Pages/CSS";
 import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
-import HTML from "./Pages/HTML";
-import jQuery from "./Pages/jQuery";
-import JavaScript from "./Pages/JavaScript";
+import IntroHTML from "./Pages/IntroHTML";
+import jQPge from "./Pages/jQPge";
+// import JSpge from "./Pages/JSpge";
 import Mysql from "./Pages/Mysql";
 import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
 import Timers from "./Pages/Timers";
 import vsc from "./Pages/vsc";
+import history from "./utils/history";
+import PrivateRoute from "./components/PrivateRoute";
+import JSpge from "./Pages/JavaScript";
 import Post from "./components/Post"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Html from './Pages/IntroHTML';
-
-
-
-// class App extends Component {
-//   state = {
-//     images
-//   };
-
-//   render() {
-//     return (
-//       <div>
-//         <Header images={this.state.images[0].img} />
-//         <Sidebar />
-//         {/* <Intro /> */}
-//       </div>
-//     );
-//   }
-// }
-// export default App;
+// import Intro from './Pages/IntroHTML';
 
 function App() {
   const { loading } = useAuth0();
@@ -60,26 +45,27 @@ function App() {
         <header>
           <NavBar />
         </header>
-        <Sidebar />
+        {/* <Header images={images[0].img} /> */}
+        {/* <Sidebar /> */}
         <Switch>
+          <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
-          <Route path="/html" component={Html} />
+          {/* <Route path="/intro" component={Intro} /> */}
           <Route path="/ajax" component={ajax} />
-          <Route path="/bootstrap" component={Btrap} />
-          <Route path="/code-intro" component={CodeIntro} />
-          <Route path="/css" component={CSSPge} />
-          <Route path="/Firebase" component={Firebase} />
-          <Route path="/GitBash" component={GitBash} />
-          {/* <Route path="/IntroHTML" component={IntroHTML} /> */}
-          <Route path="/jquery" component={jQuery} />
-          <Route path="/javascript" component={JavaScript} />
+          <Route path="/bootstrap" component={BootStrap} />
+          <Route path="/css" component={Css} />
+          <Route path="/firebase" component={Firebase} />
+          <Route path="/gitbash" component={GitBash} />
+          <Route path="/introHTML" component={IntroHTML} />
+          <Route path="/jquery" component={jQPge} />
+          <Route path="/javascript" component={JSpge} />
           <Route path="/mysql" component={Mysql} />
           <Route path="/node" component={Node} />
-          <Route path="/Sequelize" component={Sequelize} />
-          <Route path="/timer" component={Timers} />
+          <Route path="/sequelize" component={Sequelize} />
+          <Route path="/timersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
           <PrivateRoute path="/profile" component={Profile} />
-          {/* <PrivateRoute path="/post" component={Post} /> */}
+          <PrivateRoute path="/post" component={Post} />
         </Switch>
       </Router>
     </div>
