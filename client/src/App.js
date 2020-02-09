@@ -27,6 +27,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
 
 
+
 // class App extends Component {
 //   state = {
 //     images
@@ -56,9 +57,11 @@ function App() {
       <Router history={history}>
         <header>
           <NavBar />
+          
         </header>
         {/* <Header images={images[0].img} /> */}
         {/* <Sidebar /> */}
+        
         <Switch>
           <Route path="/home" component={Home} />
           {/* <Route path="/intro" component={Intro} /> */}
@@ -76,6 +79,7 @@ function App() {
           <Route path="/Sequelize" component={Sequelize} />
           <Route path="/TimersPg" component={TimersPg} />
           <Route path="/vsc" component={vsc} />
+          
           <PrivateRoute path="/profile" component={Profile} />
           {/* <PrivateRoute path="/post" component={Post} /> */}
         </Switch>
