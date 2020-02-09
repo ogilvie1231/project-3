@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import axios from "axios"
 
 class Post extends Component {
   state = {
@@ -20,10 +21,13 @@ class Post extends Component {
   }
   handleFormSubmit = event => {
     event.preventDefault()
-    console.log(this.state.title)
-    console.log(this.state.link)
-    console.log(this.state.catagory)
-    console.log(this.state.summary)
+   axios.post("mongodb://localhost/resource-center", {
+     Title: this.state.title,
+     Link: this.state.link,
+     Catagory: this.state.catagory,
+     Summary: this.state.summary
+   })
+
     
   }
 

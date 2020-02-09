@@ -38,7 +38,7 @@ function Css () {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/1Rs2ND1ryYc" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="css" width={320} height={215} src="https://www.youtube.com/embed/1Rs2ND1ryYc" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">CSS Tutorial - Zero to Hero (Complete Course)</h5>
                     <p className="card-text">6 hrs 18 mins 37 secs</p>
@@ -51,7 +51,7 @@ function Css () {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/qKoajPPWpmo" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="sequelize3" width={320} height={215} src="https://www.youtube.com/embed/qKoajPPWpmo" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">CSS Tutorial for Beginners - 01 - Introduction to CSS</h5>
                     <p className="card-text">84 videos</p>
@@ -64,7 +64,7 @@ function Css () {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/I9XRrlOOazo" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="sequelize2" width={320} height={215} src="https://www.youtube.com/embed/I9XRrlOOazo" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">CSS Tutorial</h5>
                     <p className="card-text">css tutorial for Beginners - Ninjas.</p>

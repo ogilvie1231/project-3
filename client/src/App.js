@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import Intro from "./Pages/intro";
 // import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
-import { useAuth0 } from "./react-auth0-spa";
+// import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
 import Profile from "./components/Profile";
@@ -23,14 +23,11 @@ import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
 import Post from "./components/Post"
 
-
-
 class App extends Component {
 
-
-  Auth0 = () => {
-    const { loading } = useAuth0();
-  }
+  // Auth0 = () => {
+  //   const { loading } = useAuth0();
+  // }
     render() {
       return (
         <div className="App">

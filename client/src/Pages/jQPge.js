@@ -28,14 +28,14 @@ function jQPge () {
             <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
               width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
             <p>.</p>
-            <iframe width={560} height={315} src="https://www.youtube.com/embed/BWXggB-T1jQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <iframe title="jquery"width={560} height={315} src="https://www.youtube.com/embed/BWXggB-T1jQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             <hr />
             <div className="container">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="jquery"width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <br />
                     <h5 className="card-title">Card title</h5>
@@ -50,7 +50,7 @@ function jQPge () {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="jquery"width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <br />
                     <h5 className="card-title">Card title</h5>
@@ -66,7 +66,7 @@ function jQPge () {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/65a5QQ3ZR2g" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="jquery"width={320} height={215} src="https://www.youtube.com/embed/65a5QQ3ZR2g" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <br />
                     <h5 className="card-title">Card title</h5>
