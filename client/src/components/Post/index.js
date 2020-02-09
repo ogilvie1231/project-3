@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import axios from "axios"
 
 class Post extends Component {
   state = {

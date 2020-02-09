@@ -28,9 +28,9 @@ function AJAX () {
         <p>Some text..</p>
         <br />
             <h2>Additional Resourches</h2>
-            <a href="#">AJAX Documentation</a>
+            <a href="https://api.jquery.com/jquery.ajax/" target="_blank" rel="noopener noreferrer">AJAX Documentation</a>
             <br />
-            <a href="#">AJAX Resources</a>
+            {/* <a href="#">AJAX Resources</a> */}
       </div>
     </div>
   );
