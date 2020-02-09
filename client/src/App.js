@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import Intro from "./Pages/intro";
-// import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 // import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";

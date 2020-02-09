@@ -3,12 +3,13 @@ import "./style.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import axios from "axios"
+import API from '../../utils/API'
 
 class Post extends Component {
   state = {
     title: "",
     link: "",
-    catagory: "",
+    category: "",
     summary: "",
   };
 
@@ -21,15 +22,11 @@ class Post extends Component {
   }
   handleFormSubmit = event => {
     event.preventDefault()
-   axios.post("mongodb://localhost/resource-center", {
-     Title: this.state.title,
-     Link: this.state.link,
-     Catagory: this.state.catagory,
-     Summary: this.state.summary
-   })
-
-    
+    const { title, link, category, summary } = this.state
+    const newContent = { title, link, category, summary }
   }
+
+
 
 render() {
   return (
@@ -67,6 +64,7 @@ render() {
             value={this.state.catagory}
             name="catagory"
              as="select">
+               <option value="ajax">AJAX</option>
               <option value="Visual Studio Code">Visual Studio Code</option>
               <option value="GitBash">GitBash</option>
               <option value="HTML">HTML</option>
