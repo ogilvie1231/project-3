@@ -8,6 +8,6 @@ const contentSchema = new Schema({
   summary: { type: String, required: true }
 });
 
-const ContentModel = mongoose.model("AjaxModel", contentSchema);
+const ContentModel = mongoose.model("ContentModel", contentSchema);
 
-module.exports = ContentModel;
+module.exports = ContentModel; 
