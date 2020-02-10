@@ -1,6 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
-function Sequel () {
+class Sequelize extends Component {
+  state = {
+    sequelizeInfo: []
+  };
+
+  componentDidMount() {
+    API.getAll("sequelize")
+      .then(res => {
+        console.log("data: ", res);
+        this.setState({
+          sequelizeInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  }
+
+  render()  {
     return (
     
     <div>
@@ -25,12 +47,35 @@ function Sequel () {
         <p>Sequelize is a promise-based ORM for Node. js. Sequelize is easy to learn and has dozens of cool features like synchronization, association, validation, etc. It also has support for PostgreSQL, MySQL, MariaDB, SQLite, and MSSQL. I am assuming you have some form of SQL database service started on your machine.</p>
 
         <iframe title="sequelize" width={560} height={315} src="https://www.youtube.com/embed/qsDvJrGMSUY" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-        <br></br>
-        <h3>Additional Resources</h3>
-        <p>Some text..</p>
+        <br />
+        {this.state.sequelizeInfo.length ? (
+            this.state.sequelizeInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Link to={info.link} variant="primary">
+                    Post New{" "}
+                  </Link>
+
+                  <Button onClick={() => this.deleteOne(info._id)}>
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
       </div>
     </div>
   );
 };
-
-export default Sequel;
+}
+export default Sequelize;

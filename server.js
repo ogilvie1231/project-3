@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
 }
  
 ///
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/resourceCenter";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/resourceCenter";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, }, function (error) {
     if (error) {

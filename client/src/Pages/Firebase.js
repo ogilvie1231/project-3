@@ -1,6 +1,27 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+class Firebase extends Component {
+  state = {
+    firebaseInfo: []
+  };
 
-function FireBase () {
+  componentDidMount() {
+    API.getAll("firebase")
+      .then(res => {
+        console.log("ajax data: ", res);
+        this.setState({
+          firebaseInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  }
+
+  render() {
      return (
     
     <div>
@@ -24,9 +45,36 @@ function FireBase () {
           <h3>What is Firebase</h3>
           <p>Firebase is a Backend-as-a-Service — BaaS — that started as a YC11 startup and grew up into a next-generation app-development platform on Google Cloud Platform.<a href="https://howtofirebase.com/what-is-firebase-fcb8614ba442">How To Firebase</a></p>
           <iframe title="fireBaseFrame" width={560} height={315} src="https://www.youtube.com/embed/jsRVHeQd5kU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+       <br />
+       {this.state.firebaseInfo.length ? (
+            this.state.firebaseInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Link to={info.link} variant="primary">
+                    Post New{" "}
+                  </Link>
+
+                  <Button onClick={() => this.deleteOne(info._id)}>
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
         </div>
       </div>
     </div>
   );
 };
-  export default FireBase;
+}
+  export default Firebase;

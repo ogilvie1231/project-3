@@ -1,6 +1,27 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+class Node extends Component {
+  state = {
+    nodeInfo: []
+  };
 
-function Node () {
+  componentDidMount() {
+    API.getAll("node")
+      .then(res => {
+        console.log("data: ", res);
+        this.setState({
+          nodeInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  }
+
+  render()  {
     return (
       
       <div>
@@ -77,16 +98,35 @@ function Node () {
             </div>
           </div>
           <br />
-          <p>Some text..</p>
-          <div className="code" style={{ width: '50%' }}>
-            <code>
-              hello hello hello
-              </code>
-          </div>
+          {this.state.nodeInfo.length ? (
+            this.state.nodeInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Link to={info.link} variant="primary">
+                    Post New{" "}
+                  </Link>
+
+                  <Button onClick={() => this.deleteOne(info._id)}>
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
         </div>
       </div>
     </div>
   );
 };
-
+}
 export default Node;

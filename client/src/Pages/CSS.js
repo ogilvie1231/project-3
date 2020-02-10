@@ -1,6 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+class CSS extends Component {
+  state = {
+    cssInfo: []
+  };
 
-function Css () {
+componentDidMount() {
+  API.getAll("css")
+  .then(res => {
+    console.log('ajax data: ', res)
+    this.setState({
+      cssInfo: res.data
+    })
+  }).catch(error => {
+    console.log('error: ', error)
+  })
+}
+
+ render() {
      return (
       <div>
         <br></br>
@@ -85,8 +105,33 @@ function Css () {
           </div>
         </div>
         <br />
+        {this.state.cssInfo.length ? (
+            this.state.cssInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Link to={info.link} variant="primary">
+                    Post New{" "}
+                  </Link>
+
+                  <Button onClick={() => this.deleteOne(info._id)}>
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
       </div>
     );
 };
-
-export default Css;
+}
+export default CSS;

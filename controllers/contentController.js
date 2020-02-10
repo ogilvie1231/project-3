@@ -8,12 +8,12 @@ module.exports = {
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err), console.log("error: ", err));
     },
-    // findById: function(req, res) {
-    //     db.ContentModel
-    //     .findById(req.params.id)
-    //     .then(dbModel => res.json(dbModel))
-    //     .catch(err => res.status(422).json(err))
-    // },
+    findById: function(req, res) {
+        db.ContentModel
+        .findById(req.params.id)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err))
+    },
     create: function(req, res) {
         db.ContentModel
         .create(req.body)
