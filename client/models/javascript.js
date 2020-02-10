@@ -5,7 +5,7 @@ const javascriptSchema = new Schema({
   title: { type: String, required: true },
   link: { type: String, required: true },
   category: { type: String, required: true },
-  summary: { type: Date, default: Date.now }
+  summary: { type: String, required: true }
 });
 
 const JavascriptSchema = mongoose.model("JavascriptSchema", javascriptSchema);

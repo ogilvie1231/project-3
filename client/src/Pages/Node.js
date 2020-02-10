@@ -34,7 +34,7 @@ function Node () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="node" width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -48,7 +48,7 @@ function Node () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="node" width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -63,7 +63,7 @@ function Node () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/65a5QQ3ZR2g" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="node" width={320} height={215} src="https://www.youtube.com/embed/65a5QQ3ZR2g" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional

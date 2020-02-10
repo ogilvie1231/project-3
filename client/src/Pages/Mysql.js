@@ -29,14 +29,14 @@ function SQL () {
           <h3>What is MySQL</h3>
           <p>MySQL is free and open-source software under the terms of the GNU General Public License, and is also available under a variety of proprietary licenses. MySQL was owned and sponsored by the Swedish company MySQL AB, which was bought by Sun Microsystems (now Oracle Corporation).[8] In 2010, when Oracle acquired Sun, Widenius forked the open-source MySQL project to create MariaDB.</p>
           <p>MySQL has received positive reviews, and reviewers noticed it "performs extremely well in the average case" and that the "developer interfaces are there, and the documentation (not to mention feedback in the real world via Web sites and the like) is very, very good".[20] It has also been tested to be a "fast, stable and true multi-user, multi-threaded sql database server".<a href="https://en.wikipedia.org/wiki/MySQL">Wikipedia</a></p>
-          <iframe width={560} height={315} src="https://www.youtube.com/embed/iP1wOSsKjW8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          <iframe title="mysql"width={560} height={315} src="https://www.youtube.com/embed/iP1wOSsKjW8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           <hr />
           <div className="container">
             <div className="card-deck">
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/7S_tz1z_5bA" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="mysql"width={320} height={215} src="https://www.youtube.com/embed/7S_tz1z_5bA" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -50,7 +50,7 @@ function SQL () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/HXV3zeQKqGY" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="mysql"width={320} height={215} src="https://www.youtube.com/embed/HXV3zeQKqGY" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -65,7 +65,7 @@ function SQL () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/nN4Kjdverzs" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="mysql"width={320} height={215} src="https://www.youtube.com/embed/nN4Kjdverzs" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional

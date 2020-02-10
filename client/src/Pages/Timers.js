@@ -30,14 +30,14 @@ function Timers (props) {
               width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
             <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long
               (for example if it has over 50 links inside of it).</p>
-            <iframe width={560} height={315} src="https://www.youtube.com/embed/iP1wOSsKjW8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <iframe title="timers" width={560} height={315} src="https://www.youtube.com/embed/iP1wOSsKjW8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             <hr />
             <div className="container">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="timers" width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -51,7 +51,7 @@ function Timers (props) {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="timers" width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -66,7 +66,7 @@ function Timers (props) {
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe width={320} height={215} src="https://www.youtube.com/embed/65a5QQ3ZR2g" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="timers" width={320} height={215} src="https://www.youtube.com/embed/65a5QQ3ZR2g" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional

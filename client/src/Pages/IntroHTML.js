@@ -32,7 +32,7 @@ function IntroHTML () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={260} height={215} src="https://www.youtube.com/embed/UB1O30fR-EE" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="html"width={260} height={215} src="https://www.youtube.com/embed/UB1O30fR-EE" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">HTML Crash Course</h5>
                   <p className="card-text">For Absolute Beginners
@@ -46,7 +46,7 @@ function IntroHTML () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/MW4OXdzU2Mg" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="html"width={320} height={215} src="https://www.youtube.com/embed/MW4OXdzU2Mg" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">HTML and CSS</h5>
                   <p className="card-text">HTML and CSS Tutorial For Beginner.
@@ -60,7 +60,7 @@ function IntroHTML () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe width={320} height={215} src="https://www.youtube.com/embed/dD2EISBDjWM" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="html"width={320} height={215} src="https://www.youtube.com/embed/dD2EISBDjWM" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">HTML Tutorial</h5>
                   <p className="card-text">HTML Tutorial for Beginners.</p>
