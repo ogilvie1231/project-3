@@ -25,6 +25,8 @@ import vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
+import tailwind from "./tailwind.config";
+
 // import RouterSearch from "./Pages/RouterSearch";
 
 
