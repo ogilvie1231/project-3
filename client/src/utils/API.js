@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all
   getAll: function(category) {
-    return axios.get("/api/" + category);
+    return axios.get("/api" + category);
   },
   // Gets specific based on id
   getOne: function(category, id) {
