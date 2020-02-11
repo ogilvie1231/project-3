@@ -11,18 +11,18 @@ class Home extends Component {
     homePage: []
   };
 
-  componentDidMount() {
-    API.getAll("home")
-      .then(res => {
-        console.log("ajax data: ", res);
-        this.setState({
-          homePage: res.data
-        });
-      })
-      .catch(error => {
-        console.log("error: ", error);
-      });
-  }
+  // componentDidMount() {
+  //   API.getAll("home")
+  //     .then(res => {
+  //       console.log("ajax data: ", res);
+  //       this.setState({
+  //         homePage: res.data
+  //       });
+  //     })
+  //     .catch(error => {
+  //       console.log("error: ", error);
+  //     });
+  // }
 
   render() {
     

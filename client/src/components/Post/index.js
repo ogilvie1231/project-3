@@ -9,7 +9,7 @@ class Post extends Component {
   state = {
     title: "",
     link: "",
-    category: "",
+    category: "ajax",
     summary: "",
   };
 
@@ -24,7 +24,17 @@ class Post extends Component {
     event.preventDefault()
     const { title, link, category, summary } = this.state
     const newContent = { title, link, category, summary }
+    
+    console.log('newContent: ', newContent)
+    API.saveOne({
+     newContent
+    }).then((res) => {
+      console.log(res.data)
+    }).catch((error) => {
+      console.log(error)
+    });
   }
+
 
 
 
@@ -61,10 +71,10 @@ render() {
             <Form.Label>Select category</Form.Label>
             <Form.Control
             onChange={this.handleInputChange}
-            value={this.state.catagory}
-            name="catagory"
+            value={this.state.category}
+            name="category"
              as="select">
-               <option value="ajax">AJAX</option>
+              <option value="ajax">AJAX</option>
               <option value="Visual Studio Code">Visual Studio Code</option>
               <option value="GitBash">GitBash</option>
               <option value="HTML">HTML</option>

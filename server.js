@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors")
 const app = express();
 const PORT = process.env.PORT || 3001;
+const routes = require("./routes/index")
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -12,9 +13,12 @@ app.use(cors());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
- 
+
+
+app.use(routes);
+
 ///
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/resourceCenter";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/resourceCenter";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, }, function (error) {
     if (error) {
@@ -28,8 +32,8 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true,
 
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/resourceCenter");
 
-const routes = require("./routes/api/index")
-app.use("/", routes);
+
+
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

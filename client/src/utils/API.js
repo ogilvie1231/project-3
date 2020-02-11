@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all
   getAll: function(category) {
-    return axios.get("http://localhost:3001/api?category=" + category);
+    return axios.get("/api/" + category);
   },
   // Gets specific based on id
   getOne: function(category, id) {
@@ -15,7 +15,7 @@ export default {
   },
   // Saves to the database
   saveOne: function(data) {
-    return axios.post("http://localhost:3001/api", data);
+    return axios.post("/api", data);
   }
 };
  
