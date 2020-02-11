@@ -5,6 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import { Auth0Provider } from "./react-auth0-spa";
 import config from "./auth_config.json";
 import history from "./utils/history";
+// import './styles/tailwind.css';
 
 
 const onRedirectCallback = appState => {

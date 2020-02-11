@@ -1,5 +1,5 @@
 import React from "react";
-import CardHeader from "../components/Header/index";
+
 
 function AJAX () {
     return (
