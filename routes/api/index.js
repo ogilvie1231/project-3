@@ -1,15 +1,16 @@
-module.exports = {
-    AjaxModel: require("./ajax"),
-    BootstrapModel: require("./bootstrap"),
-    FirebaseModel: require("./firebase"),
-    GitModel: require("./git"),
-    HtmlModel: require("./html"),
-    JavascriptModel: require("./javascript"),
-    JqueryModel: require("./jquery"),
-    MysqlModel: require("./mysql"),
-    NodeModel: require("./node"),
-    ReactModel: require("./react"),
-    SequelizeModel: require("./sequelize"),
-    VscModel: require("./vsc")
-  };
+const router = require("express").Router();
+const contentController = require("../../controllers/contentController");
+
+
+router.route("/")
+  .get(contentController.findAll)
+  .post(contentController.create);
   
+
+// Matches with "/api/books/:id"
+router
+  .route("/:id")
+  .get(contentController.findById)
+  .delete(contentController.remove);
+
+module.exports = router;

@@ -1,8 +1,30 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css";
 
-const Home = () => {
+class Home extends Component {
+  state = {
+    homePage: []
+  };
+
+  // componentDidMount() {
+  //   API.getAll("home")
+  //     .then(res => {
+  //       console.log("ajax data: ", res);
+  //       this.setState({
+  //         homePage: res.data
+  //       });
+  //     })
+  //     .catch(error => {
+  //       console.log("error: ", error);
+  //     });
+  // }
+
+  render() {
     
         return (
           <div className="container">
@@ -254,13 +276,36 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm">
-                </div>
               </div>
             </div>
             <br />
+            {this.state.homePage.length ? (
+            this.state.homePage.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Link to={info.link} variant="primary">
+                    Post New{" "}
+                  </Link>
+
+                  <Button onClick={() => this.deleteOne(info._id)}>
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
           </div>
         );
       }
-    
+    }
 export default Home;

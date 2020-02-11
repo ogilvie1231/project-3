@@ -21,14 +21,17 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Button style={{ marginLeft: "5px" }} variant="outline-success">
-                <Nav.Link href="/home">Home</Nav.Link>
-              </Button>
-              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+              <Nav.Link href="/home">
+                <Button style={{ marginLeft: "5px" }} variant="outline-success">
+                  Home
+                </Button>
+              </Nav.Link>
+
+              {/* <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <Nav.Link href="/post">Test New</Nav.Link>
-              </Button>
+              </Button> */}
               {/* <Nav.Link href="#link">Link</Nav.Link> */}
-              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+              <Button style={{ marginLeft: "5px", maxHeight: "39px", marginTop: "7px" }} variant="outline-success">
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
                   {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                   <NavDropdown.Item href="#action/3.2">
@@ -81,9 +84,9 @@ const NavBar = () => {
                     {/* dropdown action link */}
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
+                  {/* <NavDropdown.Item href="#action/3.4">
                     Separated link
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                 </NavDropdown>
               </Button>
             </Nav>

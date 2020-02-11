@@ -1,6 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
-function JSpge () {
+class JSpge extends Component {
+  state = {
+    jsInfo: []
+  };
+
+  componentDidMount() {
+    API.getAll("javascript")
+      .then(res => {
+        console.log("data: ", res);
+        this.setState({
+          jsInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  }
+
+  render() {
      return (
         <div>
         <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
@@ -89,11 +111,37 @@ function JSpge () {
             <h2>Books</h2>
             <a href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf"  rel="noopener noreferrer" target="_blank">Eloquent JavaScript</a>
             <div className="space" />
+            <br />
+            {this.state.jsInfo.length ? (
+            this.state.jsInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Link to={info.link} variant="primary">
+                    Post New{" "}
+                  </Link>
+
+                  <Button onClick={() => this.deleteOne(info._id)}>
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
           </div>
         </div>
       </div>
     );
   };
-
+}
 
 export default JSpge;

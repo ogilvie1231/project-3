@@ -1,7 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
+class SQL extends Component {
+  state = {
+    sqlInfo: []
+  };
 
-function SQL () {
+  componentDidMount() {
+    API.getAll("mysql")
+      .then(res => {
+        console.log("data: ", res);
+        this.setState({
+          sqlInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  }
+
+  render() {
     return (
 
     <div>
@@ -75,6 +96,32 @@ function SQL () {
                     videos Here</a>
                   <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
+                <br />
+                {this.state.sqlInfo.length ? (
+            this.state.sqlInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Link to={info.link} variant="primary">
+                    Post New{" "}
+                  </Link>
+
+                  <Button onClick={() => this.deleteOne(info._id)}>
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
               </div>
             </div>
           </div>
@@ -82,5 +129,5 @@ function SQL () {
       </div>
     );
 };
-
+}
 export default SQL;

@@ -1,6 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
-function Timers (props) {
+class TimersPg extends Component {
+  state = {
+    timerInfo: []
+  };
+
+  componentDidMount() {
+    API.getAll("timers")
+      .then(res => {
+        console.log("data: ", res);
+        this.setState({
+          timerInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  }
+
+  render() {
   return (
    <div>
         
@@ -73,7 +95,32 @@ function Timers (props) {
                     <hr />
                     <a className="btn btn-success" href="https://www.youtube.com/watch?v=65a5QQ3ZR2g&list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR" role="button" target="_blank" rel="noopener noreferrer">More
                       videos Here</a>
-                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                    <br />
+                    {this.state.timerInfo.length ? (
+            this.state.timerInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Link to={info.link} variant="primary">
+                    Post New{" "}
+                  </Link>
+
+                  <Button onClick={() => this.deleteOne(info._id)}>
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
                   </div>
                 </div>
               </div>
@@ -82,4 +129,5 @@ function Timers (props) {
         </div>
       );
     }
-  export default Timers;
+  }
+  export default TimersPg;

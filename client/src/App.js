@@ -1,23 +1,21 @@
 import React, { Component } from "react";
-// import Intro from "./Pages/intro";
-// import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 // import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
 import Profile from "./components/Profile";
-import ajax from "./Pages/Ajax";
+import Ajax from "./Pages/Ajax";
 import BootStrap from "./Pages/Bootstrap";
-import Css from "./Pages/CSS";
+import CSS from "./Pages/CSS";
 import Firebase from "./Pages/Firebase";
 import GitBash from "./Pages/GitBash";
-import IntroHTML from "./Pages/IntroHTML";
+import HTML from "./Pages/HTML";
 import jQPge from "./Pages/jQPge";
-import Mysql from "./Pages/Mysql";
+import SQL from "./Pages/Mysql";
 import Node from "./Pages/Node";
 import Sequelize from "./Pages/Sequelize";
 import TimersPg from "./Pages/TimersPg";
-import vsc from "./Pages/vsc";
+import Vsc from "./Pages/vsc";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
@@ -38,19 +36,19 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/home" component={Home} />
-              <Route path="/ajax" component={ajax} />
+              <Route path="/ajax" component={Ajax} />
               <Route path="/bootstrap" component={BootStrap} />
-              <Route path="/css" component={Css} />
+              <Route path="/css" component={CSS} />
               <Route path="/firebase" component={Firebase} />
               <Route path="/gitbash" component={GitBash} />
-              <Route path="/introHTML" component={IntroHTML} />
+              <Route path="/HTML" component={HTML} />
               <Route path="/jquery" component={jQPge} />
               <Route path="/javascript" component={JSpge} />
-              <Route path="/mysql" component={Mysql} />
+              <Route path="/mysql" component={SQL} />
               <Route path="/node" component={Node} />
               <Route path="/sequelize" component={Sequelize} />
               <Route path="/timersPg" component={TimersPg} />
-              <Route path="/vsc" component={vsc} />
+              <Route path="/vsc" component={Vsc} />
               <PrivateRoute path="/profile" component={Profile} />
               <Route path="/post" component={Post} />
             </Switch>
