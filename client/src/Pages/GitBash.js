@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./home.css";
 
 
 function GitBash (props) {
@@ -11,7 +11,7 @@ function GitBash (props) {
           <div className="content">
             <div className="card border border-white">
               <div className="card-header">
-                <h1>Git Bash</h1>
+                <h1 style={{textAlign: "center"}}>Git Bash</h1>
                 <img src="./images/gitLogo.png" className="titleimg" alt="git logo"/>
               </div>
               <div className="card-body">

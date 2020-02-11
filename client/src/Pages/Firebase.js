@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./home.css";
 
 
 function FireBase () {
@@ -9,9 +9,9 @@ function FireBase () {
       <br></br>
       <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
         <div className="content">
-          <div className="card">
+          <div className="card border border-white">
             <div className="card-header">
-              <h1>Firebase</h1>
+              <h1 style={{textAlign: "center"}}>Firebase</h1>
               <img src="./images/firebaseLogo.jpg" className="titleimg" alt="firebase logo"/>
             </div>
             <div className="card-body">

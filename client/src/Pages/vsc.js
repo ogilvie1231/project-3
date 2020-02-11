@@ -1,11 +1,9 @@
 import React from "react";
+import "./home.css";
 
 function Header(props) {
   return (
     <div>
-      {/*LINKS*/}
-      {/*Bootstrap CSS*/}
-      {/*MY CSS*/}
       <br></br>
       <div
         style={{
@@ -13,11 +11,11 @@ function Header(props) {
           marginRight: "5%",
           padding: "1px 16px",
           height: "1000px",
-          marginTop: "2%"
+          marginTop: "5%"
         }}
       >
         <div className="content">
-          <div className="card">
+          <div className="card border border-white">
             <div className="card-header" style={{ textAlign: "center" }}>
               <h1 style={{ textAlign: "center" }}>Visual Studio Code</h1>
               <img

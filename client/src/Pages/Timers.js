@@ -1,14 +1,14 @@
 import React from "react";
-
+import "./home.css";
 
 function Timers (props) {
   return (
    <div>
         
           <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-            <div className="card">
+            <div className="card border border-white">
               <div className="card-header">
-                <h1>MySQL</h1>
+                <h1 style={{textAlign: "center"}}>MySQL</h1>
                 <img src="assets/mysql logo 3.jpg" className="titleimg" />
               </div>
               <div className="card-body">

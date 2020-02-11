@@ -1,15 +1,16 @@
 import React from "react";
+import "./home.css";
 
 function Node () {
     return (
       
       <div>
-        
+        <br></br>
         <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
           <div className="content">
-            <div className="card">
+            <div className="cacard border border-whiterd">
               <div className="card-header">
-                <h1>Node.js</h1>
+                <h1 style={{textAlign: "center"}}>Node.js</h1>
                 <img src="./images/nodeLogo.jpg" className="titleimg" />
               </div>
               <div className="card-body">

@@ -23,3 +23,15 @@
 #button:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.titleimg {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-header {
+    background-color: white;
+}

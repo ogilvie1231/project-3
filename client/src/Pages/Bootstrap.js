@@ -1,12 +1,12 @@
 import React from "react";
-
+import "./home.css";
 
 function Boot (props) {
     return (
     <div>
         <br /><br />
         <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-          <div className="card">
+          <div className="card border border-white">
             <div className="card-header">
               <h1 style={{textalign:'center'}}>Bootstrap</h1>
               <img src="./images/bootstrapLogo.png" className="titleimg" alt="bootstrap logo"/>
@@ -23,8 +23,6 @@ function Boot (props) {
           </div>
         </div>
         <br />
-        <br />
-        <hr />
         <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
         <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
           width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>

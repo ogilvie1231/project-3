@@ -1,15 +1,15 @@
 import React from "react";
-
+import "./home.css";
 
 function SQL () {
     return (
 
     <div>
-        
+        <br></br>
         <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-          <div className="card">
+          <div className="card border border-white">
             <div className="card-header">
-              <h1>MySQL</h1>
+              <h1 style={{textAlign: "center"}}>MySQL</h1>
               <img src="./images/mysqlLogo.jpg" className="titleimg" alt="mysql logo"/>
             </div>
             <div className="card-body">
