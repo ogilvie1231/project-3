@@ -6,7 +6,12 @@ module.exports = {
         db.ContentModel
         .find(req.query)
         .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(422).json(err), console.log("error: ", err));
+        .catch({
+            if (error) {
+                throw error
+            }
+        });
+
     },
     findById: function(req, res) {
         db.ContentModel

@@ -7,11 +7,11 @@ export default {
   },
   // Gets specific based on id
   getOne: function(category, id) {
-    return axios.get("/api/" + category + id);
+    return axios.get("/api/" + id);
   },
   // Deletes specific based on id
-  deleteOne: function(category, id) {
-    return axios.delete("/api/" + category + id);
+  deleteOne: function(id) {
+    return axios.delete("/api/" + id);
   },
   // Saves to the database
   saveOne: function(data) {

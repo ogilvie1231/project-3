@@ -9,17 +9,28 @@ class Bootstrap extends Component {
     bootstrapInfo: []
   };
 
-componentDidMount() {
-  API.getAll("bootstrap")
-  .then(res => {
-    console.log('ajax data: ', res)
-    this.setState({
-      bootstrapInfo: res.data
-    })
-  }).catch(error => {
-    console.log('error: ', error)
-  })
-}
+  componentDidMount() {
+    this.loadAll();
+  }
+
+  loadAll = () => {
+    API.getAll("visualstudiocode")
+      .then(res => {
+        this.setState({
+          bootstrapInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  };
+
+  delete = (category, id) => {
+    API.deleteOne(id)
+      .then(res => this.loadAll())
+
+      .catch(err => console.log(err));
+  };
 
 render() {
     return (
@@ -108,27 +119,42 @@ render() {
         <div className="additional">
           <h3>More Videos</h3>
           <p>Build A Responsive Bootstrap Website A Full Screen Image Slider using Bootstrap 4, HTML5 &amp; CSS3</p><a href="https://www.youtube.com/watch?v=Thw33qJ5DXo">Watch Here</a>
-          {this.state.ajaxInfo.length ? 
+          {this.state.bootstrapInfo.length ? (
+            this.state.bootstrapInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Button className="container"
+                  style={{margin: "2px"}}
+                    href={info.link}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    variant="primary"
+                  >
+                    Find out more
+                    </Button>
 
-
-this.state.bootstrapInfo.map (info => (
-    <Card key={info._id} className="container" style={{ width: "18rem", marginTop: "7rem"}}>
-      
-      <Card.Body>
-        <Card.Title className="container text-center">
-          <h2>{info.title}</h2>
-
-        </Card.Title>
-        <Card.Text>
-        {info.summary}
-        </Card.Text>
-        <Link to={info.link} variant="primary">Post New </Link>
-
-        <Button onClick={() => this.deleteOne(info._id)} >Delete</Button>
-      </Card.Body>
-    </Card>
-
-          )) : (
+                  <Button
+                  style={{margin: "2px"}}
+                  className="container"
+                    onClick={() =>
+                      this.delete(info.category, info._id) +
+                      console.log("info: ", info)
+                    }
+                  >
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
             <h3>No Results to Display</h3>
           )}
         </div>
