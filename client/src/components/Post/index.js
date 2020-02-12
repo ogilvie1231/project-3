@@ -30,6 +30,7 @@ class Post extends Component {
      newContent
     }).then((res) => {
       console.log(res.data)
+      window.location.reload();
     }).catch((error) => {
       console.log(error)
     });
@@ -86,6 +87,7 @@ render() {
               <option value="Node.js">Node.js</option>
               <option value="MySQL">MySQL</option>
               <option value="Sequelize">Sequelize</option>
+              <option value="mongoDb">mongoDb</option>
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">

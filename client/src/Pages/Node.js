@@ -9,9 +9,12 @@ class Node extends Component {
   };
 
   componentDidMount() {
-    API.getAll("node")
+    this.loadAll();
+  }
+
+  loadAll = () => {
+    API.getAll("visualstudiocode")
       .then(res => {
-        console.log("data: ", res);
         this.setState({
           nodeInfo: res.data
         });
@@ -19,7 +22,14 @@ class Node extends Component {
       .catch(error => {
         console.log("error: ", error);
       });
-  }
+  };
+
+  delete = (category, id) => {
+    API.deleteOne(id)
+      .then(res => this.loadAll())
+
+      .catch(err => console.log(err));
+  };
 
   render()  {
     return (
@@ -110,11 +120,24 @@ class Node extends Component {
                     <h2>{info.title}</h2>
                   </Card.Title>
                   <Card.Text>{info.summary}</Card.Text>
-                  <Link to={info.link} variant="primary">
-                    Post New{" "}
-                  </Link>
+                  <Button className="container"
+                  style={{margin: "2px"}}
+                    href={info.link}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    variant="primary"
+                  >
+                    Find out more
+                    </Button>
 
-                  <Button onClick={() => this.deleteOne(info._id)}>
+                  <Button
+                  style={{margin: "2px"}}
+                  className="container"
+                    onClick={() =>
+                      this.delete(info.category, info._id) +
+                      console.log("info: ", info)
+                    }
+                  >
                     Delete
                   </Button>
                 </Card.Body>
