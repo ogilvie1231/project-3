@@ -76,18 +76,18 @@ render() {
             name="category"
              as="select">
               <option value="ajax">AJAX</option>
-              <option value="Visual Studio Code">Visual Studio Code</option>
-              <option value="GitBash">GitBash</option>
-              <option value="HTML">HTML</option>
-              <option value="CSS">CSS</option>
-              <option value="Bootstrap">Bootstrap</option>
-              <option value="Javascript">Javascript</option>
-              <option value="jQuery">jQuery</option>
-              <option value="Firebase">Firebase</option>
-              <option value="Node.js">Node.js</option>
-              <option value="MySQL">MySQL</option>
-              <option value="Sequelize">Sequelize</option>
-              <option value="mongoDb">mongoDb</option>
+              <option value="visualstudiocode">Visual Studio Code</option>
+              <option value="gitbash">GitBash</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="bootstrap">Bootstrap</option>
+              <option value="javascript">Javascript</option>
+              <option value="jquery">jQuery</option>
+              <option value="firebase">Firebase</option>
+              <option value="nodejs">Node.js</option>
+              <option value="mysql">MySQL</option>
+              <option value="sequelize">Sequelize</option>
+              <option value="mongodb">mongoDb</option>
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">

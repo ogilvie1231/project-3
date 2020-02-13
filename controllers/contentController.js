@@ -2,9 +2,10 @@ const db = require("../models");
 
 module.exports = {
     findAll: function(req, res) {
-        console.log('req made: ', req.params.id)
+        console.log('req.params.id: ', req.params.id)
+        console.log('req.query: ', req.query)
         db.ContentModel
-        .find(req.query)
+        .find({ category: req.params.id })
         .then(dbModel => res.json(dbModel))
         .catch({
             if (error) {
