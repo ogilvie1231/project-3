@@ -5,12 +5,10 @@
   "main": "server.js",
   "dependencies": {
     "axios": "^0.19.2",
-    "bootstrap": "^4.4.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.8.11",
-    "react-bootstrap": "^1.0.0-beta.16"
+    "mongoose": "^5.8.11"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
