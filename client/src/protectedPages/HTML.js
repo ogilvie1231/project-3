@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-class HTML extends Component {
+class HTMLP extends Component {
   state = {
     htmlInfo: []
   };
@@ -14,7 +14,7 @@ class HTML extends Component {
   }
 
   loadAll = () => {
-    API.getAll("gitbash")
+    API.getAll("visualstudiocode")
       .then(res => {
         this.setState({
           htmlInfo: res.data
@@ -150,7 +150,7 @@ class HTML extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -159,7 +159,7 @@ class HTML extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
@@ -170,4 +170,4 @@ class HTML extends Component {
   );
 };
 }
-export default HTML;
+export default HTMLP;

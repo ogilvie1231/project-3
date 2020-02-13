@@ -31,7 +31,14 @@ const NavBar = () => {
                 <Nav.Link href="/post">Test New</Nav.Link>
               </Button> */}
               {/* <Nav.Link href="#link">Link</Nav.Link> */}
-              <Button style={{ marginLeft: "5px", maxHeight: "39px", marginTop: "7px" }} variant="outline-success">
+              <Button
+                style={{
+                  marginLeft: "5px",
+                  maxHeight: "39px",
+                  marginTop: "7px"
+                }}
+                variant="outline-success"
+              >
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
                   {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                   <NavDropdown.Item href="#action/3.2">
@@ -44,7 +51,7 @@ const NavBar = () => {
                       <Link to="/gitbash">GitBash</Link>
                     </li>
                     <li>
-                      <Link to="/introHTML">HTML</Link>
+                      <Link to="/HTML">HTML</Link>
                     </li>
                     <li>
                       <Link to="/css">CSS</Link>
@@ -118,13 +125,12 @@ const NavBar = () => {
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <Nav.Link href="/home">Home</Nav.Link>
               </Button>
-              {/* <Nav.Link href="#link">Link</Nav.Link> */}
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
-                  {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                   <NavDropdown.Item href="#action/3.2">
-                    {/* <li><Link to="/home">Home</Link></li> */}
-                    {/* <li><Link to="/intro">Introduction</Link></li> */}
+                    <li>
+                      <Link to="/ajax">Ajax</Link>
+                    </li>
                     <li>
                       <Link to="/vsc">Visual Studio Code</Link>
                     </li>
@@ -132,7 +138,7 @@ const NavBar = () => {
                       <Link to="/gitbash">GitBash</Link>
                     </li>
                     <li>
-                      <Link to="/introHTML">HTML</Link>
+                      <Link to="/HTML">HTML</Link>
                     </li>
                     <li>
                       <Link to="/css">CSS</Link>
@@ -149,9 +155,7 @@ const NavBar = () => {
                     <li>
                       <Link to="/react">React</Link>
                     </li>
-                    <li>
-                      <Link to="/ajax">Ajax</Link>
-                    </li>
+
                     <li>
                       <Link to="/firebase">Firebase</Link>
                     </li>

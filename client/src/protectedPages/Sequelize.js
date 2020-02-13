@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-class Sequelize extends Component {
+class SequelizeP extends Component {
   state = {
     sequelizeInfo: []
   };
@@ -14,7 +14,7 @@ class Sequelize extends Component {
   }
 
   loadAll = () => {
-    API.getAll("sequelize")
+    API.getAll("visualstudiocode")
       .then(res => {
         this.setState({
           sequelizeInfo: res.data
@@ -80,7 +80,7 @@ class Sequelize extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -89,7 +89,7 @@ class Sequelize extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
@@ -101,4 +101,4 @@ class Sequelize extends Component {
   );
 };
 }
-export default Sequelize;
+export default SequelizeP;

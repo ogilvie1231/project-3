@@ -3,10 +3,9 @@ import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-
-class JQPge extends Component {
+class GitBashP extends Component {
   state = {
-    jQueryInfo: []
+    gitInfo: []
   };
 
   componentDidMount() {
@@ -14,10 +13,10 @@ class JQPge extends Component {
   }
 
   loadAll = () => {
-    API.getAll("jquery")
+    API.getAll("visualstudiocode")
       .then(res => {
         this.setState({
-          jQueryInfo: res.data
+          gitInfo: res.data
         });
       })
       .catch(error => {
@@ -36,89 +35,81 @@ class JQPge extends Component {
      return (
       <div>
 
-      
+       <br></br>
         <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '2%'}}>
           <div className="content">
-            <div className="card">
+            <div className="card border border-white">
               <div className="card-header">
-                <h1>jQuery</h1>
-                <img src="./images/jquerylogo.jpg" className="titleimg" alt="jquery logo"/>
+                <h1>Git Bash</h1>
+                <img src="./images/gitLogo.png" className="titleimg" alt="git logo"/>
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
-                <p className="card-text">You can find more info, documents and very detailed videos in the buttons
-                  below.</p>
-                <a href className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to jQuery</a>
-                <a href className="btn btn-success" target="_blank" rel="noopener noreferrer">jQuery Documents</a>
-                <a href className="btn btn-info" target="_blank" rel="noopener noreferrer">jQuery Videos</a>
-                <a href="https://www.w3schools.com/jquery/" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">jQuery
-                  W3Schools</a>
+                <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.</p>
+                <a href="https://gitforwindows.org/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to Git Bash</a>
+                <a href="https://github.com/git-for-windows/git/tree/master/Documentation" className="btn btn-success" target="_blank" rel="noopener noreferrer">Git Bash Documents</a>
+                <a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx" className="btn btn-info" target="_blank" rel="noopener noreferrer">Git Bash Videos</a>
               </div>
             </div>
             <br />
-            <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-            <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
-              width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-            <p>.</p>
-            <iframe title="jquery"width={560} height={315} src="https://www.youtube.com/embed/BWXggB-T1jQ" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <h3>What is GitBash</h3>
+            <p>" Git for Windows focuses on offering a lightweight, native set of tools that bring the full feature set of the Git SCM to Windows while providing appropriate user interfaces for experienced Git users and novices alike.<a href="https://gitforwindows.org/">Git for Windows</a></p>
+            
+            <iframe title="git" width={560} height={315} src="https://www.youtube.com/embed/cEGIFZDyszA" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             <hr />
             <div className="container">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe title="jquery"width={320} height={215} src="https://www.youtube.com/embed/R9GYRBDqxI8" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="git"width={320} height={215} src="https://www.youtube.com/embed/SWYqp7iY_Tc" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
-                    <br />
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">GitBash Tricks</h5>
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
                       content.</p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=R9GYRBDqxI8&list=PLsrZV8shpwjNuvhvotOuzRCQGcqscCekJ" role="button" target="_blank" rel="noopener noreferrer">More
-                      videos Here</a>
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=SWYqp7iY_Tc&t=1154s" role="button" target="_blank" rel="noopener noreferrer">Watch Video Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe title="jquery"width={320} height={215} src="https://www.youtube.com/embed/w-7RQ46RgxU" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="git"width={320} height={215} src="https://www.youtube.com/embed/xuB1Id2Wxak" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
-                    <br />
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">Git &amp; GitHub</h5>
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional
                       content.
                     </p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp" role="button" target="_blank" rel="noopener noreferrer">More
-                      videos Here</a>
+                    <a className="btn btn-success" href="https://youtu.be/xuB1Id2Wxak" role="button" target="_blank" rel="noopener noreferrer">Watch Video
+                      Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
                 <div className="card">
                   <div className="card-body">
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe title="jquery"width={320} height={215} src="https://www.youtube.com/embed/65a5QQ3ZR2g" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                      <iframe title="git"width={320} height={215} src="https://www.youtube.com/embed/AzfVDEBn9hw" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
+                    <h5 className="card-title">Git Commands</h5>
+                    <p className="card-text">Git Commands with examples.</p>
                     <br />
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This card has supporting text below as a natural lead-in to additional
-                      content.</p>
                     <hr />
-                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=65a5QQ3ZR2g&list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR" role="button" target="_blank" rel="noopener noreferrer">More
-                      videos Here</a>
+                    <a className="btn btn-success" href="https://www.youtube.com/watch?v=AzfVDEBn9hw" role="button" target="_blank" rel="noopener noreferrer">Watch video Here</a>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
             </div>
-            <hr />
-            <h3>Addtional Resources</h3>
-            <p>The resources below offer excersices and more videos.</p>
-            <a href="https://css-tricks.com/lodge/learn-jquery/" target="_blank" rel="noopener noreferrer">Learn JQuery from scratch</a>
             <br />
-            {this.state.jQueryInfo.length ? (
-            this.state.jQueryInfo.map(info => (
+            <h2>Additional Resourches</h2>
+            <a href="https://git-scm.com/doc">GitBash Documentation</a>
+            <br />
+            <a href="https://git-scm.com/doc/ext">GitBash Resources</a>
+            <br />
+            {this.state.gitInfo.length ? (
+            this.state.gitInfo.map(info => (
               <Card
                 key={info._id}
                 className="container"
@@ -139,7 +130,7 @@ class JQPge extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -148,7 +139,7 @@ class JQPge extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
@@ -161,4 +152,4 @@ class JQPge extends Component {
     );
 };
 }
-export default JQPge;
+export default GitBashP;

@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-class Ajax extends Component {
+class AjaxP extends Component {
   state = {
     ajaxInfo: []
   };
@@ -36,6 +36,7 @@ class Ajax extends Component {
   render() {
     return (
       <div>
+        <h1>PROTECTED</h1>
         <br></br>
         <div
           style={{
@@ -149,7 +150,7 @@ class Ajax extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -158,7 +159,7 @@ class Ajax extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
@@ -170,4 +171,4 @@ class Ajax extends Component {
     );
   }
 }
-export default Ajax;
+export default AjaxP;

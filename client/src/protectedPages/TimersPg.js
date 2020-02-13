@@ -1,38 +1,6 @@
-import React, { Component } from "react";
-import API from "../utils/API";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import React from "react";
 
-class TimersPg extends Component {
-  state = {
-    timerInfo: []
-  };
-
-  componentDidMount() {
-    this.loadAll();
-  }
-
-  loadAll = () => {
-    API.getAll("momentjs")
-      .then(res => {
-        this.setState({
-          timerInfo: res.data
-        });
-      })
-      .catch(error => {
-        console.log("error: ", error);
-      });
-  };
-
-  delete = (category, id) => {
-    API.deleteOne(id)
-      .then(res => this.loadAll())
-
-      .catch(err => console.log(err));
-  };
-
-  render() {
+function Timers (props) {
   return (
    <div>
         
@@ -105,45 +73,7 @@ class TimersPg extends Component {
                     <hr />
                     <a className="btn btn-success" href="https://www.youtube.com/watch?v=65a5QQ3ZR2g&list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR" role="button" target="_blank" rel="noopener noreferrer">More
                       videos Here</a>
-                    <br />
-                    {this.state.timerInfo.length ? (
-            this.state.timerInfo.map(info => (
-              <Card
-                key={info._id}
-                className="container"
-                style={{ width: "18rem", marginTop: "7rem" }}
-              >
-                <Card.Body>
-                  <Card.Title className="container text-center">
-                    <h2>{info.title}</h2>
-                  </Card.Title>
-                  <Card.Text>{info.summary}</Card.Text>
-                  <Button className="container"
-                  style={{margin: "2px"}}
-                    href={info.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    variant="primary"
-                  >
-                    Find out more
-                    </Button>
-
-                  {/* <Button
-                  style={{margin: "2px"}}
-                  className="container"
-                    onClick={() =>
-                      this.delete(info.category, info._id) +
-                      console.log("info: ", info)
-                    }
-                  >
-                    Delete
-                  </Button> */}
-                </Card.Body>
-              </Card>
-            ))
-          ) : (
-            <h3>Log in to add content</h3>
-          )}
+                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
@@ -152,5 +82,4 @@ class TimersPg extends Component {
         </div>
       );
     }
-  }
-  export default TimersPg;
+  export default Timers;

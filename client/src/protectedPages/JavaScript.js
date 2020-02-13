@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-class JSpge extends Component {
+class JSpgeP extends Component {
   state = {
     jsInfo: []
   };
@@ -14,7 +14,7 @@ class JSpge extends Component {
   }
 
   loadAll = () => {
-    API.getAll("javascript")
+    API.getAll("visualstudiocode")
       .then(res => {
         this.setState({
           jsInfo: res.data
@@ -144,7 +144,7 @@ class JSpge extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -153,7 +153,7 @@ class JSpge extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
@@ -167,4 +167,4 @@ class JSpge extends Component {
   };
 }
 
-export default JSpge;
+export default JSpgeP;

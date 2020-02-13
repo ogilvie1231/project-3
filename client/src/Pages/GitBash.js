@@ -13,7 +13,7 @@ class GitBash extends Component {
   }
 
   loadAll = () => {
-    API.getAll("visualstudiocode")
+    API.getAll("gitbash")
       .then(res => {
         this.setState({
           gitInfo: res.data
@@ -130,7 +130,7 @@ class GitBash extends Component {
                     Find out more
                     </Button>
 
-                  <Button
+                  {/* <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -139,7 +139,7 @@ class GitBash extends Component {
                     }
                   >
                     Delete
-                  </Button>
+                  </Button> */}
                 </Card.Body>
               </Card>
             ))

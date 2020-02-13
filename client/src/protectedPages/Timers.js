@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-class TimersPg extends Component {
+class TimersPgP extends Component {
   state = {
     timerInfo: []
   };
@@ -14,7 +14,7 @@ class TimersPg extends Component {
   }
 
   loadAll = () => {
-    API.getAll("momentjs")
+    API.getAll("visualstudiocode")
       .then(res => {
         this.setState({
           timerInfo: res.data
@@ -128,7 +128,7 @@ class TimersPg extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -137,12 +137,12 @@ class TimersPg extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
           ) : (
-            <h3>Log in to add content</h3>
+            <h3>No Results to Display</h3>
           )}
                   </div>
                 </div>
@@ -153,4 +153,4 @@ class TimersPg extends Component {
       );
     }
   }
-  export default TimersPg;
+  export default TimersPgP;

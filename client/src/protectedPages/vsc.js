@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-class Vsc extends Component {
+class VscP extends Component {
   state = {
     vscInfo: []
   };
@@ -185,7 +185,7 @@ class Vsc extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -194,7 +194,7 @@ class Vsc extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
@@ -207,4 +207,4 @@ class Vsc extends Component {
     );
   }
 }
-export default Vsc;
+export default VscP;

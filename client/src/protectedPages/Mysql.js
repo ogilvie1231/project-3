@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-class SQL extends Component {
+class SQLP extends Component {
   state = {
     sqlInfo: []
   };
@@ -14,7 +14,7 @@ class SQL extends Component {
   }
 
   loadAll = () => {
-    API.getAll("mysql")
+    API.getAll("visualstudiocode")
       .then(res => {
         this.setState({
           sqlInfo: res.data
@@ -129,7 +129,7 @@ class SQL extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -138,7 +138,7 @@ class SQL extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
@@ -153,4 +153,4 @@ class SQL extends Component {
     );
 };
 }
-export default SQL;
+export default SQLP;

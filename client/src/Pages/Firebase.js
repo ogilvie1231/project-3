@@ -13,7 +13,7 @@ class Firebase extends Component {
   }
 
   loadAll = () => {
-    API.getAll("visualstudiocode")
+    API.getAll("firebase")
       .then(res => {
         this.setState({
           firebaseInfo: res.data
@@ -78,7 +78,7 @@ class Firebase extends Component {
                     Find out more
                     </Button>
 
-                  <Button
+                  {/* <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -87,7 +87,7 @@ class Firebase extends Component {
                     }
                   >
                     Delete
-                  </Button>
+                  </Button> */}
                 </Card.Body>
               </Card>
             ))

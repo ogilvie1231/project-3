@@ -13,7 +13,7 @@ class CSS extends Component {
   }
 
   loadAll = () => {
-    API.getAll("visualstudiocode")
+    API.getAll("css")
       .then(res => {
         this.setState({
           cssInfo: res.data
@@ -138,7 +138,7 @@ class CSS extends Component {
                     Find out more
                     </Button>
 
-                  <Button
+                  {/* <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -147,7 +147,7 @@ class CSS extends Component {
                     }
                   >
                     Delete
-                  </Button>
+                  </Button> */}
                 </Card.Body>
               </Card>
             ))

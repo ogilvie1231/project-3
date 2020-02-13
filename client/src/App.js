@@ -21,6 +21,21 @@ import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
 import Post from "./components/Post"
 
+import AjaxP from "./Pages/Ajax";
+import BootStrapP from "./Pages/Bootstrap";
+import CSSP from "./Pages/CSS";
+import FirebaseP from "./Pages/Firebase";
+import GitBashP from "./Pages/GitBash";
+import HTMLP from "./Pages/HTML";
+import jQPgeP from "./Pages/jQPge";
+import SQLP from "./Pages/Mysql";
+import NodeP from "./Pages/Node";
+import SequelizeP from "./Pages/Sequelize";
+import TimersPgP from "./Pages/TimersPg";
+import VscP from "./Pages/vsc";
+import JSpgeP from "./Pages/JavaScript";
+
+
 class App extends Component {
 
   // Auth0 = () => {
@@ -49,8 +64,23 @@ class App extends Component {
               <Route path="/sequelize" component={Sequelize} />
               <Route path="/timersPg" component={TimersPg} />
               <Route path="/vsc" component={Vsc} />
+              
+              {/* <PrivateRoute path="/home" component={HomeP} /> */}
+              <PrivateRoute path="/ajax" component={AjaxP} />
+              <PrivateRoute path="/bootstrap" component={BootStrapP} />
+              <PrivateRoute path="/css" component={CSSP} />
+              <PrivateRoute path="/firebase" component={FirebaseP} />
+              <PrivateRoute path="/gitbash" component={GitBashP} />
+              <PrivateRoute path="/HTML" component={HTMLP} />
+              <PrivateRoute path="/jquery" component={jQPgeP} />
+              <PrivateRoute path="/javascript" component={JSpgeP} />
+              <PrivateRoute path="/mysql" component={SQLP} />
+              <PrivateRoute path="/node" component={NodeP} />
+              <PrivateRoute path="/sequelize" component={SequelizeP} />
+              <PrivateRoute path="/timersPg" component={TimersPgP} />
+              <PrivateRoute path="/vsc" component={VscP} />
               <PrivateRoute path="/profile" component={Profile} />
-              <Route path="/post" component={Post} />
+              <PrivateRoute path="/post" component={Post} />
             </Switch>
           </Router>
         </div>

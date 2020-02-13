@@ -3,7 +3,7 @@ import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-class Node extends Component {
+class NodeP extends Component {
   state = {
     nodeInfo: []
   };
@@ -13,7 +13,7 @@ class Node extends Component {
   }
 
   loadAll = () => {
-    API.getAll("node")
+    API.getAll("visualstudiocode")
       .then(res => {
         this.setState({
           nodeInfo: res.data
@@ -130,7 +130,7 @@ class Node extends Component {
                     Find out more
                     </Button>
 
-                  {/* <Button
+                  <Button
                   style={{margin: "2px"}}
                   className="container"
                     onClick={() =>
@@ -139,7 +139,7 @@ class Node extends Component {
                     }
                   >
                     Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
@@ -152,4 +152,4 @@ class Node extends Component {
   );
 };
 }
-export default Node;
+export default NodeP;
