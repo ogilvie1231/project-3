@@ -21,19 +21,19 @@ import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
 import Post from "./components/Post"
 
-import AjaxP from "./Pages/Ajax";
-import BootStrapP from "./Pages/Bootstrap";
-import CSSP from "./Pages/CSS";
-import FirebaseP from "./Pages/Firebase";
-import GitBashP from "./Pages/GitBash";
-import HTMLP from "./Pages/HTML";
-import jQPgeP from "./Pages/jQPge";
-import SQLP from "./Pages/Mysql";
-import NodeP from "./Pages/Node";
-import SequelizeP from "./Pages/Sequelize";
-import TimersPgP from "./Pages/TimersPg";
-import VscP from "./Pages/vsc";
-import JSpgeP from "./Pages/JavaScript";
+import AjaxP from "./protectedPages/Ajax";
+import BootStrapP from "./protectedPages/Bootstrap";
+import CSSP from "./protectedPages/CSS";
+import FirebaseP from "./protectedPages/Firebase";
+import GitBashP from "./protectedPages/GitBash";
+import HTMLP from "./protectedPages/HTML";
+import jQPgeP from "./protectedPages/jQPge";
+import SQLP from "./protectedPages/Mysql";
+import NodeP from "./protectedPages/Node";
+import SequelizeP from "./protectedPages/Sequelize";
+import TimersPgP from "./protectedPages/TimersPg";
+import VscP from "./protectedPages/vsc";
+import JSpgeP from "./protectedPages/JavaScript";
 
 
 class App extends Component {
@@ -49,38 +49,38 @@ class App extends Component {
               <NavBar />
             </header>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/home" component={Home} />
-              <Route path="/ajax" component={Ajax} />
-              <Route path="/bootstrap" component={BootStrap} />
-              <Route path="/css" component={CSS} />
-              <Route path="/firebase" component={Firebase} />
-              <Route path="/gitbash" component={GitBash} />
-              <Route path="/HTML" component={HTML} />
-              <Route path="/jquery" component={jQPge} />
-              <Route path="/javascript" component={JSpge} />
-              <Route path="/mysql" component={SQL} />
-              <Route path="/node" component={Node} />
-              <Route path="/sequelize" component={Sequelize} />
-              <Route path="/timersPg" component={TimersPg} />
-              <Route path="/vsc" component={Vsc} />
+              <Route exact exact path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/ajax" component={Ajax} />
+              <Route exact path="/bootstrap" component={BootStrap} />
+              <Route exact path="/css" component={CSS} />
+              <Route exact path="/firebase" component={Firebase} />
+              <Route exact path="/gitbash" component={GitBash} />
+              <Route exact path="/HTML" component={HTML} />
+              <Route exact path="/jquery" component={jQPge} />
+              <Route exact path="/javascript" component={JSpge} />
+              <Route exact path="/mysql" component={SQL} />
+              <Route exact path="/node" component={Node} />
+              <Route exact path="/sequelize" component={Sequelize} />
+              <Route exact path="/timersPg" component={TimersPg} />
+              <Route exact path="/vsc" component={Vsc} />
               
-              {/* <PrivateRoute path="/home" component={HomeP} /> */}
-              <PrivateRoute path="/ajax" component={AjaxP} />
-              <PrivateRoute path="/bootstrap" component={BootStrapP} />
-              <PrivateRoute path="/css" component={CSSP} />
-              <PrivateRoute path="/firebase" component={FirebaseP} />
-              <PrivateRoute path="/gitbash" component={GitBashP} />
-              <PrivateRoute path="/HTML" component={HTMLP} />
-              <PrivateRoute path="/jquery" component={jQPgeP} />
-              <PrivateRoute path="/javascript" component={JSpgeP} />
-              <PrivateRoute path="/mysql" component={SQLP} />
-              <PrivateRoute path="/node" component={NodeP} />
-              <PrivateRoute path="/sequelize" component={SequelizeP} />
-              <PrivateRoute path="/timersPg" component={TimersPgP} />
-              <PrivateRoute path="/vsc" component={VscP} />
-              <PrivateRoute path="/profile" component={Profile} />
-              <PrivateRoute path="/post" component={Post} />
+              {/* <PrivateRoute exact path="/home" component={HomeP} /> */}
+              <PrivateRoute exact path="/ajax=p" component={AjaxP} />
+              <PrivateRoute exact path="/bootstrap=p" component={BootStrapP} />
+              <PrivateRoute exact path="/css=p" component={CSSP} />
+              <PrivateRoute exact path="/firebase=p" component={FirebaseP} />
+              <PrivateRoute exact path="/gitbash=p" component={GitBashP} />
+              <PrivateRoute exact path="/HTML=p" component={HTMLP} />
+              <PrivateRoute exact path="/jquery=p" component={jQPgeP} />
+              <PrivateRoute exact path="/javascript=p" component={JSpgeP} />
+              <PrivateRoute exact path="/mysql=p" component={SQLP} />
+              <PrivateRoute exact path="/node=p" component={NodeP} />
+              <PrivateRoute exact path="/sequelize=p" component={SequelizeP} />
+              <PrivateRoute exact path="/timersPg=p" component={TimersPgP} />
+              <PrivateRoute exact path="/vsc=p" component={VscP} />
+              <PrivateRoute exact path="/profile=p" component={Profile} />
+              <PrivateRoute exact path="/post=p" component={Post} />
             </Switch>
           </Router>
         </div>

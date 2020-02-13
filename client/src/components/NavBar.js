@@ -129,50 +129,50 @@ const NavBar = () => {
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.2">
                     <li>
-                      <Link to="/ajax">Ajax</Link>
+                      <Link to="/ajax=p">Ajax</Link>
                     </li>
                     <li>
-                      <Link to="/vsc">Visual Studio Code</Link>
+                      <Link to="/vsc=p">Visual Studio Code</Link>
                     </li>
                     <li>
-                      <Link to="/gitbash">GitBash</Link>
+                      <Link to="/gitbash=p">GitBash</Link>
                     </li>
                     <li>
-                      <Link to="/HTML">HTML</Link>
+                      <Link to="/HTML=p">HTML</Link>
                     </li>
                     <li>
-                      <Link to="/css">CSS</Link>
+                      <Link to="/css=p">CSS</Link>
                     </li>
                     <li>
-                      <Link to="/bootstrap">BOOTSTRAP</Link>
+                      <Link to="/bootstrap=p">BOOTSTRAP</Link>
                     </li>
                     <li>
-                      <Link to="/javascript">JAVASCRIPT</Link>
+                      <Link to="/javascript=p">JAVASCRIPT</Link>
                     </li>
                     <li>
-                      <Link to="/jquery">jQuery</Link>
+                      <Link to="/jquery=p">jQuery</Link>
                     </li>
                     <li>
-                      <Link to="/react">React</Link>
+                      <Link to="/react=p">React</Link>
                     </li>
 
                     <li>
-                      <Link to="/firebase">Firebase</Link>
+                      <Link to="/firebase=p">Firebase</Link>
                     </li>
                     <li>
-                      <Link to="/node">Node.js</Link>
+                      <Link to="/node=p">Node.js</Link>
                     </li>
                     <li>
-                      <Link to="/mysql">MySQL</Link>
+                      <Link to="/mysql=p">MySQL</Link>
                     </li>
                     <li>
-                      <Link to="/sequelize">Sequelize</Link>
+                      <Link to="/sequelize=p">Sequelize</Link>
                     </li>
                     <li>
-                      <Link to="/profile">Profile</Link>
+                      <Link to="/profile=p">Profile</Link>
                     </li>
                   </NavDropdown.Item>
-                  {/* <NavDropdown.Item href="#action/3.3">
+                  {/* <NavDropdown.Item href="#action/3.3=p">
                   Something
                 </NavDropdown.Item> */}
                   <NavDropdown.Divider />
