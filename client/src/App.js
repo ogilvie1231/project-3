@@ -80,7 +80,7 @@ class App extends Component {
               <PrivateRoute exact path="/timersPg=p" component={TimersPgP} />
               <PrivateRoute exact path="/vsc=p" component={VscP} />
               <PrivateRoute exact path="/profile=p" component={Profile} />
-              <PrivateRoute exact path="/post=p" component={Post} />
+              <PrivateRoute exact path="/post" component={Post} />
             </Switch>
           </Router>
         </div>
