@@ -18,4 +18,4 @@ export default {
     return axios.post("/api", data);
   }
 };
- 
+  

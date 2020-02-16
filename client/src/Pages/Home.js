@@ -48,7 +48,7 @@ class Home extends Component {
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title"><a href="#section1">Visual Studio Code</a></h5>
+                              <h5 className="card-title"><a href="/vsc">Visual Studio Code</a></h5>
                               <p className="card-text">VSC Tutorials.</p>
                             </div>
                           </div>
@@ -63,7 +63,7 @@ class Home extends Component {
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title"><a href="#section2">GitBash</a></h5>
+                              <h5 className="card-title"><a href="/gitbash">GitBash</a></h5>
                               <p className="card-text">GitBash Tutorials.</p>
                             </div>
                           </div>
@@ -78,7 +78,7 @@ class Home extends Component {
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title"><a href="#section3">HTML</a></h5>
+                              <h5 className="card-title"><a href="/HTML">HTML</a></h5>
                               <p className="card-text">HTML Tutorials.</p>
                             </div>
                           </div>
@@ -99,7 +99,7 @@ class Home extends Component {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title"><a href="#section4">CSS</a></h5>
+                            <h5 className="card-title"><a href="/css">CSS</a></h5>
                             <p className="card-text">CSS Tutorials.</p>
                           </div>
                         </div>
@@ -114,7 +114,7 @@ class Home extends Component {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title"><a href="#section5">Bootstrap</a></h5>
+                            <h5 className="card-title"><a href="/bootstrap">Bootstrap</a></h5>
                             <p className="card-text">Bootstrap Tutorials.</p>
                           </div>
                         </div>
@@ -129,7 +129,7 @@ class Home extends Component {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title"><a href="#section6">JavaScript</a></h5>
+                            <h5 className="card-title"><a href="/javascript">JavaScript</a></h5>
                             <p className="card-text">JavaScript Tutorials.</p>
                           </div>
                         </div>
@@ -150,7 +150,7 @@ class Home extends Component {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section7">jQuery</a></h5>
+                          <h5 className="card-title"><a href="/jquery">jQuery</a></h5>
                           <p className="card-text">jQuery Tutorials.</p>
                         </div>
                       </div>
@@ -165,7 +165,7 @@ class Home extends Component {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section8">Firebase</a></h5>
+                          <h5 className="card-title"><a href="/firebase">Firebase</a></h5>
                           <p className="card-text">Firebase Tutorials.</p>
                         </div>
                       </div>
@@ -180,7 +180,7 @@ class Home extends Component {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section9">Node</a></h5>
+                          <h5 className="card-title"><a href="/node">Node</a></h5>
                           <p className="card-text">Node Tutorials.</p>
                         </div>
                       </div>
@@ -200,7 +200,7 @@ class Home extends Component {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section10">MySQL</a></h5>
+                          <h5 className="card-title"><a href="/mysql">MySQL</a></h5>
                           <p className="card-text">MySQL Tutorials.</p>
                         </div>
                       </div>
@@ -215,7 +215,7 @@ class Home extends Component {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title"><a href="#section11">Sequelize</a></h5>
+                          <h5 className="card-title"><a href="sequelize">Sequelize</a></h5>
                           <p className="card-text">Sequelize Tutorials.</p>
                         </div>
                       </div>
@@ -240,7 +240,7 @@ class Home extends Component {
               </div>
             </div>
             <br />
-            <div id="logocards" className="container">
+            {/* <div id="logocards" className="container">
               <div className="row">
                 <div className="col-sm">
                 </div>
@@ -260,7 +260,7 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <br />
           </div>
         );

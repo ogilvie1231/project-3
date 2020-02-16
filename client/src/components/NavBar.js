@@ -40,10 +40,14 @@ const NavBar = () => {
                 variant="outline-success"
               >
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
+                  test
                   {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                   <NavDropdown.Item href="#action/3.2">
                     {/* <li><Link to="/home">Home</Link></li> */}
                     {/* <li><Link to="/intro">Introduction</Link></li> */}
+                    <li>
+                      <Link to="/ajax">Ajax</Link>
+                    </li>
                     <li>
                       <Link to="/vsc">Visual Studio Code</Link>
                     </li>
@@ -67,9 +71,6 @@ const NavBar = () => {
                     </li>
                     <li>
                       <Link to="/react">React</Link>
-                    </li>
-                    <li>
-                      <Link to="/ajax">Ajax</Link>
                     </li>
                     <li>
                       <Link to="/firebase">Firebase</Link>
