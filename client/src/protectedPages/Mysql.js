@@ -143,7 +143,11 @@ class SQLP extends Component {
               </Card>
             ))
           ) : (
-            <h3>No Results to Display</h3>
+            <Button>
+            <Link to="/post">
+              <h3 style={{ color: "white" }} >Add New Content</h3>
+            </Link>
+          </Button>
           )}
               </div>
             </div>

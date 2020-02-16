@@ -32,7 +32,6 @@ class AjaxP extends Component {
       .catch(err => console.log(err));
   };
 
-
   render() {
     return (
       <div>
@@ -119,14 +118,19 @@ class AjaxP extends Component {
           />
           <p>Some text..</p>
           <br />
-          <h2>Additional Resourches</h2>
+          <h2 style={{textAlign: 'center'}}>Additional Resourches</h2>
+          <Button>
+            <h3>
           <a
+          style={{color: "white"}}
             href="https://api.jquery.com/jquery.ajax/"
             target="_blank"
             rel="noopener noreferrer"
           >
             AJAX Documentation
           </a>
+          </h3>
+          </Button>
           <br />
           {this.state.ajaxInfo.length ? (
             this.state.ajaxInfo.map(info => (
@@ -140,19 +144,20 @@ class AjaxP extends Component {
                     <h2>{info.title}</h2>
                   </Card.Title>
                   <Card.Text>{info.summary}</Card.Text>
-                  <Button className="container"
-                  style={{margin: "2px"}}
+                  <Button
+                    className="container"
+                    style={{ margin: "2px" }}
                     href={info.link}
                     rel="noopener noreferrer"
                     target="_blank"
                     variant="primary"
                   >
                     Find out more
-                    </Button>
+                  </Button>
 
                   <Button
-                  style={{margin: "2px"}}
-                  className="container"
+                    style={{ margin: "2px" }}
+                    className="container"
                     onClick={() =>
                       this.delete(info.category, info._id) +
                       console.log("info: ", info)
@@ -164,7 +169,11 @@ class AjaxP extends Component {
               </Card>
             ))
           ) : (
-            <h3>No Results to Display</h3>
+            <Button>
+              <Link to="/post">
+                <h3 style={{ color: "white" }} >Add New Content</h3>
+              </Link>
+            </Button>
           )}
         </div>
       </div>

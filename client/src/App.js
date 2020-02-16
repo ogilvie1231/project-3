@@ -20,6 +20,7 @@ import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import JSpge from "./Pages/JavaScript";
 import Post from "./components/Post"
+import Footer from "./components/Footer"
 
 import AjaxP from "./protectedPages/Ajax";
 import BootStrapP from "./protectedPages/Bootstrap";
@@ -82,6 +83,7 @@ class App extends Component {
               <PrivateRoute exact path="/profile=p" component={Profile} />
               <PrivateRoute exact path="/post" component={Post} />
             </Switch>
+            <Footer />
           </Router>
         </div>
       );

@@ -3,12 +3,18 @@ import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "../react-auth0-spa";
+import Login from "../components/Login"
+
 
 class Ajax extends Component {
+  
   state = {
     ajaxInfo: []
+    
   };
 
+  
   componentDidMount() {
     this.loadAll();
   }
@@ -34,7 +40,9 @@ class Ajax extends Component {
 
 
   render() {
+
     return (
+      
       <div>
         <br></br>
         <div
@@ -163,7 +171,7 @@ class Ajax extends Component {
               </Card>
             ))
           ) : (
-            <h3>No Results to Display</h3>
+            <Login />
           )}
         </div>
       </div>
