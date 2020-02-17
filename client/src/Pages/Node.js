@@ -42,7 +42,7 @@ class Node extends Component {
               <div className="card-header">
                 <h1>Node.js</h1>
                 <img
-                  src="assets/node logo.jpg"
+                  src="./nodeLogo.jpg"
                   className="titleimg"
                   alt="node logo"
                 />
