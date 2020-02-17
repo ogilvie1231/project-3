@@ -15,7 +15,7 @@ class Node extends Component {
   }
 
   loadAll = () => {
-    API.getAll("node")
+    API.getAll("nodejs")
       .then(res => {
         this.setState({
           nodeInfo: res.data

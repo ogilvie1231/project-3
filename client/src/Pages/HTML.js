@@ -15,7 +15,7 @@ class HTML extends Component {
   }
 
   loadAll = () => {
-    API.getAll("gitbash")
+    API.getAll("html")
       .then(res => {
         this.setState({
           htmlInfo: res.data

@@ -13,7 +13,7 @@ class GitBashP extends Component {
   }
 
   loadAll = () => {
-    API.getAll("git")
+    API.getAll("gitbash")
       .then(res => {
         this.setState({
           gitInfo: res.data

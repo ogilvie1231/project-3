@@ -13,7 +13,7 @@ class CSSP extends Component {
   }
 
   loadAll = () => {
-    API.getAll("visualstudiocode")
+    API.getAll("css")
       .then(res => {
         this.setState({
           cssInfo: res.data
