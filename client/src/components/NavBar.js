@@ -21,19 +21,33 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Button style={{ marginLeft: "5px" }} variant="outline-success">
-                <Nav.Link href="/home">Home</Nav.Link>
-              </Button>
-              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+              <Nav.Link href="/home">
+                <Button style={{ marginLeft: "5px" }} variant="outline-success">
+                  Home
+                </Button>
+              </Nav.Link>
+
+              {/* <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <Nav.Link href="/post">Test New</Nav.Link>
-              </Button>
+              </Button> */}
               {/* <Nav.Link href="#link">Link</Nav.Link> */}
-              <Button style={{ marginLeft: "5px" }} variant="outline-success">
+              <Button
+                style={{
+                  marginLeft: "5px",
+                  maxHeight: "39px",
+                  marginTop: "7px"
+                }}
+                variant="outline-success"
+              >
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
+              
                   {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                   <NavDropdown.Item href="#action/3.2">
                     {/* <li><Link to="/home">Home</Link></li> */}
                     {/* <li><Link to="/intro">Introduction</Link></li> */}
+                    <li>
+                      <Link to="/ajax">Ajax</Link>
+                    </li>
                     <li>
                       <Link to="/vsc">Visual Studio Code</Link>
                     </li>
@@ -41,7 +55,7 @@ const NavBar = () => {
                       <Link to="/gitbash">GitBash</Link>
                     </li>
                     <li>
-                      <Link to="/introHTML">HTML</Link>
+                      <Link to="/HTML">HTML</Link>
                     </li>
                     <li>
                       <Link to="/css">CSS</Link>
@@ -57,9 +71,6 @@ const NavBar = () => {
                     </li>
                     <li>
                       <Link to="/react">React</Link>
-                    </li>
-                    <li>
-                      <Link to="/ajax">Ajax</Link>
                     </li>
                     <li>
                       <Link to="/firebase">Firebase</Link>
@@ -81,9 +92,9 @@ const NavBar = () => {
                     {/* dropdown action link */}
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
+                  {/* <NavDropdown.Item href="#action/3.4">
                     Separated link
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                 </NavDropdown>
               </Button>
             </Nav>
@@ -115,57 +126,54 @@ const NavBar = () => {
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <Nav.Link href="/home">Home</Nav.Link>
               </Button>
-              {/* <Nav.Link href="#link">Link</Nav.Link> */}
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
-                  {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                   <NavDropdown.Item href="#action/3.2">
-                    {/* <li><Link to="/home">Home</Link></li> */}
-                    {/* <li><Link to="/intro">Introduction</Link></li> */}
                     <li>
-                      <Link to="/vsc">Visual Studio Code</Link>
+                      <Link to="/ajax=p">Ajax</Link>
                     </li>
                     <li>
-                      <Link to="/gitbash">GitBash</Link>
+                      <Link to="/vsc=p">Visual Studio Code</Link>
                     </li>
                     <li>
-                      <Link to="/introHTML">HTML</Link>
+                      <Link to="/gitbash=p">GitBash</Link>
                     </li>
                     <li>
-                      <Link to="/css">CSS</Link>
+                      <Link to="/HTML=p">HTML</Link>
                     </li>
                     <li>
-                      <Link to="/bootstrap">BOOTSTRAP</Link>
+                      <Link to="/css=p">CSS</Link>
                     </li>
                     <li>
-                      <Link to="/javascript">JAVASCRIPT</Link>
+                      <Link to="/bootstrap=p">BOOTSTRAP</Link>
                     </li>
                     <li>
-                      <Link to="/jquery">jQuery</Link>
+                      <Link to="/javascript=p">JAVASCRIPT</Link>
                     </li>
                     <li>
-                      <Link to="/react">React</Link>
+                      <Link to="/jquery=p">jQuery</Link>
                     </li>
                     <li>
-                      <Link to="/ajax">Ajax</Link>
+                      <Link to="/react=p">React</Link>
+                    </li>
+
+                    <li>
+                      <Link to="/firebase=p">Firebase</Link>
                     </li>
                     <li>
-                      <Link to="/firebase">Firebase</Link>
+                      <Link to="/node=p">Node.js</Link>
                     </li>
                     <li>
-                      <Link to="/node">Node.js</Link>
+                      <Link to="/mysql=p">MySQL</Link>
                     </li>
                     <li>
-                      <Link to="/mysql">MySQL</Link>
+                      <Link to="/sequelize=p">Sequelize</Link>
                     </li>
                     <li>
-                      <Link to="/sequelize">Sequelize</Link>
-                    </li>
-                    <li>
-                      <Link to="/profile">Profile</Link>
+                      <Link to="/profile=p">Profile</Link>
                     </li>
                   </NavDropdown.Item>
-                  {/* <NavDropdown.Item href="#action/3.3">
+                  {/* <NavDropdown.Item href="#action/3.3=p">
                   Something
                 </NavDropdown.Item> */}
                   <NavDropdown.Divider />

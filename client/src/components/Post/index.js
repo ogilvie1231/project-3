@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import "./style.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import axios from "axios"
+// import axios from "axios"
+import API from '../../utils/API'
 
 class Post extends Component {
   state = {
     title: "",
     link: "",
-    catagory: "",
+    category: "ajax",
     summary: "",
   };
 
@@ -21,15 +22,22 @@ class Post extends Component {
   }
   handleFormSubmit = event => {
     event.preventDefault()
-   axios.post("mongodb://localhost/resource-center", {
-     Title: this.state.title,
-     Link: this.state.link,
-     Catagory: this.state.catagory,
-     Summary: this.state.summary
-   })
-
+    const { title, link, category, summary } = this.state
+    const newContent = { title, link, category, summary }
     
+    console.log('newContent: ', newContent)
+    API.saveOne({
+     newContent
+    }).then((res) => {
+      console.log(res.data)
+      window.location.reload();
+    }).catch((error) => {
+      console.log(error)
+    });
   }
+
+
+
 
 render() {
   return (
@@ -64,20 +72,22 @@ render() {
             <Form.Label>Select category</Form.Label>
             <Form.Control
             onChange={this.handleInputChange}
-            value={this.state.catagory}
-            name="catagory"
+            value={this.state.category}
+            name="category"
              as="select">
-              <option value="Visual Studio Code">Visual Studio Code</option>
-              <option value="GitBash">GitBash</option>
-              <option value="HTML">HTML</option>
-              <option value="CSS">CSS</option>
-              <option value="Bootstrap">Bootstrap</option>
-              <option value="Javascript">Javascript</option>
-              <option value="jQuery">jQuery</option>
-              <option value="Firebase">Firebase</option>
-              <option value="Node.js">Node.js</option>
-              <option value="MySQL">MySQL</option>
-              <option value="Sequelize">Sequelize</option>
+              <option value="ajax">AJAX</option>
+              <option value="visualstudiocode">Visual Studio Code</option>
+              <option value="gitbash">GitBash</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="bootstrap">Bootstrap</option>
+              <option value="javascript">Javascript</option>
+              <option value="jquery">jQuery</option>
+              <option value="firebase">Firebase</option>
+              <option value="nodejs">Node.js</option>
+              <option value="mysql">MySQL</option>
+              <option value="sequelize">Sequelize</option>
+              <option value="mongodb">mongoDb</option>
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">
