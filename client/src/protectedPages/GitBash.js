@@ -13,7 +13,7 @@ class GitBashP extends Component {
   }
 
   loadAll = () => {
-    API.getAll("visualstudiocode")
+    API.getAll("git")
       .then(res => {
         this.setState({
           gitInfo: res.data

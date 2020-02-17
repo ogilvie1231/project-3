@@ -13,7 +13,7 @@ class FirebaseP extends Component {
   }
 
   loadAll = () => {
-    API.getAll("visualstudiocode")
+    API.getAll("firebase")
       .then(res => {
         this.setState({
           firebaseInfo: res.data

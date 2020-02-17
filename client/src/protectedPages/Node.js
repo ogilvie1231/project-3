@@ -13,7 +13,7 @@ class NodeP extends Component {
   }
 
   loadAll = () => {
-    API.getAll("visualstudiocode")
+    API.getAll("node")
       .then(res => {
         this.setState({
           nodeInfo: res.data
