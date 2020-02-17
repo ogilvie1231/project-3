@@ -1,0 +1,17 @@
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+    margin-top: 2%;
+}
+
+.mainBody {
+  margin-bottom: 20%;
+}
+
+.h1 {
+  text-align: center;
+}

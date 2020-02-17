@@ -1,0 +1,19 @@
+body {
+    background: white;
+}
+
+#navbarNav {
+    position: fixed;
+}
+
+#basic-nav-dropdown {
+    color: white;
+}
+
+.dropdown-menu.show {
+    color: white;
+}
+
+.dropdown-item.active {
+    color: white;
+}
