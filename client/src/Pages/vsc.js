@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import Login from "../components/Login";
+import "./pages.css";
 
 class Vsc extends Component {
   state = {
@@ -34,25 +35,14 @@ class Vsc extends Component {
 
   render() {
     return (
-      <div>
-        {/*LINKS*/}
-        {/*Bootstrap CSS*/}
-        {/*MY CSS*/}
-        <br></br>
-        <div
-          style={{
-            marginLeft: "5%",
-            marginRight: "5%",
-            padding: "1px 16px",
-            height: "1000px",
-            marginTop: "2%"
-          }}
-        >
+      <div className="mainBody">
+        <div>
           <div className="content">
             <div className="card">
               <div className="card-header" style={{ textAlign: "center" }}>
                 <h1 style={{ textAlign: "center" }}>Visual Studio Code</h1>
-                <img style={{ maxHeight: "170px" }}
+                <img
+                  style={{ maxHeight: "170px" }}
                   src="./images/VSLogo.png"
                   className="titleimg"
                   alt="vs code logo"
@@ -175,31 +165,21 @@ class Vsc extends Component {
                     <h2>{info.title}</h2>
                   </Card.Title>
                   <Card.Text>{info.summary}</Card.Text>
-                  <Button className="container"
-                  style={{margin: "2px"}}
+                  <Button
+                    className="container"
+                    style={{ margin: "2px" }}
                     href={info.link}
                     rel="noopener noreferrer"
                     target="_blank"
                     variant="primary"
                   >
                     Find out more
-                    </Button>
-
-                  {/* <Button
-                  style={{margin: "2px"}}
-                  className="container"
-                    onClick={() =>
-                      this.delete(info.category, info._id) +
-                      console.log("info: ", info)
-                    }
-                  >
-                    Delete
-                  </Button> */}
+                  </Button>
                 </Card.Body>
               </Card>
             ))
           ) : (
-            <h3>No Results to Display</h3>
+            <Login />
           )}
           <br />
         </div>
