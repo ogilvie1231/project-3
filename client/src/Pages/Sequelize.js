@@ -35,29 +35,11 @@ class Sequelize extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-    
-    <div>
-      
-      <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-        <div className="card border border-white">
-          <div className="card-header">
-            <h1 style={{textAlign: "center"}}>Sequelize</h1>
-            <img src="./images/Sequelize.png" className="titleimg" alt="sequelize logo"/>
-          </div>
-          <div className="card-body">
-            <h5 className="card-title">Quick Links</h5>
-            <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.
-            </p>
-            <a href="https://sequelize.org/master/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to Sequelize</a>
-            <a href className="btn btn-success" target="_blank" rel="noopener noreferrer">Sequelize Documents</a>
-            <a href className="btn btn-info" target="_blank" rel="noopener noreferrer">Sequelize Videos</a>
-=======
       <div className="mainBody">
         <div>
           <div className="card">
             <div className="card-header">
-              <h1>Sequelize</h1>
+              <h1 className="h1">Sequelize</h1>
               <img
                 src="./images/Sequelize.png"
                 className="titleimg"
@@ -95,7 +77,6 @@ class Sequelize extends Component {
                 Sequelize Videos
               </a>
             </div>
->>>>>>> master
           </div>
           <br />
           <h3>What is Sequelize?</h3>

@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./home.css";
-
-
-function FireBase () {
-     return (
-    
-    <div>
-      <br></br>
-      <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-        <div className="content">
-          <div className="card border border-white">
-            <div className="card-header">
-              <h1 style={{textAlign: "center"}}>Firebase</h1>
-              <img src="./images/firebaseLogo.jpg" className="titleimg" alt="firebase logo"/>
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Quick Links</h5>
-              <p className="card-text">You can find more info, documents and very detailed videos in the buttons below.</p>
-              <a href className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to Firebase</a>
-              <a href className="btn btn-success" target="_blank" rel="noopener noreferrer">Firebase Documents</a>
-              <a href className="btn btn-info" target="_blank" rel="noopener noreferrer">Firebase Videos</a>
-=======
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
@@ -64,7 +40,7 @@ class Firebase extends Component {
           <div className="content">
             <div className="card">
               <div className="card-header">
-                <h1>Firebase</h1>
+                <h1 className="h1">Firebase</h1>
                 <img
                   src="./images/firebaseLogo.jpg"
                   className="titleimg"
@@ -102,7 +78,6 @@ class Firebase extends Component {
                   Firebase Videos
                 </a>
               </div>
->>>>>>> master
             </div>
             <br />
             <h3>What is Firebase</h3>

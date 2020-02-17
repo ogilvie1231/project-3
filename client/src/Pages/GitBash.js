@@ -1,30 +1,16 @@
-<<<<<<< HEAD
-import React from "react";
-import "./home.css";
-
-=======
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Login from "../components/Login";
 import "./pages.css";
->>>>>>> master
+import "./git.css";
 
 class GitBash extends Component {
   state = {
     gitInfo: []
   };
 
-<<<<<<< HEAD
-       <br></br>
-        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-          <div className="content">
-            <div className="card border border-white">
-              <div className="card-header">
-                <h1 style={{textAlign: "center"}}>Git Bash</h1>
-                <img src="./images/gitLogo.png" className="titleimg" alt="git logo"/>
-=======
   componentDidMount() {
     this.loadAll();
   }
@@ -55,13 +41,12 @@ class GitBash extends Component {
           <div className="content">
             <div className="card border border-white">
               <div className="card-header">
-                <h1>Git Bash</h1>
+                <h1 className="h1">Git Bash</h1>
                 <img
                   src="./images/gitLogo.png"
                   className="titleimg"
                   alt="git logo"
                 />
->>>>>>> master
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>

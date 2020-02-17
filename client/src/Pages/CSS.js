@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./home.css";
-
-
-function Css () {
-     return (
-      <div>
-        <br></br>
-        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-=======
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
@@ -48,7 +37,6 @@ class CSS extends Component {
     return (
       <div className="mainBody">
         <div>
->>>>>>> master
           <div className="content">
             <div className="card border border-white">
               <div className="card-header">

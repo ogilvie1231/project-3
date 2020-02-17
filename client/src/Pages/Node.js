@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-import React from "react";
-import "./home.css";
-=======
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Login from "../components/Login";
 import "./pages.css";
->>>>>>> master
 
 class Node extends Component {
   state = {
@@ -40,29 +35,17 @@ class Node extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-      
-      <div>
-        <br></br>
-        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-=======
       <div className="mainBody">
         <div>
->>>>>>> master
           <div className="content">
             <div className="cacard border border-whiterd">
               <div className="card-header">
-<<<<<<< HEAD
-                <h1 style={{textAlign: "center"}}>Node.js</h1>
-                <img src="./images/nodeLogo.jpg" className="titleimg" />
-=======
-                <h1>Node.js</h1>
+                <h1 className="h1">Node.js</h1>
                 <img
-                  src="assets/node logo.jpg"
+                  src="./images/nodeLogo.jpg"
                   className="titleimg"
                   alt="node logo"
                 />
->>>>>>> master
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -225,15 +208,6 @@ class Node extends Component {
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
-          </div>
-          <br />
-          <p></p>
-          <div className="code" style={{ width: '50%' }}>
-            <code>
-             
-              </code>
-=======
             <br />
             {this.state.nodeInfo.length ? (
               this.state.nodeInfo.map(info => (
@@ -263,7 +237,6 @@ class Node extends Component {
             ) : (
               <Login />
             )}
->>>>>>> master
           </div>
         </div>
       </div>

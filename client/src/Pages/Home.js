@@ -2,30 +2,6 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css";
 
-<<<<<<< HEAD
-
-
-const Home = () => {
-    
-        return (
-          <div className="container">
-            <div>
-              <div className="introduction">
-                <div className="containter">
-                  <div className="row">
-                    <div className="col-8">
-                      <p style={{fontSize: '48px', fontFamily: '"Archivo Black", sans-serif'}}>THE PLACE WHERE YOU CAN
-                        FIND MANY RESOURCES TO HELP YOU BECOME A FULL-STACK WEB DEVELOPER </p>
-                      <br />
-                      <h4 style={{color: 'gray', wordWrap: 'break-word'}}>Browse through the page to find videos and additional resources from all over the Web.</h4>
-                      <br />
-                      <a id="button" href="#topicards" className="btn btn-primary btn-lg active" role="button" aria-pressed="true">Documentation</a>
-                    </div>
-                    <div className="col-4">
-                      <img src="./images/logos.JPG" alt="all logos" />
-                    </div>
-                  </div>
-=======
 class Home extends Component {
   state = {
     homePage: []
@@ -63,7 +39,6 @@ class Home extends Component {
                   >
                     Documentation
                   </a>
->>>>>>> master
                 </div>
                 <div className="col-4">
                   <img src="./images/logos.JPG" alt="all logos" />

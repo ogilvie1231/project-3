@@ -41,9 +41,9 @@ class HTML extends Component {
           <div className="content">
             <div className="card">
               <div className="card-header">
-                <h1>HTML</h1>
+                <h1 className="h1">HTML</h1>
                 <img
-                  src="./images/html_logo.png"
+                  src="./images/htmlLogo.png"
                   className="titleimg"
                   alt="html logo"
                 ></img>

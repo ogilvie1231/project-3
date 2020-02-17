@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./home.css";
-
-function Header(props) {
-  return (
-    <div>
-      <br></br>
-      <div
-        style={{
-          marginLeft: "5%",
-          marginRight: "5%",
-          padding: "1px 16px",
-          height: "1000px",
-          marginTop: "5%"
-        }}
-      >
-        <div className="content">
-          <div className="card border border-white">
-            <div className="card-header" style={{ textAlign: "center" }}>
-              <h1 style={{ textAlign: "center" }}>Visual Studio Code</h1>
-              <img
-                src="./images/VSLogo.png"
-                className="titleimg"
-                alt="vs code logo"
-              />
-=======
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
@@ -106,7 +79,6 @@ class Vsc extends Component {
                   VSC Videos
                 </a>
               </div>
->>>>>>> master
             </div>
             <br />
             <h3>What is Visual Studio Code</h3>

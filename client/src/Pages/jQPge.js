@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./home.css";
-
-function jQPge () {
-     return (
-      <div>
-        <br></br>
-        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-=======
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
@@ -47,21 +37,15 @@ class JQPge extends Component {
     return (
       <div className="mainBody">
         <div>
->>>>>>> master
           <div className="content">
             <div className="card border border-whiterd">
               <div className="card-header">
-<<<<<<< HEAD
-                <h1 style={{textAlign: "center"}}>jQuery</h1>
-                <img src="./images/jquerylogo.jpg" className="titleimg" alt="jquery logo"/>
-=======
-                <h1>jQuery</h1>
+                <h1 className="h1">jQuery</h1>
                 <img
                   src="./images/jquerylogo.jpg"
                   className="titleimg"
                   alt="jquery logo"
                 />
->>>>>>> master
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>

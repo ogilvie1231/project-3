@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./home.css";
-=======
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
@@ -13,7 +9,6 @@ class SQL extends Component {
   state = {
     sqlInfo: []
   };
->>>>>>> master
 
   componentDidMount() {
     this.loadAll();
@@ -35,15 +30,6 @@ class SQL extends Component {
     API.deleteOne(id)
       .then(res => this.loadAll())
 
-<<<<<<< HEAD
-    <div>
-        <br></br>
-        <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
-          <div className="card border border-white">
-            <div className="card-header">
-              <h1 style={{textAlign: "center"}}>MySQL</h1>
-              <img src="./images/mysqlLogo.jpg" className="titleimg" alt="mysql logo"/>
-=======
       .catch(err => console.log(err));
   };
 
@@ -53,13 +39,12 @@ class SQL extends Component {
         <div>
           <div className="card">
             <div className="card-header">
-              <h1>MySQL</h1>
+              <h1 className="h1">MySQL</h1>
               <img
                 src="./images/mysqlLogo.jpg"
                 className="titleimg"
                 alt="mysql logo"
               />
->>>>>>> master
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>
