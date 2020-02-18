@@ -107,7 +107,7 @@ class JQPgeP extends Component {
               allowFullScreen
             />
             <hr />
-            <div className="container">
+            {/* <div className="container">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
@@ -218,7 +218,7 @@ class JQPgeP extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <hr />
             <h3>Addtional Resources</h3>
             <p>The resources below offer excersices and more videos.</p>

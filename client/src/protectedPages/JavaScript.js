@@ -103,7 +103,7 @@ class JSpgeP extends Component {
             functions."-Wikipedia
           </p>
           <hr />
-          <div className="container">
+          <div>
             <div className="card-deck">
               <div className="card">
                 <div className="card-body">

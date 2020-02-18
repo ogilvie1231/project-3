@@ -42,7 +42,8 @@ class HTMLP extends Component {
               <div className="card-header">
                 <h1>HTML</h1>
                 <img
-                  src="./images/html_logo.png"
+                style={{maxHeight: '150px'}}
+                  src="./images/htmlLogo.png"
                   className="titleimg"
                   alt="html logo"
                 ></img>

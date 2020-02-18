@@ -98,7 +98,7 @@ class NodeP extends Component {
               add a scrollbar when the sidenav is too long (for example if it
               has over 50 links inside of it).
             </p>
-            <div className="container">
+            {/* <div className="container">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
@@ -206,7 +206,7 @@ class NodeP extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <br />
             <div className="dbCard">
               <h3>Additional Resources</h3>

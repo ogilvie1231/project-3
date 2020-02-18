@@ -154,8 +154,8 @@ class VscP extends Component {
           <div className="dbCard">
               <h3>Additional Resources</h3>
               <hr />
-              {this.state.gitInfo.length ? (
-                this.state.gitInfo.map(info => (
+              {this.state.vscInfo.length ? (
+                this.state.vscInfo.map(info => (
                   <Card
                     key={info._id}
                     className="container col-md-4"
