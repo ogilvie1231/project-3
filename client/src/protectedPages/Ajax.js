@@ -40,9 +40,10 @@ class AjaxP extends Component {
             <div className="card">
               <div>
                 <div className="card-header">
-                  <h1 className="AJAXhead" style={{ textAlign: "center" }}>
+                  <h1 className="titleDisp" style={{ textAlign: "center" }}>
                     AJAX
                   </h1>
+                  <hr />
                   <img
                     src="./images/ajax.png"
                     className="titleimg-AJAX"

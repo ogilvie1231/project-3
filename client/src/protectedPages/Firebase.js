@@ -39,7 +39,8 @@ class FirebaseP extends Component {
           <div className="content">
             <div className="card">
               <div className="card-header">
-                <h1>Firebase</h1>
+                <h1 className="titleDisp">Firebase</h1>
+                <hr />
                 <img
                   src="./images/firebaseLogo.jpg"
                   className="titleimg"

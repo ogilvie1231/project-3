@@ -40,7 +40,8 @@ class Bootstrap extends Component {
         <div>
           <div className="card">
             <div className="card-header">
-              <h1 style={{ textalign: "center" }}>Bootstrap</h1>
+              <h1 className="titleDisp">Bootstrap</h1>
+              <hr />
               <img
                 src="./images/bootstrapLogo.png"
                 className="titleimg"
@@ -208,45 +209,38 @@ class Bootstrap extends Component {
             using Bootstrap 4, HTML5 &amp; CSS3
           </p>
           <a href="https://www.youtube.com/watch?v=Thw33qJ5DXo">Watch Here</a>
-          {this.state.bootstrapInfo.length ? (
-            this.state.bootstrapInfo.map(info => (
-              <Card
-                key={info._id}
-                className="container"
-                style={{ width: "18rem", marginTop: "7rem" }}
-              >
-                <Card.Body>
-                  <Card.Title className="container text-center">
-                    <h2>{info.title}</h2>
-                  </Card.Title>
-                  <Card.Text>{info.summary}</Card.Text>
-                  <Button
-                    className="container"
-                    style={{ margin: "2px" }}
-                    href={info.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    variant="primary"
-                  >
-                    Find out more
-                  </Button>
-
-                  {/* <Button
-                  style={{margin: "2px"}}
-                  className="container"
-                    onClick={() =>
-                      this.delete(info.category, info._id) +
-                      console.log("info: ", info)
-                    }
-                  >
-                    Delete
-                  </Button> */}
-                </Card.Body>
-              </Card>
-            ))
-          ) : (
-            <Login />
-          )}
+          <div className="dbCard">
+            <h3>Additional Resources</h3>
+            <hr />
+            {this.state.bootstrapInfo.length ? (
+              this.state.bootstrapInfo.map(info => (
+                <Card
+                  key={info._id}
+                  className="container col-md-4"
+                  style={{ width: "18rem", marginTop: "7rem" }}
+                >
+                  <Card.Body>
+                    <Card.Title className="container text-center">
+                      <h2>{info.title}</h2>
+                    </Card.Title>
+                    <Card.Text>{info.summary}</Card.Text>
+                    <Button
+                      className="container"
+                      style={{ margin: "2px" }}
+                      href={info.link}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      variant="primary"
+                    >
+                      Find out more
+                    </Button>
+                  </Card.Body>
+                </Card>
+              ))
+            ) : (
+              <Login />
+            )}
+          </div>
         </div>
       </div>
     );

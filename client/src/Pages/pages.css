@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(243, 243, 243);
+}
+
 img {
     display: block;
   margin-left: auto;
@@ -15,4 +19,25 @@ img {
 
 a {
     margin: 3px;
+}
+
+.addNew {
+  color: white;
+}
+
+.dbCard {
+  margin-top: 3%;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.titleimg {
+  max-height: 150px;
+}
+
+.titleDisp {
+  text-align: center;
 }

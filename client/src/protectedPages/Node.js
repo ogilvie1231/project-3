@@ -39,9 +39,10 @@ class NodeP extends Component {
           <div className="content">
             <div className="card">
               <div className="card-header">
-                <h1>Node.js</h1>
+                <h1 className="titleDisp">Node.js</h1>
+                <hr />
                 <img
-                  src="assets/node logo.jpg"
+                  src="./images/nodeLogo.jpg"
                   className="titleimg"
                   alt="node logo"
                 />
@@ -98,7 +99,7 @@ class NodeP extends Component {
               add a scrollbar when the sidenav is too long (for example if it
               has over 50 links inside of it).
             </p>
-            {/* <div className="container">
+            <div className="container">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
@@ -206,13 +207,13 @@ class NodeP extends Component {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
             <br />
             <div className="dbCard">
               <h3>Additional Resources</h3>
               <hr />
-              {this.state.gitInfo.length ? (
-                this.state.gitInfo.map(info => (
+              {this.state.nodeInfo.length ? (
+                this.state.nodeInfo.map(info => (
                   <Card
                     key={info._id}
                     className="container col-md-4"

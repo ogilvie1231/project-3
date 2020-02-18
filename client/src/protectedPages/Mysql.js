@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import './pages.css'
+import "./pages.css";
 
 class SQLP extends Component {
   state = {
@@ -114,7 +114,7 @@ class SQLP extends Component {
             allowFullScreen
           />
           <hr />
-          <div className="container">
+          <div>
             <div className="card-deck">
               <div className="card">
                 <div className="card-body">
@@ -219,57 +219,59 @@ class SQLP extends Component {
                       Last updated 3 mins ago
                     </small>
                   </p>
+                  </div>
+                  </div>
                 </div>
                 <br />
                 <div className="dbCard">
-              <h3>Additional Resources</h3>
-              <hr />
-              {this.state.sqlInfo.length ? (
-                this.state.sqlInfo.map(info => (
-                  <Card
-                    key={info._id}
-                    className="container col-md-4"
-                    style={{ width: "18rem", marginTop: "7rem" }}
-                  >
-                    <Card.Body>
-                      <Card.Title className="container text-center">
-                        <h2>{info.title}</h2>
-                      </Card.Title>
-                      <Card.Text>{info.summary}</Card.Text>
-                      <Button
-                        className="container"
-                        style={{ margin: "2px" }}
-                        href={info.link}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        variant="primary"
+                  <h3>Additional Resources</h3>
+                  <hr />
+                  {this.state.sqlInfo.length ? (
+                    this.state.sqlInfo.map(info => (
+                      <Card
+                        key={info._id}
+                        className="container col-md-4"
+                        style={{ width: "18rem", marginTop: "7rem" }}
                       >
-                        Find out more
-                      </Button>
+                        <Card.Body>
+                          <Card.Title className="container text-center">
+                            <h2>{info.title}</h2>
+                          </Card.Title>
+                          <Card.Text>{info.summary}</Card.Text>
+                          <Button
+                            className="container"
+                            style={{ margin: "2px" }}
+                            href={info.link}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            variant="primary"
+                          >
+                            Find out more
+                          </Button>
 
-                      <Button
-                        style={{ margin: "2px" }}
-                        className="container"
-                        onClick={() =>
-                          this.delete(info.category, info._id) +
-                          console.log("info: ", info)
-                        }
-                      >
-                        Delete
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                ))
-              ) : (
-                <Button>
-                  <a className="addNew" href="/post">
-                    Add New Content
-                  </a>
-                </Button>
-              )}
-            </div>
-              </div>
-            </div>
+                          <Button
+                            style={{ margin: "2px" }}
+                            className="container"
+                            onClick={() =>
+                              this.delete(info.category, info._id) +
+                              console.log("info: ", info)
+                            }
+                          >
+                            Delete
+                          </Button>
+                        </Card.Body>
+                      </Card>
+                    ))
+                  ) : (
+                    <Button>
+                      <a className="addNew" href="/post">
+                        Add New Content
+                      </a>
+                    </Button>
+                  )}
+                </div>
+             
+            
           </div>
         </div>
       </div>

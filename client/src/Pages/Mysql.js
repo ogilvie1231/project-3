@@ -39,7 +39,8 @@ class SQL extends Component {
         <div>
           <div className="card">
             <div className="card-header">
-              <h1>MySQL</h1>
+              <h1 className="titleDisp">MySQL</h1>
+              <hr />
               <img
                 src="./images/mysqlLogo.jpg"
                 className="titleimg"
@@ -221,36 +222,40 @@ class SQL extends Component {
                     </small>
                   </p>
                 </div>
-                <br />
-                {this.state.sqlInfo.length ? (
-                  this.state.sqlInfo.map(info => (
-                    <Card
-                      key={info._id}
-                      className="container"
-                      style={{ width: "18rem", marginTop: "7rem" }}
-                    >
-                      <Card.Body>
-                        <Card.Title className="container text-center">
-                          <h2>{info.title}</h2>
-                        </Card.Title>
-                        <Card.Text>{info.summary}</Card.Text>
-                        <Button
-                          className="container"
-                          style={{ margin: "2px" }}
-                          href={info.link}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                          variant="primary"
-                        >
-                          Find out more
-                        </Button>
-                      </Card.Body>
-                    </Card>
-                  ))
-                ) : (
-                  <Login />
-                )}
               </div>
+            </div>
+            <br />
+            <div className="dbCard">
+              <h3>Additional Resources</h3>
+              <hr />
+              {this.state.sqlInfo.length ? (
+                this.state.sqlInfo.map(info => (
+                  <Card
+                    key={info._id}
+                    className="container col-md-4"
+                    style={{ width: "18rem", marginTop: "7rem" }}
+                  >
+                    <Card.Body>
+                      <Card.Title className="container text-center">
+                        <h2>{info.title}</h2>
+                      </Card.Title>
+                      <Card.Text>{info.summary}</Card.Text>
+                      <Button
+                        className="container"
+                        style={{ margin: "2px" }}
+                        href={info.link}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        variant="primary"
+                      >
+                        Find out more
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                ))
+              ) : (
+                <Login />
+              )}
             </div>
           </div>
         </div>

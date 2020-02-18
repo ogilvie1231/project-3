@@ -40,7 +40,8 @@ class GitBash extends Component {
           <div className="content">
             <div className="card border border-white">
               <div className="card-header">
-                <h1>Git Bash</h1>
+                <h1  className="titleDisp">Git Bash</h1>
+                <hr />
                 <img
                   src="./images/gitLogo.png"
                   className="titleimg"
@@ -212,11 +213,14 @@ class GitBash extends Component {
             <br />
             <a href="https://git-scm.com/doc/ext">GitBash Resources</a>
             <br />
+            <div className="dbCard">
+            <h3>Additional Resources</h3>
+            <hr />
             {this.state.gitInfo.length ? (
               this.state.gitInfo.map(info => (
                 <Card
                   key={info._id}
-                  className="container"
+                  className="container col-md-4"
                   style={{ width: "18rem", marginTop: "7rem" }}
                 >
                   <Card.Body>
@@ -234,23 +238,13 @@ class GitBash extends Component {
                     >
                       Find out more
                     </Button>
-
-                    {/* <Button
-                  style={{margin: "2px"}}
-                  className="container"
-                    onClick={() =>
-                      this.delete(info.category, info._id) +
-                      console.log("info: ", info)
-                    }
-                  >
-                    Delete
-                  </Button> */}
                   </Card.Body>
                 </Card>
               ))
             ) : (
               <Login />
             )}
+          </div>
           </div>
         </div>
       </div>
