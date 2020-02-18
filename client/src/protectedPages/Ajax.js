@@ -160,9 +160,10 @@ class AjaxP extends Component {
             ))
           ) : (
             <Button className="addNew">
-              <Link to="/post">
-                <h3 style={{ color: "white" }} >Add New Content</h3>
-              </Link>
+              <a href="/post">Add New Content</a>
+              
+                {/* <h3 style={{ color: "white" }} ></h3> */}
+             {/* <Link to="/post"> </Link> */}
             </Button>
           )}
         </div>
