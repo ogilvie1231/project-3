@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import './pages.css'
 
 class JSpgeP extends Component {
   state = {
@@ -14,7 +14,7 @@ class JSpgeP extends Component {
   }
 
   loadAll = () => {
-    API.getAll("visualstudiocode")
+    API.getAll("javascript")
       .then(res => {
         this.setState({
           jsInfo: res.data
@@ -266,49 +266,53 @@ class JSpgeP extends Component {
             </a>
             <div className="space" />
             <br />
-            {this.state.jsInfo.length ? (
-              this.state.jsInfo.map(info => (
-                <Card
-                  key={info._id}
-                  className="container"
-                  style={{ width: "18rem", marginTop: "7rem" }}
-                >
-                  <Card.Body>
-                    <Card.Title className="container text-center">
-                      <h2>{info.title}</h2>
-                    </Card.Title>
-                    <Card.Text>{info.summary}</Card.Text>
-                    <Button
-                      className="container"
-                      style={{ margin: "2px" }}
-                      href={info.link}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      variant="primary"
-                    >
-                      Find out more
-                    </Button>
+            <div className="dbCard">
+              <h3>Additional Resources</h3>
+              <hr />
+              {this.state.jsInfo.length ? (
+                this.state.jsInfo.map(info => (
+                  <Card
+                    key={info._id}
+                    className="container col-md-4"
+                    style={{ width: "18rem", marginTop: "7rem" }}
+                  >
+                    <Card.Body>
+                      <Card.Title className="container text-center">
+                        <h2>{info.title}</h2>
+                      </Card.Title>
+                      <Card.Text>{info.summary}</Card.Text>
+                      <Button
+                        className="container"
+                        style={{ margin: "2px" }}
+                        href={info.link}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        variant="primary"
+                      >
+                        Find out more
+                      </Button>
 
-                    <Button
-                      style={{ margin: "2px" }}
-                      className="container"
-                      onClick={() =>
-                        this.delete(info.category, info._id) +
-                        console.log("info: ", info)
-                      }
-                    >
-                      Delete
-                    </Button>
-                  </Card.Body>
-                </Card>
-              ))
-            ) : (
-              <Button>
-                <Link to="/post">
-                  <h3 style={{ color: "white" }}>Add New Content</h3>
-                </Link>
-              </Button>
-            )}
+                      <Button
+                        style={{ margin: "2px" }}
+                        className="container"
+                        onClick={() =>
+                          this.delete(info.category, info._id) +
+                          console.log("info: ", info)
+                        }
+                      >
+                        Delete
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                ))
+              ) : (
+                <Button>
+                  <a className="addNew" href="/post">
+                    Add New Content
+                  </a>
+                </Button>
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
 import "./pages.css";
 
 class BootstrapP extends Component {
@@ -241,7 +240,7 @@ class BootstrapP extends Component {
               this.state.bootstrapInfo.map(info => (
                 <Card
                   key={info._id}
-                  className="container"
+                  className="container col-md-4"
                   style={{ width: "18rem", marginTop: "7rem" }}
                 >
                   <Card.Body>
