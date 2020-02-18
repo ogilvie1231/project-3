@@ -41,7 +41,7 @@ class Home extends Component {
                   </a>
                 </div>
                 <div className="col-4">
-                  <img src="./images/logos.JPG" alt="all logos" />
+                  <img className="logoPng" src="./images/logos.png" alt="all logos" />
                 </div>
               </div>
             </div>
