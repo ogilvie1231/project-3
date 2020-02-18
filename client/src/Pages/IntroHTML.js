@@ -1,6 +1,37 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+class GitBash extends Component {
+  state = {
+    gitInfo: []
+  };
 
-function IntroHTML () {
+  componentDidMount() {
+    this.loadAll();
+  }
+
+  loadAll = () => {
+    API.getAll("visualstudiocode")
+      .then(res => {
+        this.setState({
+          gitInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  };
+
+  delete = (category, id) => {
+    API.deleteOne(id)
+      .then(res => this.loadAll())
+
+      .catch(err => console.log(err));
+  };
+
+  render() {
      return (
       <div>
       {/* <Sidebar/> */}
@@ -86,8 +117,9 @@ function IntroHTML () {
           Resources"</a>
         <br />
         <a href="https://www.youtube.com/watch?v=xE7VOZbHhFY" target="_blank" rel="noopener noreferrer">"How to Write Better HTML and CSS"</a>
-      </div></div>
-  );
-};
-
-export default IntroHTML;
+      </div>
+      </div>
+    );
+  };
+  }
+  export default introHTML;

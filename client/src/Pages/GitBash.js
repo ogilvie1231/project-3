@@ -77,9 +77,7 @@ class GitBash extends Component {
                       <iframe title="git"width={320} height={215} src="https://www.youtube.com/embed/xuB1Id2Wxak" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     </div>
                     <h5 className="card-title">Git &amp; GitHub</h5>
-                    <p className="card-text">This card has supporting text below as a natural lead-in to additional
-                      content.
-                    </p>
+                    <p className="card-text">What is Git and GitHub?</p>
                     <hr />
                     <a className="btn btn-success" href="https://youtu.be/xuB1Id2Wxak" role="button" target="_blank" rel="noopener noreferrer">Watch Video
                       Here</a>
