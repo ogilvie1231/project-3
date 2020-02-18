@@ -34,16 +34,8 @@ class JQPgeP extends Component {
 
   render() {
     return (
-      <div>
-        <div
-          style={{
-            marginLeft: "5%",
-            marginRight: "5%",
-            padding: "1px 16px",
-            height: "1000px",
-            marginTop: "2%"
-          }}
-        >
+      <div className="mainBody">
+        <div>
           <div className="content">
             <div className="card">
               <div className="card-header">

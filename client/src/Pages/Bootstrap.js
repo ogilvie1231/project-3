@@ -201,9 +201,6 @@ class Bootstrap extends Component {
           </div>
         </div>
         <br />
-        <br />
-        <br />
-        <br />
         <div className="additional">
           <h3>More Videos</h3>
           <p>

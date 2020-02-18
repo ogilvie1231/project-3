@@ -124,9 +124,11 @@ const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
-                <Nav.Link href="/home">Home</Nav.Link>
+                <Link href="/home"></Link>
+                Home
               </Button>
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
+
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.2">
                     <li>
@@ -176,10 +178,10 @@ const NavBar = () => {
                   {/* <NavDropdown.Item href="#action/3.3=p">
                   Something
                 </NavDropdown.Item> */}
-                  <NavDropdown.Divider />
+                  {/* <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">
                     Separated link
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                 </NavDropdown>
               </Button>
             </Nav>

@@ -3,6 +3,7 @@ import API from "../utils/API";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import "./pages.css";
 
 class AjaxP extends Component {
   state = {
@@ -34,19 +35,9 @@ class AjaxP extends Component {
 
   render() {
     return (
-      <div>
-        <h1>PROTECTED</h1>
-        <br></br>
-        <div
-          style={{
-            marginLeft: "5%",
-            marginRight: "5%",
-            padding: "1px 16px",
-            height: "1000px",
-            marginTop: "2%"
-          }}
-        >
-          <div className="card">
+      <div className="card">
+        <div>
+          <div>
             <div className="card-header">
               <h1 className="AJAXhead" style={{ textAlign: "center" }}>
                 AJAX
@@ -116,7 +107,6 @@ class AjaxP extends Component {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
-          <p>Some text..</p>
           <br />
           <h2 style={{textAlign: 'center'}}>Additional Resourches</h2>
           <Button>
@@ -169,7 +159,7 @@ class AjaxP extends Component {
               </Card>
             ))
           ) : (
-            <Button>
+            <Button className="addNew">
               <Link to="/post">
                 <h3 style={{ color: "white" }} >Add New Content</h3>
               </Link>

@@ -13,7 +13,6 @@ class Ajax extends Component {
     
   };
 
-  
   componentDidMount() {
     this.loadAll();
   }
@@ -163,9 +162,6 @@ class Ajax extends Component {
             <Login />
           )}
         </div>
-        {/* <div>
-          <Footer />
-        </div> */}
       </div>
     );
   }
