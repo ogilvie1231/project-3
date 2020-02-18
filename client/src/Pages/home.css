@@ -25,5 +25,10 @@
 }
 
 .logoPng {
-    max-width: 550px;
+    max-width: 45vw;
+}
+
+.introText {
+    font-size: 3vw;
+    font-family: '"Archivo Black", sans-serif'
 }
