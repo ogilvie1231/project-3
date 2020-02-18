@@ -1,8 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css";
 
-const Home = () => {
+class Home extends Component {
+  state = {
+    homePage: []
+  };
+
+  render() {
     
         return (
           <div className="container">
@@ -254,13 +259,11 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm">
-                </div>
               </div>
             </div>
             <br />
           </div>
         );
       }
-    
+    }
 export default Home;

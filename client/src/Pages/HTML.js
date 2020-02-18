@@ -1,15 +1,47 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../utils/API";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
-function IntroHTML () {
+class HTML extends Component {
+  state = {
+    htmlInfo: []
+  };
+
+  componentDidMount() {
+    this.loadAll();
+  }
+
+  loadAll = () => {
+    API.getAll("visualstudiocode")
+      .then(res => {
+        this.setState({
+          htmlInfo: res.data
+        });
+      })
+      .catch(error => {
+        console.log("error: ", error);
+      });
+  };
+
+  delete = (category, id) => {
+    API.deleteOne(id)
+      .then(res => this.loadAll())
+
+      .catch(err => console.log(err));
+  };
+
+  render() {
      return (
       <div>
       {/* <Sidebar/> */}
-      <div style={{marginLeft: '5%', marginRight: '5%', padding: '1px 16px', height: '1000px', marginTop: '5%'}}>
+      <div style={{marginLeft: '18%', marginRight: '2%', padding: '1px 16px', height: '1000px'}}>
         <div className="content">
           <div className="card">
             <div className="card-header">
               <h1>HTML</h1>
-              <img src="./images/htmlLogo.png" className="titleimg" alt="html logo"></img>
+              <img src="./images/html_logo.png" className="titleimg" alt="html logo"></img>
             </div>
             <div className="card-body">
               <h5 className="card-title">Quick Links</h5>
@@ -23,16 +55,18 @@ function IntroHTML () {
             </div>
           </div>
           <br />
-          <h3>What is HTML</h3>
-          <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
-          <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<a href="https://en.wikipedia.org/wiki/HTML">Wikipedia</a></p>
+          <h3>Videos</h3>
+          <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
+            width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+          <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too
+            long (for example if it has over 50 links inside of it).</p>
           <hr />
           <div className="container">
             <div className="card-deck">
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe title="html"width={260} height={215} src="https://www.youtube.com/embed/UB1O30fR-EE" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="html" width={260} height={215} src="https://www.youtube.com/embed/UB1O30fR-EE" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">HTML Crash Course</h5>
                   <p className="card-text">For Absolute Beginners
@@ -46,7 +80,7 @@ function IntroHTML () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe title="html"width={320} height={215} src="https://www.youtube.com/embed/MW4OXdzU2Mg" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="html" width={320} height={215} src="https://www.youtube.com/embed/MW4OXdzU2Mg" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">HTML and CSS</h5>
                   <p className="card-text">HTML and CSS Tutorial For Beginner.
@@ -60,7 +94,7 @@ function IntroHTML () {
               <div className="card">
                 <div className="card-body">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe title="html"width={320} height={215} src="https://www.youtube.com/embed/dD2EISBDjWM" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="html" width={320} height={215} src="https://www.youtube.com/embed/dD2EISBDjWM" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   <h5 className="card-title">HTML Tutorial</h5>
                   <p className="card-text">HTML Tutorial for Beginners.</p>
@@ -73,8 +107,14 @@ function IntroHTML () {
             </div>
           </div>
         </div>
+        <hr />
         <br />
-        
+        {/*TRYING TO PUT HTML TEMPLATE HERE*/}
+        <h3>HTML Template</h3>
+        <div className="code" style={{width: '50%'}}>
+          <pre><code>{/*? $str = <<<'EOD'
+      <!DOCTYPE html*/}{"\n"}{"        "}{"\n"}{"        "}<title>HTML Tutorial</title>{"\n"}{"        "}{"\n"}{"      "}</code></pre>
+        </div>
         <hr />
         {/*ADDITIONAL RESOURCES*/}
         <h3>Addtional Resources</h3>
@@ -86,8 +126,48 @@ function IntroHTML () {
           Resources"</a>
         <br />
         <a href="https://www.youtube.com/watch?v=xE7VOZbHhFY" target="_blank" rel="noopener noreferrer">"How to Write Better HTML and CSS"</a>
-      </div></div>
+      </div>
+      <br />
+      {this.state.htmlInfo.length ? (
+            this.state.htmlInfo.map(info => (
+              <Card
+                key={info._id}
+                className="container"
+                style={{ width: "18rem", marginTop: "7rem" }}
+              >
+                <Card.Body>
+                  <Card.Title className="container text-center">
+                    <h2>{info.title}</h2>
+                  </Card.Title>
+                  <Card.Text>{info.summary}</Card.Text>
+                  <Button className="container"
+                  style={{margin: "2px"}}
+                    href={info.link}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    variant="primary"
+                  >
+                    Find out more
+                    </Button>
+
+                  <Button
+                  style={{margin: "2px"}}
+                  className="container"
+                    onClick={() =>
+                      this.delete(info.category, info._id) +
+                      console.log("info: ", info)
+                    }
+                  >
+                    Delete
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
+      </div>
   );
 };
-
-export default IntroHTML;
+}
+export default HTML;
