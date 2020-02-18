@@ -24,7 +24,7 @@ class Home extends Component {
                       <a id="button" href="#topicards" className="btn btn-primary btn-lg active" role="button" aria-pressed="true">Documentation</a>
                     </div>
                     <div className="col-4">
-                      <img src="./images/logos.JPG" alt="all logos" />
+                      <img src="./images/LogosTransp.png" alt="all logos" />
                     </div>
                   </div>
                 </div>
