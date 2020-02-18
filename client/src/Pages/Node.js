@@ -41,11 +41,7 @@ class Node extends Component {
             <div className="card">
               <div className="card-header">
                 <h1>Node.js</h1>
-<<<<<<< HEAD
-                <img src="./images/nodeLogo.jpg" className="titleimg" />
-=======
                 <img src="assets/node logo.jpg" className="titleimg" alt="node logo"/>
->>>>>>> alex
               </div>
               <div className="card-body">
                 <h5 className="card-title">Quick Links</h5>
@@ -112,14 +108,6 @@ class Node extends Component {
             </div>
           </div>
           <br />
-<<<<<<< HEAD
-          <p></p>
-          <div className="code" style={{ width: '50%' }}>
-            <code>
-             
-              </code>
-          </div>
-=======
           {this.state.nodeInfo.length ? (
             this.state.nodeInfo.map(info => (
               <Card
@@ -158,7 +146,6 @@ class Node extends Component {
           ) : (
             <h3>No Results to Display</h3>
           )}
->>>>>>> alex
         </div>
       </div>
     </div>
