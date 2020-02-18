@@ -21,30 +21,14 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/home">
-                <Button style={{ marginLeft: "5px" }} variant="outline-success">
+            <Nav.Link href="/home">
+                <Button variant="outline-success">
                   Home
                 </Button>
               </Nav.Link>
-
-              {/* <Button style={{ marginLeft: "5px" }} variant="outline-success">
-                <Nav.Link href="/post">Test New</Nav.Link>
-              </Button> */}
-              {/* <Nav.Link href="#link">Link</Nav.Link> */}
-              <Button
-                style={{
-                  marginLeft: "5px",
-                  maxHeight: "39px",
-                  marginTop: "7px"
-                }}
-                variant="outline-success"
-              >
+              {/* <Button variant="outline-success"> */}
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
-              
-                  {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> */}
                   <NavDropdown.Item href="#action/3.2">
-                    {/* <li><Link to="/home">Home</Link></li> */}
-                    {/* <li><Link to="/intro">Introduction</Link></li> */}
                     <li>
                       <Link to="/ajax">Ajax</Link>
                     </li>
@@ -96,8 +80,9 @@ const NavBar = () => {
                     Separated link
                   </NavDropdown.Item> */}
                 </NavDropdown>
-              </Button>
+              {/* </Button> */}
             </Nav>
+            
             <Form inline>
               <FormControl
                 type="text"
@@ -106,6 +91,7 @@ const NavBar = () => {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
+            
             <Button
               style={{ marginLeft: "5px" }}
               variant="outline-success"
@@ -113,6 +99,7 @@ const NavBar = () => {
             >
               Log in
             </Button>
+
           </Navbar.Collapse>
         </Navbar>
       )}
@@ -124,7 +111,8 @@ const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
-                <Nav.Link href="/home">Home</Nav.Link>
+                <Link href="/home"></Link>
+                Home
               </Button>
               <Button style={{ marginLeft: "5px" }} variant="outline-success">
                 <NavDropdown title="Topics" id="basic-nav-dropdown">
@@ -176,10 +164,10 @@ const NavBar = () => {
                   {/* <NavDropdown.Item href="#action/3.3=p">
                   Something
                 </NavDropdown.Item> */}
-                  <NavDropdown.Divider />
+                  {/* <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">
                     Separated link
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                 </NavDropdown>
               </Button>
             </Nav>

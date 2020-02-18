@@ -39,7 +39,8 @@ class JSpge extends Component {
         <div>
           <div className="card">
             <div className="card-header">
-              <h1>Javascript</h1>
+              <h1 className="titleDisp">Javascript</h1>
+              <hr />
               <img
                 src="./images/jslogo.png"
                 className="titleimg"
@@ -104,7 +105,7 @@ class JSpge extends Component {
             functions."-Wikipedia
           </p>
           <hr />
-          <div className="container">
+          <div>
             <div className="card-deck">
               <div className="card">
                 <div className="card-body">
@@ -267,11 +268,14 @@ class JSpge extends Component {
             </a>
             <div className="space" />
             <br />
+            <div className="dbCard">
+            <h3>Additional Resources</h3>
+            <hr />
             {this.state.jsInfo.length ? (
               this.state.jsInfo.map(info => (
                 <Card
                   key={info._id}
-                  className="container"
+                  className="container col-md-4"
                   style={{ width: "18rem", marginTop: "7rem" }}
                 >
                   <Card.Body>
@@ -295,6 +299,7 @@ class JSpge extends Component {
             ) : (
               <Login />
             )}
+          </div>
           </div>
         </div>
       </div>

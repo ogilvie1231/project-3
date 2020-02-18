@@ -40,7 +40,8 @@ class JQPge extends Component {
           <div className="content">
             <div className="card">
               <div className="card-header">
-                <h1>jQuery</h1>
+                <h1  className="titleDisp">jQuery</h1>
+                <hr />
                 <img
                   src="./images/jquerylogo.jpg"
                   className="titleimg"
@@ -231,11 +232,14 @@ class JQPge extends Component {
               Learn JQuery from scratch
             </a>
             <br />
+            <div className="dbCard">
+            <h3>Additional Resources</h3>
+            <hr />
             {this.state.jQueryInfo.length ? (
               this.state.jQueryInfo.map(info => (
                 <Card
                   key={info._id}
-                  className="container"
+                  className="container col-md-4"
                   style={{ width: "18rem", marginTop: "7rem" }}
                 >
                   <Card.Body>
@@ -253,23 +257,13 @@ class JQPge extends Component {
                     >
                       Find out more
                     </Button>
-
-                    {/* <Button
-                  style={{margin: "2px"}}
-                  className="container"
-                    onClick={() =>
-                      this.delete(info.category, info._id) +
-                      console.log("info: ", info)
-                    }
-                  >
-                    Delete
-                  </Button> */}
                   </Card.Body>
                 </Card>
               ))
             ) : (
               <Login />
             )}
+          </div>
           </div>
         </div>
       </div>

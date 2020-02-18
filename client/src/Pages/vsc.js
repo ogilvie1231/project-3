@@ -40,7 +40,8 @@ class Vsc extends Component {
           <div className="content">
             <div className="card">
               <div className="card-header" style={{ textAlign: "center" }}>
-                <h1 style={{ textAlign: "center" }}>Visual Studio Code</h1>
+                <h1 className="titleDisp">Visual Studio Code</h1>
+                <hr />
                 <img
                   style={{ maxHeight: "170px" }}
                   src="./images/VSLogo.png"
@@ -153,34 +154,38 @@ class Vsc extends Component {
             "Visual Studio Code Tips and Tricks"
           </a>
           <br />
-          {this.state.vscInfo.length ? (
-            this.state.vscInfo.map(info => (
-              <Card
-                key={info._id}
-                className="container"
-                style={{ width: "18rem", marginTop: "7rem" }}
-              >
-                <Card.Body>
-                  <Card.Title className="container text-center">
-                    <h2>{info.title}</h2>
-                  </Card.Title>
-                  <Card.Text>{info.summary}</Card.Text>
-                  <Button
-                    className="container"
-                    style={{ margin: "2px" }}
-                    href={info.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    variant="primary"
-                  >
-                    Find out more
-                  </Button>
-                </Card.Body>
-              </Card>
-            ))
-          ) : (
-            <Login />
-          )}
+          <div className="dbCard">
+            <h3>Additional Resources</h3>
+            <hr />
+            {this.state.vscInfo.length ? (
+              this.state.vscInfo.map(info => (
+                <Card
+                  key={info._id}
+                  className="container col-md-4"
+                  style={{ width: "18rem", marginTop: "7rem" }}
+                >
+                  <Card.Body>
+                    <Card.Title className="container text-center">
+                      <h2>{info.title}</h2>
+                    </Card.Title>
+                    <Card.Text>{info.summary}</Card.Text>
+                    <Button
+                      className="container"
+                      style={{ margin: "2px" }}
+                      href={info.link}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      variant="primary"
+                    >
+                      Find out more
+                    </Button>
+                  </Card.Body>
+                </Card>
+              ))
+            ) : (
+              <Login />
+            )}
+          </div>
           <br />
         </div>
       </div>

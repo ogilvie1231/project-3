@@ -40,9 +40,10 @@ class Node extends Component {
           <div className="content">
             <div className="card">
               <div className="card-header">
-                <h1>Node.js</h1>
+                <h1 className="titleDisp">Node.js</h1>
+                <hr />
                 <img
-                  src="assets/node logo.jpg"
+                  src="./images/nodeLogo.jpg"
                   className="titleimg"
                   alt="node logo"
                 />
@@ -209,11 +210,14 @@ class Node extends Component {
               </div>
             </div>
             <br />
+            <div className="dbCard">
+            <h3>Additional Resources</h3>
+            <hr />
             {this.state.nodeInfo.length ? (
               this.state.nodeInfo.map(info => (
                 <Card
                   key={info._id}
-                  className="container"
+                  className="container col-md-4"
                   style={{ width: "18rem", marginTop: "7rem" }}
                 >
                   <Card.Body>
@@ -237,6 +241,7 @@ class Node extends Component {
             ) : (
               <Login />
             )}
+          </div>
           </div>
         </div>
       </div>

@@ -5,15 +5,11 @@ import Button from "react-bootstrap/Button";
 import Login from "../components/Login";
 import "./pages.css";
 
-
 class Ajax extends Component {
-  
   state = {
     ajaxInfo: []
-    
   };
 
-  
   componentDidMount() {
     this.loadAll();
   }
@@ -37,11 +33,8 @@ class Ajax extends Component {
       .catch(err => console.log(err));
   };
 
-
   render() {
-
     return (
-      
       <div className="mainBody">
         <div>
           <div className="card">
@@ -124,48 +117,39 @@ class Ajax extends Component {
             AJAX Documentation
           </a>
           <br />
-          {this.state.ajaxInfo.length ? (
-            this.state.ajaxInfo.map(info => (
-              <Card
-                key={info._id}
-                className="container"
-                style={{ width: "18rem", marginTop: "7rem" }}
-              >
-                <Card.Body>
-                  <Card.Title className="container text-center">
-                    <h2>{info.title}</h2>
-                  </Card.Title>
-                  <Card.Text>{info.summary}</Card.Text>
-                  <Button className="container"
-                  style={{margin: "2px"}}
-                    href={info.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    variant="primary"
-                  >
-                    Find out more
+          <div className="dbCard">
+            <h3>Additional Resources</h3>
+            <hr />
+            {this.state.ajaxInfo.length ? (
+              this.state.ajaxInfo.map(info => (
+                <Card
+                  key={info._id}
+                  className="container col-md-4"
+                  style={{ width: "18rem", marginTop: "7rem" }}
+                >
+                  <Card.Body>
+                    <Card.Title className="container text-center">
+                      <h2>{info.title}</h2>
+                    </Card.Title>
+                    <Card.Text>{info.summary}</Card.Text>
+                    <Button
+                      className="container"
+                      style={{ margin: "2px" }}
+                      href={info.link}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      variant="primary"
+                    >
+                      Find out more
                     </Button>
-
-                  {/* <Button
-                  style={{margin: "2px"}}
-                  className="container"
-                    onClick={() =>
-                      this.delete(info.category, info._id) +
-                      console.log("info: ", info)
-                    }
-                  >
-                    Delete
-                  </Button> */}
-                </Card.Body>
-              </Card>
-            ))
-          ) : (
-            <Login />
-          )}
+                  </Card.Body>
+                </Card>
+              ))
+            ) : (
+              <Login />
+            )}
+          </div>
         </div>
-        {/* <div>
-          <Footer />
-        </div> */}
       </div>
     );
   }

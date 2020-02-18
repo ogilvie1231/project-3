@@ -40,7 +40,8 @@ class Firebase extends Component {
           <div className="content">
             <div className="card">
               <div className="card-header">
-                <h1>Firebase</h1>
+                <h1  className="titleDisp">Firebase</h1>
+                <hr />
                 <img
                   src="./images/firebaseLogo.jpg"
                   className="titleimg"
@@ -99,11 +100,14 @@ class Firebase extends Component {
               allowFullScreen
             />
             <br />
+            <div className="dbCard">
+            <h3>Additional Resources</h3>
+            <hr />
             {this.state.firebaseInfo.length ? (
               this.state.firebaseInfo.map(info => (
                 <Card
                   key={info._id}
-                  className="container"
+                  className="container col-md-4"
                   style={{ width: "18rem", marginTop: "7rem" }}
                 >
                   <Card.Body>
@@ -121,23 +125,13 @@ class Firebase extends Component {
                     >
                       Find out more
                     </Button>
-
-                    {/* <Button
-                  style={{margin: "2px"}}
-                  className="container"
-                    onClick={() =>
-                      this.delete(info.category, info._id) +
-                      console.log("info: ", info)
-                    }
-                  >
-                    Delete
-                  </Button> */}
                   </Card.Body>
                 </Card>
               ))
             ) : (
               <Login />
             )}
+          </div>
           </div>
         </div>
       </div>
