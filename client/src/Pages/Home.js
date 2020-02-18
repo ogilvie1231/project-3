@@ -14,7 +14,7 @@ class Home extends Component {
           <div className="introduction">
             <div className="containter">
               <div className="row">
-                <div className="col-8">
+                <div className="col-7">
                   <p className="introText">
                     THE PLACE WHERE YOU CAN FIND MANY RESOURCES TO HELP YOU
                     BECOME A FULL-STACK WEB DEVELOPER{" "}
