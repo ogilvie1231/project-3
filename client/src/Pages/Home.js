@@ -9,7 +9,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div >
         <div>
           <div className="introduction">
             <div className="containter">
@@ -20,23 +20,29 @@ class Home extends Component {
                     BECOME A FULL-STACK WEB DEVELOPER{" "}
                   </p>
                   <br />
-                  <h4 style={{ color: "gray", wordWrap: "break-word" }}>
-                    Browse through the page to find videos and additional
-                    resources from all over the Web.
-                  </h4>
-                  <br />
-                  <a
-                    id="button"
-                    href="#topicards"
-                    className="btn btn-primary btn-lg active"
-                    role="button"
-                    aria-pressed="true"
-                  >
-                    Documentation
-                  </a>
+                  <div className="row">
+                    <h4  style={{ color: "gray", wordWrap: "break-word" }}>
+                      Browse through the page to find videos and additional
+                      resources from all over the Web.
+                    </h4>
+                    <br />
+                    <a
+                      id="button"
+                      href="#topicards"
+                      className="btn btn-primary btn-lg active"
+                      role="button"
+                      aria-pressed="true"
+                    >
+                      Documentation
+                    </a>
+                  </div>
                 </div>
                 <div className="col-4">
-                  <img className="logoPng" src="./images/logos.png" alt="all logos" />
+                  <img
+                    className="logoPng hidden-xs"
+                    src="./images/logos.png"
+                    alt="all logos"
+                  />
                 </div>
               </div>
             </div>

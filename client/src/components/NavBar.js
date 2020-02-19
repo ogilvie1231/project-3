@@ -53,9 +53,9 @@ const NavBar = () => {
                     <li>
                       <Link to="/jquery">jQuery</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/react">React</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/firebase">Firebase</Link>
                     </li>
@@ -141,10 +141,9 @@ const NavBar = () => {
                     <li>
                       <Link to="/jquery=p">jQuery</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/react=p">React</Link>
-                    </li>
-
+                    </li> */}
                     <li>
                       <Link to="/firebase=p">Firebase</Link>
                     </li>
