@@ -2,8 +2,8 @@
 
 <h2> <a href="https://lit-scrubland-80180.herokuapp.com/">A resource center for developers</a></h2>
 <p>The Resource Center was built as a place to gather helpful links and information for developers.
-<img src="./public/assets/images/14.png" alt="site image" >&nbsp;
-<!-- ![Image description](./public/assets/images/14.png) -->
+<img src="./client/public/images/12.png" alt="site image" >&nbsp;
+<!-- ![Image description](./client/public/images/12.png) -->
 
 <h3>This project was built with:</h3>
 <ul>
